@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>throttle</title>
+  <style>
+    #box {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+  <script>
+    const outputLog = (remaining, now, previous, wait) => {
+      console.group(remaining)
+      console.log('now = %s', now)
+      console.log('previous = %s', previous)
+      console.log('wait = %s', wait)
+      console.groupEnd()
+    }
+    const throttle = (func, wait = 1000, options = {}) => {
+      let context, args, timeout = null,
+        previous = 0
+
+      const later = () => {
+        const now = Date.now()
+        clearTimeout(timeout)
+        timeout = null
+        func.apply(context, args)
+        context = args = null
+        previous = now
+      }
+
+      // return (...arguments) => {
+      return function (...arguments) {
+        // console.log(this)
+        const now = Date.now()
+        context = this
+        args = arguments
+        if (!previous && options.leading === false) {
+          previous = now
+        }
+
+        const remaining = wait - (now - previous)
+        outputLog(remaining, now, previous, wait)
+        if (remaining <= 0 || remaining > wait) {
+          if (timeout) {
+            clearTimeout(timeout)
+            timeout = null
+          }
+
+          func.apply(context, args)
+          context = args = null
+          previous = Date.now()
+        } else if (!timeout && options.trailig !== false) {
+          timeout = setTimeout(later, remaining)
+        }
+      }
+    }
+
+    document.getElementById('box').addEventListener('click', throttle(() => {
+      console.log('%c hello', 'color: #f00;')
+    }, 5000))
+  </script>
+</body>
+
+</html>
