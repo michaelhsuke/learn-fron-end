@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Lifecycle</title>
+  <style>
+    .user-info {
+      border: 1px solid #f00;
+    }
+  </style>
+  <script src="../lib/vue/vue.min.js"></script>
+</head>
+<body>  
+  <div id="app">
+    <user :user="curUser"></user>
+    {{ msg }}
+  </div>
+  <script type="text/x-template" id="user-info-template">
+    <div class="user-info">
+      <div>{{ user && user.name }}</div>
+      <div>{{ user && user.age }}</div>
+    </div>
+  </script>
+  <script>
+    const User = {
+      template: '#user-info-template',
+      props: {
+        user: Object
+      }
+    }
+
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        msg: 'hello',
+        curUser: {
+          name: '徐可',
+          age: 30
+        }
+      },
+      components: {
+        user: User
+      },
+      beforeCreate() {
+        // debugger
+        console.group('beforeCreate')
+        console.log(this.$el)
+        console.log(this.$data)
+        console.log(this.msg)
+        console.groupEnd()
+      },
+      created() {
+        // debugger
+        console.group('created')
+        console.log(this.$el)
+        console.log(this.$data)
+        console.log(this.msg)
+        console.groupEnd()
+      },
+      beforeMount() {
+        // debugger
+        console.group('beforeMount')
+        console.log(this.$el)
+        console.log(this.$data)
+        console.log(this.msg)
+        console.groupEnd()
+      },
+      mounted() {
+        // debugger
+        console.group('mounted')
+        console.log(this.$el)
+        console.log(this.$data)
+        console.log(this.msg)
+        console.groupEnd()
+      },
+      methods: {
+        hello() {
+          console.log('say hello')
+        }
+      }
+    })
+
+    vm.$createElement()
+  </script>
+</body>
+</html>
