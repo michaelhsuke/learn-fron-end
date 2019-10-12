@@ -1,57 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vue Lifecycle</title>
-  <script src="../lib/vue/vue.min.js"></script>
-</head>
-<body>  
-  <div id="app">{{ msg }}</div>
-  <script>
-    const vm = new Vue({
-      el: '#app',
-      data: {
-        msg: 'hello'
-      },
-      beforeCreate() {
-        console.group('beforeCreate')
-        console.log(this.$el)
-        console.log(this.$data)
-        console.log(this.msg)
-        console.groupEnd()
-      },
-      created() {
-        console.group('created')
-        console.log(this.$el)
-        console.log(this.$data)
-        console.log(this.msg)
-        console.groupEnd()
-      },
-      beforeMount() {
-        console.group('beforeMount')
-        console.log(this.$el)
-        console.log(this.$data)
-        console.log(this.msg)
-        console.groupEnd()
-      },
-      mounted() {
-        console.group('mounted')
-        console.log(this.$el)
-        console.log(this.$data)
-        console.log(this.msg)
-        console.groupEnd()
-      },
-      methods: {
-        hello() {
-          console.log('say hello')
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue Lifecycle</title>
+    <script src="../lib/vue/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ msg }}
+      <component-a></component-a>
+    </div>
+    <script>
+      const ComponentA = {
+        template: `
+        <div>
+          <div>speak: {{ content }}  </div>
+          <div @click="onClicked">test</div>
+        </div>
+      `,
+        data: () => {
+          return { content: "goood" }
+        },
+        methods: {
+          onClicked() {
+            console.log("onClicked")
+          }
         }
       }
-    })
+      const vm = new Vue({
+        el: "#app",
+        components: {
+          "component-a": ComponentA
+        },
+        data: {
+          msg: "hello"
+        },
+        beforeCreate() {
+          console.group("beforeCreate")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        created() {
+          console.group("created")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        beforeMount() {
+          console.group("beforeMount")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        mounted() {
+          console.group("mounted")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        beforeUpdate() {
+          console.group("beforeUpdate")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        updated() {
+          console.group("updated")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        beforeDestroy() {
+          console.group("beforeDestroy")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        destroyed() {
+          console.group("destroyed")
+          console.log(this.$el)
+          console.log(this.$data)
+          console.log(this.msg)
+          console.groupEnd()
+        },
+        methods: {
+          hello() {
+            console.log("say hello")
+          }
+        }
+      })
 
-    // console.log('ok')
-    // vm.$mount('#app')
-  </script>
-</body>
+      // console.log('ok')
+      // vm.$mount('#app')
+    </script>
+  </body>
 </html>
