@@ -15,7 +15,7 @@
 <body>  
   <div id="app">
     <user :user="curUser"></user>
-    {{ msg }}
+    {{ msg }} test: {{ test }}
   </div>
   <script type="text/x-template" id="user-info-template">
     <div class="user-info">
@@ -42,6 +42,11 @@
       },
       components: {
         user: User
+      },
+      computed: {
+        test: () => {
+          return this.msg
+        }
       },
       beforeCreate() {
         // debugger
