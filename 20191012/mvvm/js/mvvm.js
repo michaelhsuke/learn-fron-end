@@ -17,13 +17,11 @@ class MVVM {
     const self = this
     if (typeof computed === 'object') {
       Object.keys(computed).forEach(function(key) {
+        const getter = typeof computed[key] === 'function' ? computed[key] : computed[key].get
         Object.defineProperty(self, key, {
-          get: typeof computed[key] === 'function' ? computed[key].bind(self) : computed[key].get.bind(self),
+          get: getter,
           set: () => {}
         })
-        
-        // debugger
-        // self[key]
       })
     }
     
