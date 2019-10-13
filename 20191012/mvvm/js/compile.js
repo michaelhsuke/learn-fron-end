@@ -66,10 +66,23 @@ const CompileUtils = {
   text: function (node, expr, data) {
     const updateFn = this.updater['text']
     updateFn && updateFn(node, Utils.matchTplData(expr, data))
+    expr.replace(TEMPLATE_REG, (...args) => {
+      new Watcher(data, args[1], newValue => {
+        updateFn(node, Utils.matchTplData(expr, data))
+      })
+    })
   },
   model: function (node, expr, data) {
     const updateFn = this.updater['model']
     updateFn && updateFn(node, Utils.matchData(expr, data))
+    new Watcher(data, expr, (newValue) => {
+      updateFn(node, newValue)
+    })
+
+    node.addEventListener('input', e => {
+      let newValue = e.target.value
+      Utils.setValue(expr, data, newValue)
+    })
   },
   updater: {
     text(node, value) {

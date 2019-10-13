@@ -15,13 +15,22 @@ const Utils = {
         return obj[key]
       }, data)
     }
-    console.log('result=', expr, result)
     return result
   },
   matchTplData(expr, data) {
     return expr.replace(TEMPLATE_REG, (...args) => {
       return this.matchData(args[1], data)
     })
+  },
+  setValue(expr, data, newValue) {
+    const exprArr = expr.split('.')
+    exprArr.reduce((obj, key, index) => {
+      if (index == exprArr.length - 1) {
+        obj[key] = newValue
+      } else {
+        return obj[key]
+      }
+    }, data)
   }
 }
 

@@ -6,6 +6,7 @@ class MVVM {
     if (!Utils.isElemenent(this.$el)) {
       this.$el = document.querySelector(this.$el)
     }
+    new Observer(this.$data)
     new Compile(this)
   }
 }
