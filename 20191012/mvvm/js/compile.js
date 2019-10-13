@@ -45,7 +45,7 @@ class Compile {
   parseTextNode(node) {
     let textContent = node.textContent
     if (TEMPLATE_REG.test(textContent)) {
-      CompileUtils.text(node, textContent, this.data)
+      CompileUtils.text(node, textContent, this.vm)
     }
   }
 
@@ -56,7 +56,7 @@ class Compile {
       const attrName = attr.name
       if (attrName.includes('v-')) {
         let [ , type] = attrName.split('-')
-        CompileUtils[type](node, attr.value, this.data)
+        CompileUtils[type](node, attr.value, this.vm)
       }
     })
   }
@@ -64,9 +64,12 @@ class Compile {
 
 const CompileUtils = {
   text: function (node, expr, data) {
+    
     const updateFn = this.updater['text']
+    // debugger
     updateFn && updateFn(node, Utils.matchTplData(expr, data))
     expr.replace(TEMPLATE_REG, (...args) => {
+      // console.log('expr=%s, len = %d', args[1], args[1].length, data)
       new Watcher(data, args[1], newValue => {
         updateFn(node, Utils.matchTplData(expr, data))
       })
