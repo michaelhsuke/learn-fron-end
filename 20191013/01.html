@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #f00;
+      margin: 50px;
+    }
+
+    #box2 {
+      /* display: none; */
+      /* visibility: hidden; */
+      opacity: 0;
+    }
+
+    .img__wrap img {
+      width: 300px!important;
+    }
+
+    img {
+      /* max-width: 300px; */
+      transform: scale(.625);
+    }
+  </style>
+</head>
+<body>
+  <div id="box1" class="box">1</div>
+  <div id="box2" class="box">2</div>
+  <div id="box3" class="box">3</div>
+
+  <div class="img__wrap">
+      <img src="../images/001.jpg" style="width:480px!important">
+  </div>
+
+  <script>
+    // document.getElementsByTagName('img')[0].style = '300px!important'
+  </script>
+  
+  
+</body>
+</html>
