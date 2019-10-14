@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>如何用 css 或 js 实现多行文本溢出省略效果，考虑兼容性</title>
+  <style>
+    #single-line {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100px;
+    }
+
+    #multiply-lines {
+      width: 300px;
+      position: relative;
+      line-height: 1.4em;
+      height: 4.2em;
+      overflow: hidden;
+      border: 1px solid #f00;
+    }
+    #multiply-lines:after {
+      content: '...';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="single-line">
+    如何用 css 或 js 实现多行文本溢出省略效果，考虑兼容性
+  </div>
+
+  <div id="multiply-lines">
+    在普通流中，元素按照其在 HTML
+    中的先后位置至上而下布局，在这个过程中，行内元素水平排列，直到当行被占满然后换行，块级元素则会被渲染为完整的一个新行，除非另外指定，否则所有元素默认都是普通流定位，也可以说，普通流中元素的位置由该元素在 HTML 文档中的位置决定。
+  </div>
+
+</body>
+
+</html>

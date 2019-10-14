@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>一、BFC（Block Formatting Context）：块级格式上下文</h2>
+  <h3>BFC的触发</h3>
+  <p>body根元素</p>
+  <p>浮动元素：float除none之外的值</p>
+  <p>绝对定位元素：position(absolute, fixed)</p>
+  <p>display为inline-block, table-cell, flex</p>
+  <p>overflow除了visible之外的的值: hidden, auto, scroll</p>
+  
+  <h3>BFC的作用</h3>
+  <p>同一个BFC下外边距会发生折叠</p>
+  <p>可以包含浮动元素</p>
+  <p>可以阻止元素被浮动元素覆盖</p>
+</body>
+</html>
