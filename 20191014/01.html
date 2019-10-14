@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>渐变测试</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 40px;
+      margin: 20px;
+    }
+
+    #box1 {
+      background-image: linear-gradient(to right, red, blue)
+    }
+
+    #box2 {
+      background-image: linear-gradient(to bottom right, red, blue);
+    }
+
+    #box3 {
+      background-image: linear-gradient(0deg, red, blue)
+    }
+
+    #box4 {
+      background-image: linear-gradient(0deg, red, blue)
+    }
+
+    #box5 {
+      background-image: linear-gradient(45deg, red, blue)
+    }
+
+    #box6 {
+      background-image: linear-gradient(90deg, red, blue)
+    }
+
+    #box7 {
+      background-image: linear-gradient(135deg, red, blue)
+    }
+
+    #box8 {
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+    }
+
+    #box9 {
+      background: linear-gradient(180deg, black, black 50%, transparent 50%) top left / 100% 1px no-repeat, 
+      linear-gradient(90deg, black, black 50%, transparent 50%) top right / 1px  100% no-repeat,
+      linear-gradient(0, black, black 50%, transparent 50%) bottom right / 100% 1px no-repeat, 
+      linear-gradient(-90deg, black, black 50%, transparent 50%) bottom left / 1px 100% no-repeat;
+    }
+    
+    #box10 {
+      box-shadow: inset 0px -1px 1px -1px #c8c7cc;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box1" class="box"></div>
+  <div id="box2" class="box"></div>
+  <div id="box3" class="box"></div>
+  <div id="box4" class="box"></div>
+  <div id="box5" class="box"></div>
+  <div id="box6" class="box"></div>
+  <div id="box7" class="box"></div>
+  <div id="box8" class="box"></div>
+
+  <div id="box9" class="box"></div>
+  <div id="box10" class="box"></div>
+</body>
+</html>
