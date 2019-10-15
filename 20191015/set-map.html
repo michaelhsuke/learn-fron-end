@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Set和Map</title>
+</head>
+<body>
+  <script>
+    var s = new Set([1, 2, 3, 4])
+    s.add(5)
+    s.delete(5)
+    s.keys()
+    s.values()
+    s.entries()
+    s.forEach(parseInt)
+    s.has(1)
+    s.clear()
+
+    // WeakSet的成员只能是对象，不能是其他类型的值
+    var ws = new WeakSet([4, 3, 2, 1])
+    ws.delete(4)
+    w.has(4)
+    w.add(4)
+  </script>
+</body>
+</html>
