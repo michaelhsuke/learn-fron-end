@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>redux demo</title>
+  </head>
+  <body>
+    <script>
+      const createStore = (reducer, initialState) => {
+        const store = {}
+        store.state = initialState
+        store.listeners = []
+
+        store.subscribe = listener => store.listeners.push(listener)
+        store.dispatch = action => {
+          store.state = reducer(store.state, action)
+          store.listeners.forEach(listener => listener())
+        }
+        store.getState = () => store.state
+
+        return store
+      }
+
+      function counter(state = 0, action) {
+        switch (action.type) {
+          case "INCREMENT":
+            return state + 1
+          case "DECREMENT":
+            return state - 1
+          default:
+            return state
+        }
+      }
+
+      let store = createStore(counter)
+      store.subscribe(() => { console.log( store.getState() )})
+      store.dispatch({ type: "INCREMENT" })
+      store.dispatch({ type: "INCREMENT" })
+      store.dispatch({ type: "DECREMENT" })
+    </script>
+  </body>
+</html>
