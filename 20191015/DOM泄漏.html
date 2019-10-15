@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM内存泄漏</title>
+</head>
+<body>
+  <div class="main">
+    <div class="test">test</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+  </div>
+
+  <button id="add">点我增加</button>
+  <button id="remove">点我减少</button>
+
+  <script>
+    var domMain = document.querySelector('.main')
+    var domTest = document.querySelector('.test')
+    var domAdd = document.querySelector('#add')
+    var domRemove = document.querySelector('#remove')
+
+    domAdd.addEventListener('click', function(e) {
+      var newItem = document.createElement('div')
+      var newText = document.createTextNode('append')
+      newItem.appendChild(newText)
+      domMain.appendChild(newItem)
+    })
+
+    domRemove.addEventListener('click', function () {
+      domMain.removeChild(domTest)
+    })
+  </script>
+</body>
+</html>

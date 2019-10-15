@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>内存泄漏</title>
+</head>
+<body>
+  <p>定义：内存浪费，应用程序分配某段内存后，由于设计错误，导致在释放该段内存之前就失去了对该段内存的控制</p>
+  <p>一、意外的全局变量</p>
+  <p>二、console.log</p>
+  <p>三、闭包：A函数里有个B函数，B函数可以使用在A中定义的变量、方法等</p>
+  <p>四、DOM泄漏</p>
+  <p>五、被遗忘的timers</p>
+
+  <script>
+    // 意外的全局变量示例
+    function myFun() {
+      name = '意外的全局变量，将会挂在window或global下'
+    }
+
+    function myFun2() {
+      this.name = '这是通过this意外创建的全局变量'
+    }
+  </script>
+
+  
+  
+</body>
+</html>
