@@ -24,6 +24,25 @@
     const arrayES6 = new MyES6Array(3)
     console.log(arrayES6)
   </script>
+
+  <script>
+    class Foo {
+      constructor() {
+        this.foo = 1
+      }
+
+      static answer() {
+        return 42
+      }
+
+      print() {
+        console.log(this.foo)
+      }
+    }
+
+    console.log(Object.keys(Foo.prototype))
+    console.log(Object.keys(Foo))
+  </script>
   
 </body>
 </html>
