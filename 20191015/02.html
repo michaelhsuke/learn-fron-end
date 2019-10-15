@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>节流</title>
+  <style>
+    #container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="../js/throttle.js"></script>
+  <p>节流：在n秒内只会执行一次，如果在执行期间又触发事件，则不会执行，直到n秒之后触发才能继续执行事件</p>
+  <div id="container"></div>
+  <a href="javascript: void(0);" id="btn-cancel">取消</a>
+  <script>
+    let count = 1
+    var container = document.getElementById('container')
+    function sayHi() {
+      container.innerHTML = count++
+    }
+    container.onmousemove = throttle(sayHi, 5000)
+  </script>
+</body>
+
+</html>
