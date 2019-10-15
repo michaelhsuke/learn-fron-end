@@ -1,0 +1,12 @@
+<p>new操作符做了什么？</p>
+<script>
+  function myNew(func) {
+    let target = {}
+    target.__proto__ = func.prototype
+    let res = func.call(target)
+    if (typeof (res) === 'object' || typeof(res) === 'function') {
+      return res
+    }
+    return target
+  }
+</script>

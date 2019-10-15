@@ -1,0 +1,46 @@
+<script>
+Function.prototype.call2 = function (context) {
+  var context = context || window
+  context.fn = this
+  var args = []
+  for (var i = 1; i < arguments; i++) {
+    args.push("arguments[" + i + "]")
+  }
+  args = args.join(',')
+  var result = eval("context.fn(" + args + ")")
+  delete context.fn 
+  return result
+}
+
+Function.prototype.apply2 = function (context) {
+  context = context || window
+  context.fn = this
+  args = []
+  for (var i = 1, len = arguments[1].length; i < len; i++) {
+    args.push("arguments[" + i + "]")
+  }
+  args = args.join(',')
+  var result = eval("context.fn(" + args + ")")
+  delete context.fn
+  return result
+}
+
+
+function add(a, b) {
+  return a + b
+}
+
+function runAdd() {
+  var args = []
+  for (var i = 0; i < arguments.length; i++) {
+    args.push("arguments[" + i + "]")
+  }
+  args = args.join(',')
+  var expr = "add(" + args + ")"
+  console.log(expr)
+  var result = eval(expr)
+  console.log(result)
+}
+
+runAdd(1, 2)
+</script>

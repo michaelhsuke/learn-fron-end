@@ -1,0 +1,27 @@
+<script>
+  var arr = []
+  function produceNum() {
+    return 2 + Math.floor(Math.random() * 30)
+  }
+
+  function isExist(arr, newNum) {
+    return arr.some(num => num === newNum)
+  }
+
+  function fillArr(i) {
+    console.log(i)
+    if (i == 5) {
+      return
+    }
+    var newNum= produceNum()
+    if (isExist(arr, newNum)) {
+      fillArr(i)
+    } else {
+      arr[i] = newNum
+      fillArr(i+1)
+    }
+  }
+
+  fillArr(0)
+  console.log(arr)
+</script>
