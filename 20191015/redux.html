@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>redux原理</title>
+</head>
+<body>
+  <p>https://juejin.im/post/5a9e6a61f265da239866c7a3</p>
+  <script>
+    const createStore = (reducer, initalState) => {
+      const store = {}
+      store.state = initalState
+      store.listeners = []
+
+      store.subscribe = listener => {
+        store.listeners.push(listener)
+      }
+
+      store.dispatch = action => {
+        store.state = reducer(action.type, action)
+        store.listeners.forEach(listener => listener())
+      }
+
+      store.getState = () => store.state
+      return store
+    }
+
+
+  </script>
+
+</body>
+</html>
