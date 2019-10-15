@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>防抖和节流</title>
+  <style>
+    #container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="../js/debounce.js"></script>
+  <p>防抖：n秒内只会执行一次，如果n秒内事件再次触发，则重新计算时间</p>
+  <div id="container"></div>
+  <a href="javascript: void(0);" id="btn-cancel">取消</a>
+  <script>
+    let count = 1
+    var container = document.getElementById('container')
+    var userAction = debounce(sayHi, 50000, true)
+    container.onmousemove = userAction
+    document.getElementById('btn-cancel').addEventListener('click', function () {
+      userAction.cancel()
+    })
+
+    function sayHi() {
+      console.log(count++)
+    }
+  </script>
+</body>
+
+</html>
