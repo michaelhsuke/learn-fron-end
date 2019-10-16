@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>下面代码打印什么？</h3>
+  <h4>IIFE: Immediately Invoked Function Expression，立即调用函数表达式，声明函数的同时立即调用这个函数</h4>
+  <p>闭包：（1）访问所在作用域（2）函数嵌套（3）在所在作用域外被调用</p>
+  <script>
+    // source
+    var b = 10;
+    (function b() {
+      b = 20;
+      console.log(b);
+    })();
+  </script>
+
+  <script>
+    var b = 10;
+    (function b() {
+      // 'use strict'
+      var b = 20;
+      console.log(b)
+      console.log(window.b);
+    })();
+
+    function func() {
+      debugger
+      func = 10000
+      console.log(func)
+    }
+    console.log(func())
+    console.log(func)
+
+    // var fn1 = function () {
+    //   fn1 = 2000
+    //   console.log(fn1)
+    // }
+    // console.log(fn1())
+  </script>
+
+</body>
+
+</html>
