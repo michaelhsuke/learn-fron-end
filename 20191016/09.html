@@ -1,0 +1,19 @@
+<script>
+  let arrs = new Array(100000);
+
+  console.time('for');
+  for (let i = 0; i < arrs.length; i++) {
+
+  };
+  console.timeEnd('for');
+
+  console.time('forEach');
+
+  arrs.forEach((arr) => {
+
+  });
+  console.timeEnd('forEach');
+
+  for: 2.263 ms
+  forEach: 0.254 ms
+</script>

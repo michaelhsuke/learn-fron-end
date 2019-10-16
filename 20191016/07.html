@@ -1,0 +1,22 @@
+<script>
+  function whatNewDo(func) {
+    let target = {}
+    target.__proto__ = func.prototype
+    let result = func.call(target, ...arguments)
+    if (typeof result === 'object' || typeof result === 'function') {
+      return result
+    }
+
+    return target
+  }
+</script>
+
+<section>
+  <h3>箭头函数与普通函数的区别</h3>
+  <ul>
+    <li>1、函数体内没有this对象，this要从作用域链的上一级找</li>
+    <li>2、没有arguments对象</li>
+    <li>3、不可以使用yield命令</li>
+    <li>4、不能使用new命令：1）没有自己的this对象，因而无法调用apply、call命令；2）没有prototype属性，不能将函数的prototype属性赋值给新对象的__proto__</li>
+  </ul>
+</section>
