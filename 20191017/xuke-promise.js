@@ -1,3 +1,4 @@
+// another 实现: https://mp.weixin.qq.com/s/kK-zAtXQy4FLnalaE7gRVA
 function XukePromise(func) {
   this.value = undefined
   this.status = 'pending'
