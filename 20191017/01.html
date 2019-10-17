@@ -1,0 +1,35 @@
+<script>
+  var outerFunc = function(fn) {
+    return function() {
+      console.log(arguments)
+      var args = Array.from(arguments)
+      fn.apply(
+        null,
+        args.concat(function() {
+          console.log("okkkk")
+        })
+      )
+    }
+  }
+
+  var f1 = outerFunc(function () {})
+  f1('a', 'b', 'c')
+
+  // outerFunc(function() {})("a", "b", "c")
+
+  // console.log(Promise.promisify)
+
+  Promise.promisify = function(fn) {
+    return function() {
+      var args = Array.from(arguments)
+      return new Promise(function(resolve, reject) {
+        fn.apply(
+          null,
+          args.concat(function(err) {
+            err ? reject(err) : resolve(arguments[1])
+          })
+        )
+      })
+    }
+  }
+</script>
