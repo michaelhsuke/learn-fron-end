@@ -1,0 +1,16 @@
+<html>
+<script src="./db.js"></script>
+<script>
+  const db = $DB.init()
+  // console.log(db)
+  $DB.add({
+    latlng: '100200',
+    province: '江苏省',
+    district: '雨花台区',
+    street: '板桥新城'
+  })
+
+  console.log($DB.get('100200'))
+</script>
+
+</html>

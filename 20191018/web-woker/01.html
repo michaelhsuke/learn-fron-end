@@ -1,0 +1,25 @@
+<p>计数：<output id="result"></output></p>
+<button onclick="startWorker()">开始工作</button>
+<button onclick="stopWorker()">停止工作</button>
+
+<script>
+  var w
+  function startWorker() {
+    if (typeof(Worker) !== 'undefined') {
+      if (typeof w === 'undefined') {
+        w = new Worker('demo-worker.js')
+      }
+
+      w.onmessage = function (event) {
+        document.getElementById('result').innerHTML = event.data
+      }
+    } else {
+      document.getElementById('result').innerHTML = '不支持 web worker'
+    }
+  }
+
+  function stopWorker() {
+    w.terminate()
+    w = undefined
+  }
+</script>
