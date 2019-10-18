@@ -25,7 +25,8 @@
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3"
+    "@babel/preset-react": "^7.6.3",
+    "traceur": "^0.0.111"
   },
   "dependencies": {
     "express": "^4.17.1",
