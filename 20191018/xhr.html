@@ -1,0 +1,24 @@
+<script>
+  var xhr = new XMLHttpRequest()
+  xhr.open('get', 'http://localhost:3000/package.json')
+  xhr.onreadystatechange = function(status) {
+    console.log(this.readyState, this.response)
+
+    // readyState = 2 send()方法执行完成，已接收到全部响应内容 loaded
+    // readyState = 3 正在解析响应内容 Interactive
+    // readyState = 4 响应内容解析完成 可以在客户端调用了 Completed
+    if (this.readyState !== 4) {
+      return
+    }
+
+    if (this.status === 200) {
+      console.log(this.response)
+    } else {
+      throw new Error(this.statusText)
+    }
+
+  }
+  xhr.responseType = 'json'
+  xhr.setRequestHeader('Accept', 'application/json')
+  xhr.send({ data: 1 })
+</script>
