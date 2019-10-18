@@ -1,0 +1,17 @@
+<script>
+  function* another() {
+    yield "人月神话"
+  }
+  function* gen() {
+    yield* another() // 移交执行权
+    const a = yield "hello"
+    const b = yield a // a='world' 是 next('world') 传参赋值给了上一个 yidle 'hello' 的左值
+    yield b // b=！ 是 next('！') 传参赋值给了上一个 yidle a 的左值
+  }
+  const g = gen()
+  console.log(g.next()) // {value: "人月神话", done: false}
+  console.log(g.next()) // {value: "hello", done: false}
+  console.log(g.next("world")) // {value: "world", done: false} 将 'world' 赋给上一条 yield 'hello' 的左值，即执行 a='world'，
+  console.log(g.next("!")) // {value: "!", done: false} 将 '!' 赋给上一条 yield a 的左值，即执行 b='!'，返回 b
+  console.log(g.next()) // {value: undefined, done: true}
+</script>
