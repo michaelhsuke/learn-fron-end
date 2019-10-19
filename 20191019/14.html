@@ -1,0 +1,11 @@
+<script>
+  var foo = {
+    bar: function() {
+      console.log(this)
+    }
+  }
+  foo.bar()
+  // (foo.bar)()
+  // console.log(foo.bar)
+  (foo.bar)()
+</script>
