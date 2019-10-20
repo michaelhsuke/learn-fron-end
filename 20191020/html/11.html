@@ -1,0 +1,26 @@
+<script>
+  var fullName = "language"
+  var obj = {
+    fullName: "javascript",
+    prop: {
+      getFullName: function() {
+        return this.fullName
+      }
+    }
+  }
+  console.log(obj.prop.getFullName())
+  var test = obj.prop.getFullName
+  console.log(test())
+  var name = "window"
+  var Tom = {
+    name: "Tom",
+    show: function() {
+      console.log(this.name)
+    },
+    wait: function() {
+      var fun = this.show
+      fun()
+    }
+  }
+  Tom.wait()
+</script>
