@@ -1,0 +1,24 @@
+<script>
+  function funA() {
+    console.log('aaaaa')
+  }
+
+  funA.prototype.getName = function() {
+    return 'funA'
+  }
+
+  function funB() {
+    console.log('bbbb')
+    this.getName = function () {
+      return 'funB'
+    }
+  }
+
+  funB.prototype = new funA()
+  funB.prototype.constructor = funB
+  
+  var obj = new funB()
+  console.log(obj.getName())
+  console.log(obj.constructor)
+
+</script>
