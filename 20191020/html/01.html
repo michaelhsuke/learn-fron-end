@@ -1,0 +1,31 @@
+<script>
+  var n = 0
+  function a() {
+    var n = 10
+    function b() {
+      console.log(this)
+      n++
+      console.log(n)
+    }
+    b()
+    return b
+  }
+  var c = a()
+  c()
+  console.log(n)
+</script>
+
+<script>
+  var a = 10,
+    b = 11,
+    c = 12
+  function test(a) {
+    a = 1
+    var b = 2
+    c = 3
+  }
+  test(10)
+  console.log(a)
+  console.log(b)
+  console.log(c)
+</script>
