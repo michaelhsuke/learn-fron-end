@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>learn vue router</title>
+  <script src="/lib/vue/vue.js"></script>
+  <script src="/lib/vue-router/vue-router.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const Foo = { template: `<div>foo</div>` }
+    const Bar = { template: `<div>bar</div>` }
+    const Index = { template: `<div>index</div>` }
+
+
+    const routes = [
+      { path: '/', component: Index },
+      { path: '/foo', component: Foo },
+      { path: '/bar', component: Bar }
+    ]
+
+    const router = new VueRouter({ routes })
+    console.log(router)
+    const app = new Vue({
+      router,
+      template: `
+        <div id="app">
+          <h1>Basic</h1>
+          <ul>
+            <li><router-link to="/">/</router-link></li>
+            <li><router-link to="/foo">/foo</router-link></li>
+            <li><router-link to="/bar">/bar</router-link></li>
+            <router-link tag="li" to="/bar">/bar</router-link>
+          </ul>
+          <router-view class="view"></router-view>
+        </div>
+      `
+    }).$mount('#app')
+
+  </script>
+  
+</body>
+</html>
