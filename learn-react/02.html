@@ -107,9 +107,7 @@
       render() {
         return (
           <div className="App">
-            <div style={this.state.visible ? {} : { display: "none" }}>
-              <CounterMounting />
-            </div>
+            { this.state.visible ? <CounterMounting /> : null }
             <button onClick={() => {
               this.setState({
                 visible: !this.state.visible
