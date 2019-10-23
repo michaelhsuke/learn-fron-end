@@ -9,7 +9,9 @@
   <script src="/lib/vue-router/vue-router.js"></script>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div v-html="contentNew"></div>
+  </div>
   <script>
     const Foo = { template: `<div>foo</div>` }
     const Bar = { template: `<div>bar</div>` }
@@ -25,19 +27,31 @@
     const router = new VueRouter({ routes })
     console.log(router)
     const app = new Vue({
+      data: {
+        content:  `<div class="aa"><div class="manual-head">一、家用网络设备状态检查</div><div class="manual-subhead">1.光猫状态检查：2222</div><div class="manual-content">正常情况下，光猫上POWER灯长亮，PON灯常亮，LAN灯闪，LOS的步伐熄灭</div></div>`,
+        contentCopy:  `<div class="aa"><div class="manual-head">一、家用网络设备状态检查</div><div class="manual-subhead">1.光猫状态检查：2222</div><div 
+class="manual-content">正常情况下，光猫上POWER灯长亮，PON灯常亮，LAN灯闪，LOS的步伐熄灭</div></div>`,
+      },
+      computed: {
+        contentNew() {
+          let str = this.contentCopy.replace(/\u00A0/g, '\u0020')
+          console.log(str)
+          return str
+        }
+      },
       router,
-      template: `
-        <div id="app">
-          <h1>Basic</h1>
-          <ul>
-            <li><router-link to="/">/</router-link></li>
-            <li><router-link to="/foo">/foo</router-link></li>
-            <li><router-link to="/bar">/bar</router-link></li>
-            <router-link tag="li" to="/bar">/bar</router-link>
-          </ul>
-          <router-view class="view"></router-view>
-        </div>
-      `
+      // template: `
+      //   <div id="app">
+      //     <h1>Basic</h1>
+      //     <ul>
+      //       <li><router-link to="/">/</router-link></li>
+      //       <li><router-link to="/foo">/foo</router-link></li>
+      //       <li><router-link to="/bar">/bar</router-link></li>
+      //       <router-link tag="li" to="/bar">/bar</router-link>
+      //     </ul>
+      //     <router-view class="view"></router-view>
+      //   </div>
+      // `
     }).$mount('#app')
 
   </script>
