@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>react lifeCycle</title>
+  <script src="https://cdn.bootcss.com/react/16.9.0/umd/react.development.js"></script>
+  <script src="https://cdn.bootcss.com/react-dom/16.9.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    class CounterMounting extends React.Component {
+      constructor() {
+        super()
+        this.state = { count: 0 }
+        console.log('child: constructor')
+      }
+
+      static getDerivedStateFromProps(nextProps, prevState) {
+        console.log('child: getDerivedStateFromProps')
+        return <div/>
+      }
+
+      increment() {
+        this.setState({ count: this.state.count + 1 })
+      }
+      
+      decrement() {
+        this.setState({ count: this.state.count - 1 })
+      }
+
+      render() {
+        console.log('child: render')
+        return (
+          <div>
+            <div>count: {this.state.count}</div>
+            <button onClick={this.increment.bind(this)}>+</button>
+            <button onClick={this.decrement.bind(this)}>-</button>
+          </div>
+        ) 
+      }
+
+      componentDidMount() {
+        console.log('child: componentDidMount')
+      }
+      
+      shouldComponentUpdate(nextProps, nextState) {
+        if (nextProps.ignoreProp && this.props.ignoreProp !== nextProps.ignoreProp) {
+          console.log('child: shouldComponentUpdate: DO NOT ENTER')
+          return false
+        }
+
+        console.log('child: shouldComponentUpdate: RENDER')
+        return true
+      }
+
+      getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('child: getSnapshotBeforeUpdate', prevProps, prevState)
+        return null
+      }
+
+      componentDidUpdate(curState) {
+        console.log('child: componentDidUpdate', curState)
+      }
+
+      componentWillUnmount() {
+        console.log('child: componentWillUnmount')
+      }
+
+      componentDidMount() {
+        console.log('child: componentDidMount')
+      }
+    }
+
+    class AppMounting extends React.Component {
+      constructor() {
+        super()
+        this.state={
+          visible: true
+        };
+      }
+
+      static getDerivedStateFromProps(nextProps, prevState) {
+        console.log('parent: getDerivedStateFromProps', nextProps, prevState)
+        return null
+
+      }
+
+      componentDidMount() {
+        console.log('parent: componentDidMount')
+      }
+
+      shouldComponentUpdate(nextProps, nextState) {
+        console.log('parent: shouldComponentUpdate', nextProps, nextState)
+        return true
+      }
+
+      componentDidUpdate(nextState) {
+        console.log('parent:componentDidUpdate', nextState)
+      }
+      
+      render() {
+        return (
+          <div className="App">
+            <div style={this.state.visible ? {} : { display: "none" }}>
+              <CounterMounting />
+            </div>
+            <button onClick={() => {
+              this.setState({
+                visible: !this.state.visible
+              })
+            }}>toggle counter</button>
+          </div>
+
+        ) 
+      }
+    }
+
+    ReactDOM.render(
+      <AppMounting />,
+      document.getElementById('root')
+    );
+  </script>
+
+</body>
+
+</html>
