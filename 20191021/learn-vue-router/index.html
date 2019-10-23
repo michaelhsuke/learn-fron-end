@@ -9,7 +9,9 @@
   <script src="/lib/vue-router/vue-router.js"></script>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <div v-html="contentNew"></div>
+  </div>
   <script>
     const Foo = { template: `<div>foo</div>` }
     const Bar = { template: `<div>bar</div>` }
