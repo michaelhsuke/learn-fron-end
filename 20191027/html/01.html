@@ -1,0 +1,36 @@
+<html>
+  <script>
+    let xhr = new XMLHttpRequest()
+    xhr.open('GET', 'http://localhost:3000/20191027/data/01.json')
+    xhr.setRequestHeader('from', 'banqiao')
+    xhr.onreadystatechange = () => {
+      /**
+       * xhr.readyState
+       * 0  UNSET
+       * 1  OPENED
+       * 2  HEADERS_RECEIVED
+       * 3  LOADING
+       * 4  DONE
+       */ 
+      console.log('xhr.readyState=%s, xhr.status=%s', xhr.readyState, xhr.status)
+      if (xhr.readyState === 2) {
+        let headerDate = xhr.getResponseHeader('date')
+        console.log(new Date(headerDate))
+      }
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log('请求成功了')
+      }
+    }
+    xhr.onabort = () => {
+      console.log('abort status', xhr.readyState)
+    }
+    // xhr.overrideMimeType('aaa/bbb')
+    
+    xhr.send()
+    // setTimeout(() => {
+    //   xhr.abort()
+    // }, 0)
+    
+  </script>
+
+</html>
