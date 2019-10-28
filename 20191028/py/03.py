@@ -72,6 +72,7 @@ def get_product_detail():
     img_urls = []
     for item in img_items:
       url = item.find('img').attr('data-src')
+      print(url)
       img_urls.append(url)
     if len(img_urls): 
       img_list = ','.join(img_urls)
@@ -120,7 +121,7 @@ def save_to_mongo(result):
     :param result: 结果
     """
     try:
-        if db[MONGO_COLLECTION].insert(result):
+        if db[MONGO_COLLECTION].insert_one(result):
             print('存储到MongoDB成功')
     except Exception:
         print('存储到MongoDB失败')

@@ -1,0 +1,6 @@
+mongodb 安装教程
+
+https://www.cnblogs.com/damon-/p/10832494.html
+https://www.cnblogs.com/oceanden/p/5188119.html
+
+启动：mongod --dbpath /data/db --logpath /data/log/mongod.log --logappend
