@@ -39,7 +39,7 @@ for line in file:
   count = count + 1
   # win32api.ShellExecute(0, 'open', r'D:\Program Files (x86)\Tencent\微信web开发者工具\微信开发者工具.exe', '','',1)
   win32api.ShellExecute(0, 'open', r'D:\微信web开发者工具\微信web开发者工具.exe', '','',1)
-  sleep(3)
+  sleep(1)
   k.press_keys([k.control_l_key, 'l'])
   k.press_keys([k.control_l_key, 'a'])
   k.type_string(line)
@@ -47,8 +47,8 @@ for line in file:
   k.tap_key(k.enter_key)
   # k.tap_key(k.enter_key)
   print(str(count) + ':' + line)
-  sleep(5)
-  # a = input('input')
+  # sleep(5)
+  a = input('任意键继续')
 
 
 
