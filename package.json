@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.3.3",
     "recast": "^0.18.5",
     "vuex": "^0.6.3"
   }
