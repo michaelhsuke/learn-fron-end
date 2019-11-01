@@ -29,6 +29,7 @@
     "traceur": "^0.0.111"
   },
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "express": "^4.17.1",
     "mongodb": "^3.3.3",
     "recast": "^0.18.5",
