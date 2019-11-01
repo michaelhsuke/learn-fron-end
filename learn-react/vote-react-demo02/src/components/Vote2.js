@@ -16,9 +16,11 @@ export default class Vote extends React.Component {
   //   // console.log(args, this)
   // }
 
-  static getDerivedStateFromProps() {
-    console.log('getDerivedStateFromProps')
-    return {}
+  static getDerivedStateFromProps(props) {
+    console.log('getDerivedStateFromProps', props)
+    return {
+      foo: 'bar'
+    }
   }
 
   getSnapshotBeforeUpdate() {
@@ -27,7 +29,7 @@ export default class Vote extends React.Component {
   }
 
   componentDidMount(...args) {
-    console.log('componentDidMount')
+    console.log('componentDidMount', this.state)
   }
 
   // componentWillReceiveProps() {
