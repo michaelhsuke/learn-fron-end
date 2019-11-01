@@ -16,19 +16,19 @@ export default class Vote extends React.Component {
   //   // console.log(args, this)
   // }
 
-  static getDerivedStateFromProps(props) {
+  static getDerivedStateFromProps(props, state) {
     console.log('getDerivedStateFromProps', props)
     return {
       foo: 'bar'
     }
   }
 
-  getSnapshotBeforeUpdate() {
-    console.log('getSnapshotBeforeUpdate')
-    return {}
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('getSnapshotBeforeUpdate, prevState=', prevState, this.state)
+    return { hello: 'world' }
   }
 
-  componentDidMount(...args) {
+  componentDidMount() {
     console.log('componentDidMount', this.state)
   }
 
@@ -36,8 +36,8 @@ export default class Vote extends React.Component {
   //   console.log('componentWillReceiveProps')
   // }
 
-  shouldComponentUpdate() {
-    console.log('shouldComponentUpdate')
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('shouldComponentUpdate, nextState = ', nextState)
     return true
   }
 
@@ -45,8 +45,8 @@ export default class Vote extends React.Component {
   //   console.log('componentWillUpdate')
   // }
 
-  componentDidUpdate() {
-    console.log('componentDidUpdate')
+  componentDidUpdate(prevProps, prevState, snap) {
+    console.log('componentDidUpdate, preveState=', prevState, this.state, snap)
   }
 
   support = () => {
