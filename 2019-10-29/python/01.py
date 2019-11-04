@@ -13,7 +13,7 @@ import win32api
 m = PyMouse()
 k = PyKeyboard()
 
-file = open('./01.txt', 'r', encoding="UTF-8")
+file = open('./04.txt', 'r', encoding="UTF-8")
 # file = open('./01.txt', 'rb')
 count = 0
 # targetUrl = ''
@@ -42,6 +42,8 @@ for line in file:
   sleep(1)
   k.press_keys([k.control_l_key, 'l'])
   k.press_keys([k.control_l_key, 'a'])
+  k.tap_key(k.backspace_key)
+  k.tap_key(k.escape_key)
   k.type_string(line)
   sleep(1)
   k.tap_key(k.enter_key)
