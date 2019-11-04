@@ -1,0 +1,73 @@
+<html>
+  <!-- JavaScript专题之跟着 underscore 学节流:https://github.com/mqyqingfeng/Blog/issues/26 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>防抖</title>
+  <style>
+    #container {
+      width: 200px;
+      height: 200px;
+      /* background-color: #444; */
+      border: 1px solid #f00;
+    }
+  </style>
+  <div id="container"></div>
+  <script>
+    var count = 1
+    var container = document.getElementById("container")
+
+    function throttle(func, wait) {
+      var context, args
+      var previous = 0
+
+      return function() {
+        var now = +new Date()
+        context = this
+        args = arguments
+
+        if (now - previous > wait) {
+          func.apply(context, args)
+          previous = now
+        }
+      }
+    }
+
+    function getUserAction() {
+      console.log(count)
+      container.innerHTML = count++
+    }
+
+    container.onmousemove = throttle(getUserAction, 1000)
+
+    var isRun = false
+    var total = 0
+    var target = 10
+
+
+    // var timer = setTimeout(function () {
+    //   total++
+    //   if (total < target) {
+        
+    //   }
+    // }, 1000)
+
+    function callLoop() {
+      var timer = setTimeout(function () {
+        timer = null
+        total++
+        if (!isRun && total && !(total % 5)) {
+          target += 10
+          isRun = true
+        }
+        console.log('total=%s target=%s', total, target)
+        if (total < target) {
+          callLoop()
+        } else {
+          clearTimeout(timer)
+          timer = null
+        }
+      }, 200)
+    }
+
+    callLoop()
+  </script>
+</html>
