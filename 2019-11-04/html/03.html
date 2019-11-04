@@ -1,0 +1,38 @@
+<html>
+  <!-- JavaScript专题之跟着 underscore 学节流:https://github.com/mqyqingfeng/Blog/issues/26 -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <div id="container"></div>
+  <script>
+    function callLoop() {
+      var isRun = false
+      var total = 0
+      var target = 10
+      var context, args
+
+      var executor = function() {
+        context = this
+        args = arguments
+
+        var timer = setTimeout(function() {
+          timer = null
+          total++
+          if (!isRun && total && !(total % 5)) {
+            target += 10
+            isRun = true
+          }
+          console.log("total=%s target=%s", total, target)
+          if (total < target) {
+            executor()
+          } else {
+            clearTimeout(timer)
+            timer = null
+          }
+        }, 200)
+      }
+
+      return executor
+    }
+
+    callLoop()()
+  </script>
+</html>
