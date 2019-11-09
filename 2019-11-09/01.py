@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from pyquery import PyQuery as pq
 from time import sleep
+import requests
+import os
 
 login_url = 'https://passport.jd.com/new/login.aspx'
 product_url = 'https://item.jd.com/100000177760.html'
@@ -17,8 +19,22 @@ browser = webdriver.Chrome(options=chrome_options)
 wait = WebDriverWait(browser, 100)
 
 browser.get(login_url)
-wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.login-wrap div.qrcode-login div.qrcode-img')))
-current_url = browser.current_url
+qrcode_img = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.login-wrap div.qrcode-login div.qrcode-img img')))
+
+img_src = qrcode_img.get_attribute('src')
+
+hidden_inputs = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'form#formlogin input[type=hidden]')))
+# hiddenInputItems = hiddenInputs.item()
+
+for item in hidden_inputs:
+    print('{0} = {1}'.format(item.get_attribute('name'), item.get_attribute('value')))
+
+# print(hiddenInputs)
+
+
+
+# exit()
+
 while True:
     if browser.current_url != login_url:
         break
@@ -46,8 +62,15 @@ btn_go_shopping_cart.click()
 
 #cart-floatbar > div > div > div > div.options-box > div.toolbar-right.toolbar-right-new > div.normal > div > div.btn-area > a
 
+
+
 btn_goto_order = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'a.submit-btn')))
 btn_goto_order.click()
+
+#sumPayPriceId
+sum_pay_price = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#sumPayPriceId')))
+print(sum_pay_price.text)
+
 
 #order-submit
 btn_submit_order = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#order-submit')))
