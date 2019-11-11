@@ -48,24 +48,24 @@ qrcode_img = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.wr
 img_src = qrcode_img.get_attribute('src')
 print(img_src)  # todo
 
-resp = requests.get(img_src)
-## save QR code
-image_file = 'qr.png'
-with open(image_file, 'wb') as f:
-    for chunk in resp.iter_content(chunk_size=1024):
-        f.write(chunk)
+# resp = requests.get(img_src)
+# ## save QR code
+# image_file = 'qr.png'
+# with open(image_file, 'wb') as f:
+#     for chunk in resp.iter_content(chunk_size=1024):
+#         f.write(chunk)
 
-## scan QR code with phone
-if os.name == "nt":
-    # for windows
-    os.system('start ' + image_file)
-else:
-    if os.uname()[0] == "Linux":
-        # for linux platform
-        os.system("eog " + image_file)
-    else:
-        # for Mac platform
-        os.system("open " + image_file)
+# ## scan QR code with phone
+# if os.name == "nt":
+#     # for windows
+#     os.system('start ' + image_file)
+# else:
+#     if os.uname()[0] == "Linux":
+#         # for linux platform
+#         os.system("eog " + image_file)
+#     else:
+#         # for Mac platform
+#         os.system("open " + image_file)
 
 while True:
     if re.match(r'https://open.weixin.qq.com/', browser.current_url) == None:
@@ -85,13 +85,14 @@ print('获取到了产品页')
 browser.execute_script('document.documentElement.scrollTop=1101')
 
 #J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_6.hotzone > div > div > div:nth-child(3)
-btn_1111 =  wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_6.hotzone > div > div > div:nth-child(3)')))
+#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_5.hotzone > div > div > div:nth-child(3)
+btn_1111 =  wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_5.hotzone > div > div > div:nth-child(3)')))
 
 count = 0
 while count < 1000:
   count = count + 1
   print('点击了{0}次'.format(count))
-  browser.execute_script('document.querySelector("#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_6.hotzone > div > div > div:nth-child(3)").click()')
+  browser.execute_script('document.querySelector("#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_5.hotzone > div > div > div:nth-child(3)").click()')
   sleep(1)
   k.press_key(k.control_l_key)#按住alt键
   k.tap_key('w')#点击tab键
@@ -110,4 +111,6 @@ while count < 1000:
 # print('第二次点击')
 print('done....')
 # browser.close()
+
+
 
