@@ -87,22 +87,23 @@ browser.execute_script('document.documentElement.scrollTop=1101')
 #J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_6.hotzone > div > div > div:nth-child(3)
 #J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_5.hotzone > div > div > div:nth-child(3)
 #J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_7.hotzone > div > div > div:nth-child(3)
-selector = '#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_7.hotzone > div > div > div:nth-child(3)'
+# selector = '#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_7.hotzone > div > div > div:nth-child(3)'
+selector = '#J_babelOptPage > div > div.bab-opt-mod.bab-opt-mod-1_3.free_coupon > div > div > a:nth-child(1)'
 btn_1111 =  wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, selector)))
 
 try : 
   count = 0
-  while count < 1000:
+  while count < 1000000000:
     count = count + 1
     print('点击了{0}次'.format(count))
     
     js = 'document.querySelector("{0}").click()'.format(selector)
     browser.execute_script(js)
-    sleep(0.4)
-    k.press_key(k.control_l_key)#按住alt键
-    k.tap_key('w')#点击tab键
-    k.release_key('w')#松开alt键
-    k.release_key(k.control_l_key)#松开alt键
+    sleep(0.1)
+    # k.press_key(k.control_l_key)#按住alt键
+    # k.tap_key('w')#点击tab键
+    # k.release_key('w')#松开alt键
+    # k.release_key(k.control_l_key)#松开alt键
     # browser.refresh()
 except Exception as e:
     browser.close()
