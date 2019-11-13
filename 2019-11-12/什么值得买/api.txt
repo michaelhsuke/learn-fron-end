@@ -5,3 +5,44 @@ https://api.smzdm.com/v1/home/articles?f=wxapp&wxapp=zdmapp&offset=0&limit=20&ti
 
 h5唤起app
 https://www.imooc.com/article/71638
+
+[post] https://www.smzdm.com/baoliao/submit_step
+request
+{
+  link: https://item.jd.com/6571612.html
+  is_ajax: 1
+}
+
+response:
+{
+  "error_code": 1,
+  "data": {
+    "link": "https://item.jd.com/6571612.html",
+    "link_original": "https://item.jd.com/6571612.html",
+    "t": "70980a57",
+    "baoliao": 1,
+    "box": {
+      "title": "该优惠信息最近发布过",
+      "info": {
+        "pic_url": "https://y.zdmimg.com/201808/19/5b790036a4c3b7874.jpg_a100.jpg",
+        "title": "GREE 格力 FL-09X61Bh 无叶风扇 *2件",
+        "price": "385.2元（合192.6元/件）",
+        "channel": "个人中心",
+        "link": "https://www.smzdm.com/p/17468442/"
+      },
+      "tip": "更低价格、更好活动、新补货可以继续爆料，恶意重复爆料会降低爆料审核优先级",
+      "button1": {
+        "link": "https://www.smzdm.com/p/17468442/",
+        "title": "点个值",
+        "channel_id": 3,
+        "article_id": 17468442
+      },
+      "button2": {
+        "link": "",
+        "title": "继续爆料"
+      },
+      "pic_url": "https://y.zdmimg.com/201808/19/5b790036a4c3b7874.jpg_a100.jpg"
+    }
+  },
+  "error_msg": "\r\n<div class=\"divide-line\">\r\n    <span class=\"line-first\"></span>\r\n    <span>\r\n        该条优惠信息发布过了</span>\r\n    <span class=\"line-last\"></span>\r\n</div>\r\n<div class=\"product-content\">\r\n<div class=\"product-image\"><a href=\"https://www.smzdm.com/p/17468442/\" target=\"_blank\"><img src=\"https://y.zdmimg.com/201808/19/5b790036a4c3b7874.jpg_a100.jpg\" title=\"GREE 格力 FL-09X61Bh 无叶风扇 *2件\" width=\"80\" height=\"80\"></a></div>\r\n<div class=\"product-infor\">\r\n<ul>\r\n<li class=\"information1\">\r\n    <div class=\"infor1-div\">\r\n        <span class=\"red-tag\">\r\n        个人中心        </span>\r\n    </div>\r\n    \r\n</li>\r\n<li class=\"information2\"><span class=\"infor-title\"><a href=\"https://www.smzdm.com/p/17468442/\" target=\"_blank\">GREE 格力 FL-09X61Bh 无叶风扇 *2件</a></span></li>\r\n<li class=\"information3\">385.2元（合192.6元/件）</li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"red-font\">\r\n    该优惠信息已经发布过，仅在发现“更低价格”或”售罄新补货“时请继续提交爆料，无效重复爆料将扣除金币。</div>\r\n\r\n<div class=\"line-black\"></div>\r\n\r\n<div class=\"two-button\">\r\n<a href=\"//www.smzdm.com/baoliao\" title=\"另爆一个\">另爆一个</a>\r\n<a href=\"javascript:void(0);\" title=\"继续提报\" id=\"submit_goto\" class=\"goon\">继续提报</a>\r\n<span class=\"signout\">退出爆料</span>\r\n</div>\r\n"
+}
