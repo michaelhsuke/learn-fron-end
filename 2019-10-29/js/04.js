@@ -19,9 +19,9 @@ function getFiles(globPath, prefix = '', host = '') {
 
 const globPath = `D:/xuke/js-unicom-projects/wo-activity/src/actPage/**/*.html`
 const dir = 'D:/xuke/js-unicom-projects/wo-activity/src/'
-const host = 'https://jscuc.10010js.com/'
+const host = 'https://weixin.10010js.com/'
 let files = getFiles(globPath, dir, host)
-let targetFilepath = './04.txt'
+let targetFilepath = './actPage.txt'
 files.forEach(item => {
   fs.writeFileSync(targetFilepath, `${item}\r\n`, { flag: 'a' })
 })

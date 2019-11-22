@@ -14,7 +14,7 @@ import win32api
 m = PyMouse()
 k = PyKeyboard()
 
-file = open('./04.txt', 'r', encoding="UTF-8")
+file = open('../js/04.txt', 'r', encoding="UTF-8")
 # file = open('./01.txt', 'rb')
 count = 0
 # targetUrl = ''
