@@ -1,0 +1,19 @@
+<script>
+  (function () {
+
+  var a = { n: 1 }
+  var b = a
+
+  // a = { n: 2 }
+  // a.x = a
+
+  a.x = a = { n: 2 }
+
+  // a.x = { n: 2 }
+  // a = { n: 2 }
+  console.log(a)
+  console.log(b)
+
+  })()
+  
+</script>

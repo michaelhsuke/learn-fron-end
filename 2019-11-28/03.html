@@ -1,0 +1,19 @@
+<style>
+  #container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #f00;
+  }
+</style>
+
+<div id="container">
+
+</div>
+
+<script>
+  var div = document.getElementById("container");
+  div.onclick = function () {
+    console.log(this)
+    console.log("click");
+  };
+</script>

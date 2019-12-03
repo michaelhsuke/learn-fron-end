@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shadow dom template</title>
+</head>
+<body>
+  <div id="host">
+    <h1 class="title">I am title</h1>
+    <p class="subtitle">I am subtitle</p>
+  </div>
+
+  <template id="temp">
+      <style>
+          span {
+              color: red;
+          }
+          ::content * {
+              background-color: #60d9ff;
+          }
+          :host {
+              border: 2px solid #14ff1a;
+          }
+      </style>
+      <p onclick="alert('hello~');" pseudo="test">template - 点我吧~~</p>
+      <span>I'm the span tag of template</span>
+      <!-- 绑定#host所有内容 -->
+      <!--<content></content>-->
+  
+      <!-- 绑定#host p的内容 -->
+      <content select=".subtitle"></content>
+      <!-- 绑定#host h1的内容 -->
+      <content select="h1"></content>
+  </template>
+
+  <script>
+    var host = document.querySelector('#host')
+    var root = host.createShadowRoot()
+    var temp = document.querySelector('#temp')
+    var clone = document.importNode(temp.content, true)
+    
+
+    root.appendChild(clone)
+    document.addEventListener('click', function (e) {
+      console.log(e.target.innerHTML + ' clicked!')
+    })
+  </script>
+</body>
+</html>
