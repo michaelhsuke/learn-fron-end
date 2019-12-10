@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>千分位实现</title>
+</head>
+
+<body>
+  <script>
+    var num = 123
+
+    // 正则法
+    function format1(num) {
+      console.log(num)
+      var reg = /\d{1,3}(?=(\d{3})+$)/g;
+
+      var result = (num + '').replace(reg, "$&,")
+      // var result = (num + '').replace(reg, "$`,")
+      // console.log((num + '').replace(reg, "$',"))
+      // console.log((num + '').replace(reg, "$$,"))
+
+      console.log(result)
+    }
+
+
+    // 凑3法
+    function format2(num) {
+      num = num + ''
+      var remain = num.length % 3
+      if (remain) {
+        for (i = 0; i < 3 - remain; i++) {
+          num = '9' + num
+        }
+      }
+
+      var str = ''
+      for (var i = num.length - 1; i >= 0; i--) {
+        str += num[i]
+        if (i % 3 === 0 && i) {
+          str += ','
+        }
+      }
+      str = str.split('').reverse()
+      if (remain) {
+        for (i = 0; i < 3 - remain; i++) {
+          str.shift()
+        }
+      }
+      return str
+    }
+
+    // 方法三 计数法
+    function format3(num) {
+      num = num + ''
+      console.log(num)
+      var str = ''
+      for (var i = num.length - 1, j = 1; i >= 0; i--, j++) {
+        str += num[i]
+        if (j % 3 === 0 && i) {
+          str += ','
+        }
+      }
+      return str.split('').reverse().join('')
+    }
+
+    // 方法四：数组法
+    function format4(num) {
+      console.log(num)
+      var arr = [],
+        str = num + '',
+        count = str.length
+      while (count >= 3) {
+        arr.unshift(str.slice(count - 3, count))
+        count -= 3
+      }
+
+      str.length % 3 && arr.unshift(str.slice(0, str.length % 3))
+      return arr.toString()
+    }
+
+    // 方法五: reduce法
+    function format5(num) {
+      var str = num + ''
+      return str.split('').reverse().reduce((prev, next, index) => {
+        console.log(index, prev, next)
+        var result = ''
+        if (index % 3 === 0) {
+          result = next + ','
+        } else {
+          result = next
+        }
+        return result + prev
+      })
+    }
+
+    format5(num)
+  </script>
+</body>
+
+</html>
