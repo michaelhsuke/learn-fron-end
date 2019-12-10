@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>html</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f00;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        overflow: scroll;
+      }
+
+      #inner {
+        width: 100px;
+        height: 10000px;
+        border: 1px solid #00f;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="inner"></div>
+    </div>
+    <script>
+      var container = document.getElementById("container")
+      var inner = document.getElementById("inner")
+      // console.log(window.getComputedStyle(dom))
+      // console.log(container.offsetTop)
+      // console.log(inner.scrollTop)
+      container.onscroll = function () {
+        console.log(this.scrollTop, inner.offsetTop, inner.scrollTop)
+        
+      }
+
+      console.log(inner.ownerDocument.nodeName)
+      console.log(inner.ownerDocument.documentElement.nodeName)
+    </script>
+  </body>
+</html>
