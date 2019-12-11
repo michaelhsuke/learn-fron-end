@@ -1,0 +1,23 @@
+<div id="app">
+  <xuke />
+</div>
+<script src="../lib/vue/vue.js"></script>
+<script>
+  Vue.component('xuke', {
+    data() {
+      return { msg: 'gooddddd'}
+    },
+    template: '<div>xuke</div>',
+    render: function (h) {
+      const { msg } = this
+      var div = h('div', msg)
+      
+      return div
+    }
+  })
+
+  var vm = new Vue({
+    el: '#app',
+  })
+
+</script>
