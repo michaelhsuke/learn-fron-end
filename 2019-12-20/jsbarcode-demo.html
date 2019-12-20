@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jsbarcode/3.11.0/JsBarcode.all.min.js"></script>
+  <script>
+    var data = [
+      "6611467448359283",
+      "6611467400217237",
+      "6611467497349177",
+      "6611467432217785",
+      "6611467491989112",
+      "6611467496591658",
+      "6611467453059724",
+      "6611467401575442",
+      "6611467403554222",
+      "6611467415989091",
+    ]
+
+    function createSvgGroup() {
+      for (var i = 0, len = data.length >>> 0; i < len; i++) {
+        var elem = $(`<div class="barcoder-container"><svg id="barcode${i}"></svg></div>`)
+        $('body').append(elem)
+      }
+    }
+
+    function createBarcode() {
+      for (var i = 0, len = data.length >>> 0; i < len; i++) {
+        var id = '#barcode' + i
+        JsBarcode(id, data[i]);
+      }
+    }
+
+    createSvgGroup()
+    createBarcode()
+    
+
+
+    // JsBarcode("#barcode", "Hi!");
+  </script>
+</body>
+
+
+
+
+</html>
