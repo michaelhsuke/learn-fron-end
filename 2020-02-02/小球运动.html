@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>小球运动</title>
+  </head>
+  <body>
+    <div id="ball" style="position: absolute; width: 100px; height: 100px; background-color: blue;"></div>
+    <script>
+      var tween = {
+        linear(t, start, dist, duration) {
+          return t * dist / duration + start
+        },
+        easeIn(t, start, dist, duration) {
+          return dist * ( t /= duration ) * t + start
+        },
+        strongEaseIn(t, start, dist, duration) {
+          return dist * ( t /= duration ) * t * t * t * t + start
+        },
+        strongEaseOut(t, start, dist, duration) {
+          return dist * (( t = t / duration - 1 ) * t * t * t * t + 1) + start
+        },
+        sineaseIn(t, start, dist, duration) {
+          return dist * ( t /= duration ) * t * t + start
+        },
+        sineaseOut(t, start, dist, duration) {
+          return dist * (( t = t / duration - 1 ) * t * t + 1) + start
+        }
+      }
+
+      var Animate = function (dom) {
+        this.dom = dom
+        this.startTime = 0
+        this.startPos = 0
+        this.endPos = 0
+        this.propertyName = null
+        this.easing = null
+        this.duration = null
+      }
+
+      Animate.prototype.start = function (propertyName, endPos, easing, duration) {
+        this.startTime = +new Date()
+        this.startPos = this.dom.getBoundingClientRect()[propertyName]
+        this.endPos = endPos
+        this.propertyName = propertyName
+        this.easing = tween[easing]
+        this.duration = duration
+
+        var self = this
+        var timer = setInterval(function () {
+          if (self.step() === false) {
+            clearInterval(timer)
+            timer = null
+          }
+        }, 20)
+      }
+
+      Animate.prototype.step = function () {
+        var nowTime = +new Date()
+        if (nowTime > this.startTime + this.duration) {  // 停止运动
+          this.update(this.endPos)
+          return false
+        }
+
+        var pos = this.easing(nowTime - this.startTime, this.startPos, this.endPos - this.startPos, this.duration)
+        this.update(pos)
+      }
+
+      Animate.prototype.update = function (pos) {
+        console.log('pos===', parseInt((pos - this.dom.getBoundingClientRect()[this.propertyName]) * 100))
+        this.dom.style[this.propertyName] = pos + 'px'
+      }
+
+      var div = document.getElementById('ball')
+      var animate = new Animate(div)
+
+      animate.start('left', 500, 'sineaseOut', 1000)
+      
+
+      </script>
+
+  </body>
+</html>

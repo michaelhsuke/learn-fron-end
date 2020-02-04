@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>html</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #container {
-        width: 200px;
-        height: 200px;
-        border: 1px solid #f00;
-        position: relative;
-        top: 100px;
-        left: 100px;
-        overflow: scroll;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <img id="file_img" />
+  <script>
+    var n = `data:image/png;base64,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`
+    
+    for (var i = n.split(","), 
+    e = i[0].match(/:(.*?);/)[1], 
+    o = atob(i[1]), A = o.length, 
+    a = new Uint8Array(A); A--; )
+                        a[A] = o.charCodeAt(A);
+t = "_image.jpg"
+      var r = new File([a],t,{
+      type: e
+  });
 
-      #inner {
-        width: 100px;
-        height: 10000px;
-        border: 1px solid #00f;
-        position: absolute;
-        top: 20px;
-        left: 40px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <div id="inner"></div>
-    </div>
-    <script>
-      var container = document.getElementById("container")
-      var inner = document.getElementById("inner")
-      // console.log(window.getComputedStyle(dom))
-      // console.log(container.offsetTop)
-      // console.log(inner.scrollTop)
-      container.onscroll = function () {
-        console.log(this.scrollTop, inner.offsetTop, inner.scrollTop)
-        
-      }
-
-      console.log(inner.ownerDocument.nodeName)
-      console.log(inner.ownerDocument.documentElement.nodeName)
-    </script>
-  </body>
+  var reader = new FileReader(); // 图片文件转换为base64
+　　　　　　reader.readAsDataURL(r);//用文件加载器加载文件
+　　　　　　reader.onload = function() { // 显示图片
+　　　　　　　　document.getElementById("file_img").src = this.result;//file_img是图片展示载体
+　　　　　　}
+  
+  </script>
+  
+</body>
 </html>

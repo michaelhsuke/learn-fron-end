@@ -1,0 +1,56 @@
+<html>
+  <script>
+    var Singleton = function (name) {
+      this.name = name
+      this.instance = null
+    }
+
+    Singleton.prototype.getName = function () {
+      return this.name
+    }
+    Singleton.prototype.setName = function (name) {
+      this.name = name
+    }
+
+    Singleton.getInstance = function (name) {
+      if (!this.instance) {
+        this.instance = new Singleton(name)
+      }
+      // debugger
+
+      this.instance.setName(name)
+      return this.instance
+    }
+
+
+    var a = Singleton.getInstance('aaa')
+    
+    
+    console.log(a.getName());
+    var b = Singleton.getInstance('bbb')
+    console.log(b.getName());
+    console.log(a === b)
+
+    // 动态创建命名空间
+    var MyApp = {}
+    MyApp.namespace = function (name) {
+      var parts = name.split('.') || []
+      var result = MyApp
+      parts.reduce((obj, key) => {
+        debugger
+        obj[key] = obj[key] || {}
+        return obj[key]
+      }, MyApp)
+    }
+
+    MyApp.namespace('event.some.trigger')
+    console.dir(MyApp)
+
+
+    
+    
+
+    
+
+  </script>
+</html>
