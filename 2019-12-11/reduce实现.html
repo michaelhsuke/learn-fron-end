@@ -1,0 +1,133 @@
+<script>
+  const f1 = (value) => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('p1 running', value)
+      resolve(1)
+    }, 1000)
+  })
+
+  const f2 = (value) => new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('p2 running', value)
+      resolve(2)
+    }, 1000)
+  })
+
+  const array = [f1, f2]
+  const runPromiseInSequence = (array, value) => array.reduce((promiseChain, currentFunction) => promiseChain.then(
+    currentFunction), Promise.resolve(value))
+
+  console.log(runPromiseInSequence(array, 'init').then(value => console.log(value)))
+</script>
+
+<script>
+  const pipe = (...functions) => input => functions.reduce((acc, fn) => fn(acc), input)
+</script>
+
+<script>
+  if (!Array.prototype.reduce) {
+    Object.defineProperty(Array.prototype, 'reduce', {
+      value: function (callback) {
+        if (this === null) {
+          throw new TypeError('Array.prototype.reduce called on null or undefined')
+        }
+
+        if (typeof callback !== 'function') {
+          throw new TypeError(callback + ' is not a function')
+        }
+
+        var o = Object(this)
+        var len = o.length >>> 0
+        var k = 0
+        var value
+
+        if (arguments.length >= 2) {
+          value = arguments[1]
+        } else {
+          while (k < len && !(k in o)) {
+            k++
+          }
+
+          while (k >= len) {
+            throw new TypeError('Reduce of empty array with no initial value')
+          }
+
+          value = o[k++]
+        }
+
+        while (k < len) {
+          if (k in o) {
+            value = callback(value, o[k], k, o)
+          }
+          k++
+        }
+
+        return value
+      }
+    })
+  }
+</script>
+
+<script>
+  Array.prototype.reduce = Array.prototype.reduce || function (callback, initalValue) {
+    if (this.constructor === Array && (typeof callback === 'function')) {
+      var startIndex = 0
+      if (initalValue === undefined) {
+        initalValue = this[0] || ''
+        startIndex = 1
+      }
+
+      var arr = this.slice(index)
+      var base
+      arr.forEach((value, index) => {
+        base = callback(base, value, startIndex + index, this)
+      })
+      return base
+    }
+  }
+</script>
+
+<script>
+  var only = function (obj, keys) {
+    obj = obj || {}
+    if (typeof keys === 'string') {
+      keys = keys.split(/ +/)
+      return keys.reduce(function (ret, key) {
+        if (obj[key] === null) {
+          return ret
+        }
+        ret[key] = obj[key]
+        return ret
+      }, {})
+    }
+  }
+</script>
+
+<script>
+  // compose(f1, f2, f3, f4)(args) => f1(f2(f3(f4(args))))
+  var compose = function (...args) {
+    var length = args.length
+    var count = length - 1
+    var result
+
+    return function f1(...arg1) {
+      result = args[count].call(this, arg1)
+      if (count <= 0) {
+        count = length - 1
+        return result
+      }
+      count--
+      return f1.call(null, result)
+    }
+  }
+
+  const reduceFunc = (f, g) => (...args) => g.call(this, f.apply(this, args))
+  const compose = (...args) => args.reverse().reduce(reduceFunc, args.shift())
+
+  /**
+  * [f1, f2, f3, f4] => [f4, f3, f2, f1]
+  *
+  */
+
+
+</script>

@@ -1,0 +1,38 @@
+<script>
+  function compose(...funcs) {
+    if (funcs.length === 0) {
+      return arg => arg
+    }
+
+    if (funcs.length === 1) {
+      return funcs[0]
+    }
+
+    return funcs.reduce((prev, next, index) => {
+      console.group('======' + index + '======')
+      console.log(prev)
+      console.log(next)
+      console.groupEnd()
+      return (...args) => (prev(next(...args)))
+    })
+  }
+
+  function f1() {
+    console.log('f1')
+  }
+
+  function f2() {
+    console.log('f2')
+  }
+
+  function f3(value) {
+    console.log('f3', value)
+  }
+
+  var fn = compose(f1, f2, f3)
+  fn('okkkk')
+
+  /**
+   *
+   */
+</script>
