@@ -1,0 +1,83 @@
+<script>
+  function Person(name) {
+    this.name = name
+  }
+
+  Person.prototype.getName = function () {
+    return this.name
+  }
+
+  function Author(name, books) {
+    Person.call(this, name)
+    this.books = books
+  }
+
+  Author.prototype = new Person()
+  // Author.prototype = Person.prototype
+  Author.prototype.constructor = Author
+  Author.prototype.getBooks = function () {
+    return this.books
+  }
+
+  // var author = new Author('xuke', 'JavaScript设计模式')
+  // console.log('author.__proto__ === Author.prototype', author.__proto__ === Author.prototype)
+  // console.log('author.__proto__ === Person.prototype', author.__proto__ === Person.prototype)
+  // console.log('Author.prototype.__proto__ === Person.prototype', Author.prototype.__proto__ === Person.prototype)
+  // console.log('Person.prototype.__proto__ === Object.prototype', Person.prototype.__proto__ === Object.prototype)
+
+  // console.dir(Author.prototype)
+  // console.dir(Person.prototype)
+
+  var author = []
+  author[0] = new Author('AAAA', ['JavaScript Desgin Patterns'])
+  author[1] = new Author('BBBB', ['JavaScript Desgin Patterns'])
+
+  console.dir(author)
+
+  // ==============extend=========
+
+ function extend(subClass, superClass) {
+   var F = function () {}
+   F.prototype = superClass.prototype
+   subClass.prototype = new F()
+   subClass.prototype.constructor = subClass
+
+   subClass.superClass = superClass.prototype
+   if (superClass.prototype.constructor === Object.prototype.constructor) {
+     superClass.prototype.constructor = superClass
+   }
+ }
+
+ function Author2(name, books) {
+   Author2.superClass.constructor.call(this, name)
+   this.books = books
+ }
+
+ extend(Author2, Person)
+ Author2.prototype.getBooks = function () {
+   return this.books
+ }
+
+ author[2] = new Author2('michael', ['hello world'])
+
+// =======================================
+
+function clone(obj) {
+  var F = function () {}
+  F.prototype = obj
+  return new F()
+}
+
+var Person2 = {
+  name: 'xuke',
+  getName: function () {
+    return this.name
+  }
+}
+
+var Author3 = clone(Person2)
+// Author3.name = 'michael'
+console.log(Author3.getName())
+// console.log(Author3)
+// var author3 = Author3('xuke', ['test'])
+</script>
