@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>节流</title>
+    <style>
+      #box {
+        margin: 40px;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border: 1px solid #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <p>n秒内只调用1次</p>
+    <div id="box"></div>
+    <script>
+      function throttle(func, wait) {
+        var context, args;
+        var timer = null;
+        var previous = 0;
+
+        return function() {
+          context = this;
+          args = arguments;
+          var now = Date.now();
+          var remaining = wait - (now - previous);
+          if (remaining <= 0) {
+            func.apply(context, args);
+            previous = now;
+          }
+        };
+      }
+
+      var box = document.getElementById("box");
+      var count = 0;
+      var show = function() {
+        count++;
+        console.log("count====", count);
+        box.innerHTML = count;
+      };
+
+      box.addEventListener("click", throttle(show, 1000));
+    </script>
+  </body>
+</html>
