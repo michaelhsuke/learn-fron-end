@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>防抖</title>
+    <style>
+      #container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #f00;
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>n秒内只执行一次，如果在执行期间再次触发，则重新计算时间</p>
+    <div id="container"></div>
+    <script>
+      function debounce(func, wait, isImmediate) {
+        var context, args;
+        var timer = null;
+
+        return function() {
+          context = this;
+          args = arguments;
+          if (isImmediate) {
+            // 立即执行
+            if (!timer) {
+              func.apply(context, args);
+            }
+            timer = setTimeout(function() {
+              timer = null;
+            }, wait);
+          } else {
+            if (timer) {
+              clearTimeout(timer);
+              timer = null;
+            }
+            timer = setTimeout(function() {
+              func.apply(context, args);
+            }, wait);
+          }
+        };
+      }
+
+      var count = 0;
+      var inc = function() {
+        count = count + 1;
+        console.log("count===", count);
+        document.getElementById("container").innerHTML = count;
+      };
+
+      document
+        .getElementById("container")
+        .addEventListener("click", debounce(inc, 5000, true));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<script>
+  function debounce(func, wait, isImmediate) {
+    var context, args;
+    var timer = null;
+
+    return function() {
+      context = this;
+      args = arguments;
+
+      if (isImmediate) {
+        if (!timer) {
+          func.apply(context, args);
+        }
+
+        timer = setTimeout(function() {
+          clearTimeout(timer);
+          timer = null;
+        }, wait);
+      } else {
+        if (timer) {
+          clearTimeout(timer);
+          timer = null;
+        }
+        timer = setTimeout(function() {
+          func.apply(context, args);
+        }, wait);
+      }
+    };
+  }
+</script>
