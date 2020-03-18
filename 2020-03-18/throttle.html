@@ -29,8 +29,18 @@
           var now = Date.now();
           var remaining = wait - (now - previous);
           if (remaining <= 0) {
+            clearTimeout(timer);
+            timer = null;
             func.apply(context, args);
             previous = now;
+          } else {
+            if (!timer) {
+              timer = setTimeout(function() {
+                func.apply(context, args);
+                previous = Date.now();
+                timer = null;
+              }, wait);
+            }
           }
         };
       }
