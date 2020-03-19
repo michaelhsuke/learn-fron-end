@@ -24,6 +24,35 @@
     }
   }
 
-  var repeatFunc = repeat(alert, 3000, 4)
+  var repeatFunc = repeat(console.log, 3000, 4)
   repeatFunc('hello world');
+</script>
+
+<script>
+  var Event = (function () {
+    var cache = {}
+    var that = this
+
+    return {
+      on(name, func) {
+        cache[name] = cache[name] || []
+        cache[name].push(func)
+      },
+      off(name) {
+        if (cache[name]) {
+          delete cache[name]
+        }
+      },
+      trigger(name) {
+        var args = arguments
+        var name = args.shift()
+        var funcs = cache[name] || []
+        funcs.forEach(function (func) {
+          func.apply(that, args)
+        })
+      }
+    }
+  })()
+
+
 </script>

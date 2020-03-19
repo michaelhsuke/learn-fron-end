@@ -1,0 +1,37 @@
+<script>
+  var Event = (function () {
+    var cache = {}
+    var that = this
+
+    return {
+      on(name, func) {
+        cache[name] = cache[name] || []
+        cache[name].push(func)
+      },
+      off(name) {
+        if (cache[name]) {
+          delete cache[name]
+        }
+      },
+      trigger(name) {
+        // var name = [].shift.apply(args)
+        var args = []
+        var name = arguments[0];
+        for ( var i = 1, one; one = arguments[i++];) {
+          args.push(one)
+        }
+        var funcs = cache[name] || []
+        // console.log(funcs)
+        funcs.forEach(function (func) {
+          // console.log(func, args)
+          func.apply(that, args)
+        })
+      }
+    }
+  })()
+
+  Event.on('dispatch', function (o) { console.log(o) })
+  Event.trigger('dispatch', { foo: 'foo' })
+
+
+</script>
