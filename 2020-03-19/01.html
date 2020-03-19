@@ -1,0 +1,29 @@
+<script>
+  function repeat(func, wait, times) {
+    var context, args;
+    var timer = null;
+    var later = function () {
+      timer = setTimeout(function () {
+        times--
+        func.apply(context, args)
+        if (times) {
+          later()
+        } else {
+          clearTimeout(timer);
+          timer = null;
+        }
+      }, wait)
+    }
+
+    return function () {
+      context = this;
+      args = arguments
+      if (times) {
+        later()
+      }
+    }
+  }
+
+  var repeatFunc = repeat(alert, 3000, 4)
+  repeatFunc('hello world');
+</script>
