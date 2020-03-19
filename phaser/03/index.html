@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>phaser</title>
+</head>
+
+<body>
+  <script src="https://cdn.bootcss.com/phaser/3.19.0/phaser.js"></script>
+  <div id="phaser-example"></div>
+  <script>
+    var config = {
+      width: 800,
+      height: 600,
+      type: Phaser.AUTO,
+      backgroundColor: '#2d2d2d',
+      parent: 'phaser-example',
+      scene: {
+        preload: preload,
+        create: create,
+        update: update,
+      }
+    }
+    var groupA
+    var groupB
+    var move
+
+    var game = new Phaser.Game(config)
+
+    function preload() {
+      this.load.at
+
+    }
+
+    function create() {
+      
+    }
+
+    function update() {
+
+    }
+  </script>
+</body>
+
+</html>
