@@ -1,0 +1,18 @@
+<script>
+    function createObject(props) {
+        function F() {};
+        F.prototype = props;
+        return new F();
+    }
+
+    function new2(func) {
+        var createObject = createObject(func.prototype);
+        var [ func, ...args] = arguments;
+        var returnObject = func.apply(createObject, args);
+        if (typeof returnObject === 'object') {
+            return returnObject;
+        } else {
+            return createObject;
+        }
+    }
+</script>

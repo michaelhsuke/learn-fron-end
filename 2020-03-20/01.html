@@ -1,0 +1,36 @@
+<script>
+    var a1 = {};
+    console.log('a1.__proto__ === Object.prototype', a1.__proto__ === Object.prototype);
+
+    var a2 = new Object();
+    console.log('a2.__proto__ === Object.prototype', a2.__proto__ === Object.prototype);
+
+    function Base() {
+        this.name = 'xuke'
+    }
+    Base.prototype.say = function () {
+        return this.name;
+    }
+
+    var base = new Base();
+    console.dir(base);
+
+    console.log('base.__proto__ === Base.prototype', base.__proto__ === Base.prototype);
+    console.log('Base.prototype.__proto__ === Object.prototype', Base.prototype.__proto__ === Object.prototype);
+
+    var a2 = Object.create(Base, Base);
+    console.log('a2====', a2);
+    console.log('a2.__proto__ === Base', a2.__proto__ === Base);
+
+    var a3 = new Base();
+    console.log('a3.__proto__ === Base.prototype', a3.__proto__ === Base.prototype);
+
+    Object.create = Object.create || function (prop, srcProp) {
+
+
+
+        return {}
+    }
+    
+    
+</script>
