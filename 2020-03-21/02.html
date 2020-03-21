@@ -1,0 +1,14 @@
+<script>
+  // ?<=和?=的用法 https://blog.csdn.net/z69183787/article/details/81740803
+
+  var html = '<a href="https://www.baidu.com">link</a>'
+  var reg = /(?<=(href="))/g
+  console.log(reg.test(html)) 
+  console.log(reg.exec(html))
+
+  var reg=/hello/g;
+  var text = 'hello world';
+  console.log(reg.exec(text));
+
+
+</script>

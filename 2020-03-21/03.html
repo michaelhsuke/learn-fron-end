@@ -1,0 +1,32 @@
+<script>
+  // ?:  非获取匹配
+  var reg1 = /industr(?:y|ies)/;  // => /industry|industries/
+  console.log(reg1.exec('aaaaindustry'));
+
+  // ?= 非获取匹配，正向肯定预查
+  var reg2 = /Windows(?=7|10|xp)/g;
+  // console.log(reg2.exec('Windows7'));
+  // console.log(reg2.exec('Windows2000'));
+
+  // ?! 非获取匹配，正向否定预查
+  var reg3 = /Windows(?!7|10|xp)/
+  console.log(reg3.exec('Windows7'));
+  console.log(reg3.exec('Windows2000'));
+
+  // ?<= 非获取匹配，反向肯定预查
+  var reg4 = /(?<=7|10|xp)windows/
+  console.log(reg4.exec('7windows'));
+  console.log(reg4.exec('2000windows'));
+  
+  // ?<! 非获取匹配，反向否定预查
+  var reg5 = /(?<!7|10|xp)windows/
+  console.log(reg5.exec('7windows'));
+  console.log(reg5.exec('2000windows'));
+
+  // question: what's the result of the reg express above?
+  var reg = /(?<=(href=")).{1,200}(?=(">))/
+  var html = '<a href="https://www.baidu.com">link</a>'
+  console.log(reg.exec(html));
+  
+  
+</script>
