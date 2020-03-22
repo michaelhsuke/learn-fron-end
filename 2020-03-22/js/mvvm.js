@@ -100,7 +100,6 @@ watcher.prototype.update = function () {
   }
 }
 
-
 function Dep() {
   this.subs = []
   var self = this;
