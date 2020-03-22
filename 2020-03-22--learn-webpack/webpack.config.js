@@ -5,23 +5,23 @@ const OptimizeCss = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  optimization: {
-    minimizer: [
-      new OptimizeCss(),
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      })
-    ]
-  },
+  // optimization: {
+  //   minimizer: [
+  //     new OptimizeCss(),
+  //     new UglifyJsPlugin({
+  //       cache: true,
+  //       parallel: true,
+  //       sourceMap: true
+  //     })
+  //   ]
+  // },
   devServer: {
     port: 3000,
     contentBase: './dist',
     progress: true
   },
-  // mode: "development",
-  mode: "production",
+  mode: "development",
+  // mode: "production",
   entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
@@ -44,7 +44,34 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/, use: [
+        test: /\.js$/,
+        use: { // eslint eslint-loader
+          loader: 'eslint-loader',
+          options: {
+            enforce: 'pre'  // previous
+          }
+        }
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env'
+            ],
+            plugins: [
+              '@babel/plugin-proposal-class-properties',
+              '@babel/plugin-transform-runtime'
+            ]
+          },
+        },
+        include: path.resolve(__dirname + '/src'),
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: [
           // {
           //   loader: 'style-loader',
           //   options: {
