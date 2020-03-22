@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   devServer: {
@@ -22,6 +23,57 @@ module.exports = {
         collapseWhitespace: true
       },
       hash: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
     })
-  ]
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/, use: [
+          // {
+          //   loader: 'style-loader',
+          //   options: {
+          //     // insert: 'top'
+          //   }
+          // },
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     plugins: loader => {
+          //       require('autoprefixer')()
+          //     }
+          //   }
+          // },
+        ]
+      },
+      {  // node-sass sass-loader
+        // stylus stylus-loader
+        test: /\.less$/, use: [
+          // {
+          //   loader: 'style-loader',
+          //   options: {
+          //     // insert: 'top'
+          //   }
+          // },
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'less-loader',
+          'postcss-loader',
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     plugins: loader => {
+          //       require('autoprefixer')()
+          //     }
+          //   }
+          // },
+        ]
+      },
+    ]
+  }
 }

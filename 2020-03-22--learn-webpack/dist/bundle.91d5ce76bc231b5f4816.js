@@ -86,14 +86,36 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/index.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log('hello world');\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__(/*! ./index.css */ \"./src/index.css\");\n__webpack_require__(/*! ./index.less */ \"./src/index.less\");\nconsole.log('hello world');\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/index.less":
+/*!************************!*\
+  !*** ./src/index.less ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/index.less?");
 
 /***/ })
 
