@@ -43,6 +43,46 @@ module.exports = {
   ],
   module: {
     rules: [
+      // {
+      //   test: /\.(png|jpg|svg|gif)$/,
+      //   use: [
+      //     {
+      //       loader: 'url-loader',
+      //       options: {
+      //         name: '[name].[hash:8].[ext]',
+      //         // limt: 1000*10000,
+      //         limt: 1,
+      //         // outputPath: 'images',
+      //         publicPath: 'image/',
+      //       }
+      //     }
+      //   ]
+      // },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1,
+              outputPath: 'static',
+              name: '[name].[hash].[ext]'
+            }
+          }
+        ]
+      },
+      // {
+      //   test: /png|jpg|svg|gif$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: 'image/[name].[hash:8].[ext]'
+      //       }
+      //     }
+
+      //   ]
+      // },
       {
         test: /\.js$/,
         use: { // eslint eslint-loader
