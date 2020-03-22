@@ -1,14 +1,27 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCss = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+  optimization: {
+    minimizer: [
+      new OptimizeCss(),
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      })
+    ]
+  },
   devServer: {
     port: 3000,
     contentBase: './dist',
     progress: true
   },
-  mode: "development",
+  // mode: "development",
+  mode: "production",
   entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
