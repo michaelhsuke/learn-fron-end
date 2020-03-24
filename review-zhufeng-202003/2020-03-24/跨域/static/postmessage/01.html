@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <iframe id="myFrame" src="http://localhost:9000/postmessage/02.html" frameborder="0"></iframe>
+  <script>
+    var myFrame = document.getElementById('myFrame')
+    myFrame.onload = function () {
+      myFrame.contentWindow.postMessage('1111111', 'http://localhost:9000')
+    }
+    window.onmessage = function (event) {
+      console.log('received data', event.data)
+    }
+
+  </script>
+
+</body>
+
+</html>

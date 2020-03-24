@@ -5,7 +5,7 @@ app.listen(9000, () => {
   console.log('port is 9000')
 })
 
-app.use(express.static('./static'))
+app.use(express.static('../static'))
 
 app.get('/queryInfo', (req, res) => {
   const fn = req.query.cb
