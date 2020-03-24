@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORS测试</title>
+</head>
+
+<body>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script>
+    let url = 'http://localhost:9000/queryInfo'
+    $.ajax({
+      url,
+      type: 'post',
+      success(res) {
+        console.log(res)
+      }
+    })
+  </script>
+</body>
+
+</html>
