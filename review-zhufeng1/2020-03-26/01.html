@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    #outer {
+      position: absolute;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer">
+    <div id="box" class="container boxxxxx" style="width: 200px;height: 200px; border: 1px solid #f00; text-align: left;" title="helllllo" draggable="true" contenteditable="false">
+      <div id="inner">aaaaa</div>
+      <div id="title">zzzz</div>
+    </div>
+  </div>
+  <script>
+    let oBox = document.getElementById("box");
+    oBox.oncontextmenu = function () {
+      alert('okkkk')
+    }
+    console.dir(oBox);
+    console.log(oBox.classList.value)
+    console.log(oBox.currentStyle)
+    console.log(document.defaultView)
+
+  </script>
+</body>
+</html>
