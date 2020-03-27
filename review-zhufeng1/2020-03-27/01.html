@@ -1,0 +1,30 @@
+<script>
+  // function aaa() {
+  //   console.log(a);
+  //   var a = 2;
+  // }
+
+  // aaa();
+</script>
+
+<script>
+  function fn() {
+    console.log(1);
+  }
+  var fn = 100; //=>带VAR的在提升阶段只把声明处理了,赋值操作没有处理,所以在代码执行的时候需要完成赋值 FN=100
+  fn(); //=>4
+
+  // fn(); //=>4
+
+  // fn(); //=>4
+
+  // fn(); //=>100() Uncaught TypeError: fn is not a function
+  // function fn() {
+  //   console.log(3);
+  // }
+  // fn();
+  // function fn() {
+  //   console.log(4);
+  // }
+  // fn();
+</script>

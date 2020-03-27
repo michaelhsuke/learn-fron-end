@@ -1,0 +1,26 @@
+<script>
+  function Person(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  Person.prototype.sayName = function() {
+    return this.name;
+  };
+
+  function extend(subClass, superClass) {
+    var F = function() {};
+    F.prototype = superClass.prototype; // todo
+    subClass.prototype = new F();
+    subClass.prototype.constructor = subClass;
+  }
+
+  function Student(name, age) {
+    Person.call(this, name, age);
+  }
+  extend(Student, Person);
+
+  var o = new Student("michael", 30);
+  console.dir(o);
+  console.log(o.sayName());
+</script>
