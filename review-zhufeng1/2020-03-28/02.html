@@ -1,0 +1,18 @@
+<script>
+  let n = 10,
+    obj = { n: 20 };
+  let fn = obj.fn = (function () {
+    // console.log(this)
+    this.n++;
+    // console.log('nnnnn', this.n)
+    n++;
+    return function (m) {
+      n += 10 + (++m);
+      this.n += n;
+      console.log(n);
+    }
+  })(obj.n);
+  fn(10);  // => 32 window.n = undefined
+  obj.fn(10);  
+  console.log(n, obj.n);
+</script>

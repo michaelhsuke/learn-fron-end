@@ -1,0 +1,53 @@
+<script>
+  Function.prototype.myCall = function (context) {
+    context = typeof context === 'object' ? context : Window
+    context.fn = this
+    var args = []
+    for (var i = 1, len = arguments.length; i < len; i++) {
+      args.push('arguments[' + i + ']')
+    }
+    var result = eval('context.fn(' + args.join(',') + ')')
+    delete context.fn
+    return result
+  }
+
+  function sum() {
+    return this.a + this.b
+  }
+
+  var opt = {
+    a: 100,
+    b: 300,
+  }
+
+  var ret = sum.call(opt)
+  var ret2 = sum.myCall(opt)
+  console.log(ret, ret2)
+</script>
+
+<script>
+  Function.prototype.myApply = function (context) {
+    context = typeof context === 'object' ? context : window
+    context.fn = this
+    var arg1 = arguments[1] || []
+    var args = []
+    for (var i = 0, len = arg1.length; i < len; i++) {
+      args.push('arg1[' + i + ']')
+      
+    }
+    var ret = eval('context.fn(' + args.join(',') + ')')
+    delete context.fn
+    return ret
+  }
+
+  function sum2(a, b) {
+    var base = this.base || 0
+    return base + a + b
+  }
+
+  console.log(sum2(2, 3))
+  console.log(sum2.call({ base: 100 }, 2, 3))
+  console.log(sum2.myCall({ base: 100 }, 2, 3))
+  console.log(sum2.apply({ base: 100 }, [2, 3]))
+  console.log(sum2.myApply({ base: 100 }, [2, 3]))
+</script>
