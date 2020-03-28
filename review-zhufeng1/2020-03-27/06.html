@@ -1,0 +1,19 @@
+<script>
+  var n = 2;
+  var obj = {
+    n: 3,
+    fn: (function (n) {
+      n *= 2;
+      this.n += 2;
+      var n = 5;
+      return function (m) {
+        this.n *= 2;
+        console.log(m + (++n));
+      }
+    })(n)//=>obj.n会报错
+  };
+  var fn = obj.fn; // => obj.n = 5 { n = 5} 
+  fn(3); // => window.n = 4  { n = 6 }        =>9
+  obj.fn(3);  // => obj.n = 10  { n = 7 } => 10
+  console.log(n, obj.n);
+</script>

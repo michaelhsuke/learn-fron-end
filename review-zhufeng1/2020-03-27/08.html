@@ -1,0 +1,21 @@
+<script>
+  function fn() {
+    this.m =  10
+    var n = 5
+  }
+
+  var obj = new fn()
+  console.log(obj)
+</script>
+
+<script>
+  function hasPubProperty(obj, attr) {
+    var proto = obj.__proto__
+    return (attr in proto)
+  }
+
+  var f = new fn
+  console.log(hasPubProperty(f, 'm'))
+  console.log(hasPubProperty(f, 'n'))
+  console.log(hasPubProperty(f, 'toString'))
+</script>
