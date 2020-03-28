@@ -26,16 +26,16 @@
 </script>
 
 <script>
-  Function.prototype.myApply = function (context) {
+  Function.prototype.myApply = function (context, arr) {
     context = typeof context === 'object' ? context : window
     context.fn = this
-    var arg1 = arguments[1] || []
+    arr = arr || []
     var args = []
-    for (var i = 0, len = arg1.length; i < len; i++) {
-      args.push('arg1[' + i + ']')
-      
+    for (var i = 0, len = arr.length; i < len; i++) {
+      args.push('arr[' + i + ']')
+
     }
-    var ret = eval('context.fn(' + args.join(',') + ')')
+    var ret = eval('context.fn(' + args + ')')
     delete context.fn
     return ret
   }
@@ -45,9 +45,28 @@
     return base + a + b
   }
 
+  Function.prototype.myBind = function (context) {
+    // context.fn = this
+    // return context.fn
+    var fn = this
+    return function () {
+      context.fn = fn
+      var args = []
+      for (var i = 0, len = arguments.length; i < len; i++) {
+        args.push('arguments[' + i + ']')
+      }
+      var ret = eval('context.fn(' + args + ')')
+      delete context.fn
+      return ret
+    }
+  }
+
   console.log(sum2(2, 3))
   console.log(sum2.call({ base: 100 }, 2, 3))
   console.log(sum2.myCall({ base: 100 }, 2, 3))
   console.log(sum2.apply({ base: 100 }, [2, 3]))
   console.log(sum2.myApply({ base: 100 }, [2, 3]))
+
+  console.log(sum2.bind({ base: 100 })(2, 3))
+  console.log(sum2.myBind({ base: 100 })(2, 3))
 </script>
