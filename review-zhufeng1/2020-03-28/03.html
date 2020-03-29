@@ -1,0 +1,21 @@
+<script>
+  Function.prototype.call_ = function (obj) {
+    //判断是否为null或者undefined,同时考虑传递参数不是对象情况
+    obj = obj ? Object(obj) : window;
+    var args = [];
+    // 注意i从1开始
+    for (var i = 1, len = arguments.length; i < len; i++) {
+      args.push("arguments[" + i + "]");
+    };
+    obj.fn = this; // 此时this就是函数fn
+    var result = eval("obj.fn(" + args + ")"); // 执行fn
+    delete obj.fn; //删除fn
+    return result;
+  };
+
+  function fn1() { console.log(1); }
+  function fn2() { console.log(2); }
+  fn1.call(fn2);//=>找到CALL-AA把它执行,CALL-AA中的THIS是FN1,第一个参数传递的是FN2  =>在CALL-AA中执行的是FN1 =>1
+
+  fn1.call.call.call.call.call(fn2);
+</script>

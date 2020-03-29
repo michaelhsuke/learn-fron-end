@@ -1,15 +1,22 @@
 <script>
   Function.prototype.myCall = function (context) {
-    context = typeof context === 'object' ? context : Window
+    context = context ? Object(context) : Window
     context.fn = this
     var args = []
     for (var i = 1, len = arguments.length; i < len; i++) {
       args.push('arguments[' + i + ']')
     }
+    console.log('express==', 'context.fn(' + args.join(',') + ')')
     var result = eval('context.fn(' + args.join(',') + ')')
     delete context.fn
     return result
   }
+
+  function fn1() { console.log(1); }
+  function fn2() { console.log(2); }
+  fn1.myCall(fn2);//=>找到CALL-AA把它执行,CALL-AA中的THIS是FN1,第一个参数传递的是FN2  =>在CALL-AA中执行的是FN1 =>1
+
+  fn1.myCall.myCall(fn2);
 
   function sum() {
     return this.a + this.b
@@ -69,4 +76,5 @@
 
   console.log(sum2.bind({ base: 100 })(2, 3))
   console.log(sum2.myBind({ base: 100 })(2, 3))
+  
 </script>

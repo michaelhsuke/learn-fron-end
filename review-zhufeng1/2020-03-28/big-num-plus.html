@@ -1,0 +1,30 @@
+<script>
+  var a = '11111111111112'
+  var b = '222222222222'
+
+  a1 = a.split('').reverse().map(item => parseInt(item) || 0)
+  b1 = b.split('').reverse().map(item => parseInt(item) || 0)
+
+  console.log(a1, b1);
+  var maxlen = Math.max(a1.length, b1.length)
+  // alert(maxlen)
+  var ret = []
+  for (var i = 0; i <= maxlen; i++) {
+    ret[i] = 0
+  }
+  for (var i = 0; i < maxlen; i++) {
+    console.log(a1[i], b1[i])
+    ret[i] = (a1[i] || 0) + (b1[i] || 0)
+    if (ret[i] > 10) {
+      ret[i] = ret[i] % 10
+      ret[i + 1]++
+    }
+  }
+
+  console.log(ret.reverse().join(''))
+
+
+
+
+
+</script>
