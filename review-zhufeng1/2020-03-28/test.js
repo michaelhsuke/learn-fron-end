@@ -7,14 +7,6 @@
 // var ret2 = formatDate(str2)
 // console.log(ret1 < ret2)
 
-var minDate = null
-var count = 0
-
-function tranDate2Num(str) {
-  var ret = str.split(/[-:. ]/g)
-  ret = ret.join('')
-  return ret
-}
 
 var dateArr = [
   '1992-08-20 12:12:12.001',
@@ -23,7 +15,15 @@ var dateArr = [
   '1992-08-21 12:12:12.001',
   '1992-08-21 12:12:12.003'
 ]
+
+function tranDate2Num(str) {
+  var ret = str.split(/[-:. ]/g)
+  ret = ret.join('')
+  return ret
+}
+
 dateArr = dateArr.map(item => tranDate2Num(item))
+
 var data = {}
 for (var i = 0, len = dateArr.length; i < len; i++) {
   var day = dateArr[i].slice(0, 8)
@@ -37,7 +37,6 @@ Object.keys(data).forEach(function (key) {
   items.sort()
 })
 
-console.log(data)
 
 var count = 0
 Object.keys(data).forEach(function (key) {
