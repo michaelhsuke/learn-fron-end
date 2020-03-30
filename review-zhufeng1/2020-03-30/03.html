@@ -1,0 +1,20 @@
+<script>
+  var reg = /<([A-Za-z][A-Za-z0-9]*)>([\s\S]*?)<\/(\1)>/g
+  var str = `<h1>hello 
+    <p>title</p>
+    
+    world</h1>`
+  var ret = null
+  while (ret = reg.exec(str)) {
+    console.log('ret====', ret)
+  }
+  // console.log(str.match(reg))
+  // console.log(reg.test(str))
+  // str.replace(reg, (...args) => {
+  //   console.log(args)
+  // })
+  'aaa1234'.replace(/(?:(\d))/g, (...args) => {
+    console.log(args)
+  })
+  // console.log(/(?:\d)/g.exec('aaa1234'))
+</script>

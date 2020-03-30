@@ -1,0 +1,17 @@
+<script>
+  let reg = /\d{1,3}(?=(\d{3})+$)/g
+  var num = '1123434340000001234567891111111122343434344343545'
+  console.log(num.replace(reg, '$&,'))
+  console.log(trans(num))
+
+  function trans(str) {
+    var result = []
+    var strArr = str.split('').reverse()
+    while (strArr && strArr.length) {
+      var tmp = strArr.splice(0, 3)
+      result.push(tmp.reverse().join(''))
+    }
+
+    return result.reverse().join()
+  }
+</script>
