@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>echarts demo</title>
+    <style>
+      #myChart {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+    <!-- <script src="http://weixin.10010js.com/lib/js/echartsAll.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./config/option1.js"></script>
+  </head>
+  <body>
+    <div id="myChart"></div>
+    <script>
+      var chartElem = document.getElementById("myChart");
+      var myChart = echarts.init(chartElem);
+
+      var data2 = [
+        {
+          symbol: "none",
+          value: 60,
+          symbolSize: 12,
+          label: {
+            formatter: "￥{c}",
+            show: true,
+            color: "#cacaca",
+            // offset: [-10, -10],
+            fontSize: 16
+          }
+        },
+        {
+          symbol: "circle",
+          value: 70,
+          name: "aaaa",
+          symbolSize: 12,
+          label: {
+            formatter: "￥{c}",
+            show: true,
+            color: "#cacaca",
+            // offset: [-10, -10],
+            fontSize: 14
+          }
+        },
+        {
+          symbol: "circle",
+          value: 80,
+          name: "aaaa",
+          symbolSize: 12,
+          label: {
+            formatter: "￥{c}",
+            show: true,
+            color: "#cacaca",
+            // offset: [-10, -10],
+            fontSize: 14
+          }
+        },
+        {
+          symbol: "image://./images/pointer-select.png",
+          value: 70,
+          name: "aaaa",
+          symbolSize: 16,
+          label: {
+            formatter: "￥{c}",
+            show: true,
+            color: "#cacaca",
+            // offset: [-10, -10],
+            fontSize: 14
+          }
+        },
+        {
+          symbol:
+            "image://data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7",
+          value: 123,
+          name: "aaaa",
+          symbolSize: 10
+        },
+        {
+          symbol: "circle",
+          value: 50,
+          name: "aaaa",
+          symbolSize: 12,
+          label: {
+            formatter: "￥{c}",
+            show: true,
+            color: "#cacaca",
+            // offset: [-10, -10],
+            fontSize: 14
+          }
+        }
+      ];
+      var option = {
+        xAxis: {
+          // boundaryGap: false,
+          type: "category",
+          data: ["202002", "202001", "201912", "201911", "201910", "201909"],
+          axisLine: {
+            lineStyle: {
+              color: "#f5f5f5",
+              width: 4
+            }
+          },
+          axisPointer: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            color: "#c8c8c8"
+          }
+        },
+        yAxis: {
+          show: false,
+          type: "value"
+        },
+        visualMap: {
+          type: "piecewise",
+          show: false,
+          dimension: 0,
+          seriesIndex: 0,
+          pieces: [
+            {
+              gt: 1,
+              lt: 2,
+              color: "#ffdcc3"
+            }
+          ]
+        },
+        series: [
+          {
+            type: "line",
+            data: [123, 19, 30, 934, 1290, 20],
+            lineStyle: {
+              color: "#ff7a1a",
+              width: 3
+            },
+            itemStyle: {
+              color: "#ff7a1a"
+            },
+            areaStyle: {
+              // color: "#ffdcc3"
+            },
+            data: [
+              {
+                symbol: "image://./images/pointer-select.png",
+                value: 0,
+                symbolSize: 12,
+                label: {
+                  borderWidth: 1,
+                  shadowColor: "#111",
+                  shadowBlur: 5,
+                  borderColor: "#fff",
+                  shadowOffsetX: 0,
+                  shadowOffsetX: -5,
+                  borderRadius: 5,
+                  padding: 10,
+                  formatter: ["{a|￥{c}\n}", "{b|消费合计}"].join("\n"),
+                  show: true,
+                  // formatter: "{a|￥{c}}",
+                  rich: {
+                    a: {
+                      color: "red",
+                      lineHeight: 10,
+                      fontSize: 16
+                    },
+                    b: {
+                      color: "#777"
+                    }
+                  }
+                }
+              },
+              {
+                symbol: "circle",
+                value: 10,
+                name: "aaaa",
+                symbolSize: 12,
+                label: {
+                  formatter: "￥{c}",
+                  show: true,
+                  color: "#cacaca",
+                  // offset: [-10, -10],
+                  fontSize: 14
+                }
+              },
+              {
+                symbol: "circle",
+                value: 10,
+                name: "aaaa",
+                symbolSize: 12,
+                label: {
+                  formatter: "￥{c}",
+                  show: true,
+                  color: "#cacaca",
+                  // offset: [-10, -10],
+                  fontSize: 14
+                }
+              },
+              {
+                symbol: "circle",
+                value: 10,
+                name: "aaaa",
+                symbolSize: 12,
+                label: {
+                  formatter: "￥{c}",
+                  show: true,
+                  color: "#cacaca",
+                  // offset: [-10, -10],
+                  fontSize: 14
+                }
+              },
+              {
+                symbol: "circle",
+                value: 10,
+                name: "aaaa",
+                symbolSize: 12,
+                label: {
+                  formatter: "￥{c}",
+                  show: true,
+                  color: "#cacaca",
+                  // offset: [-10, -10],
+                  fontSize: 14
+                }
+              },
+              {
+                symbol:
+                  "image://data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7",
+                value: 70,
+                name: "aaaa",
+                symbolSize: 10
+              }
+            ],
+            zlevel: 10,
+            z: 11,
+            markLine: {
+              symbol: ["none", "none"],
+              label: {
+                show: false
+              },
+              lineStyle: {
+                color: "#f5f5f5",
+                type: "solid"
+              },
+              data: [
+                { xAxis: 0 },
+                { xAxis: 1 },
+                { xAxis: 2 },
+                { xAxis: 3 },
+                { xAxis: 4 },
+                { xAxis: 5 },
+                { xAxis: 6 }
+              ]
+            }
+          }
+        ]
+      };
+
+      myChart.setOption(option);
+      myChart.on("click", function(params) {
+        console.log("params====", params);
+      });
+      console.log(myChart);
+      // setTimeout(function() {
+      //   console.log("ddddddddd");
+      //   option.series[0].data = data2;
+      //   option.visualMap.pieces = [
+      //     {
+      //       gt: 2,
+      //       lt: 3,
+      //       color: "#ffdcc3"
+      //     }
+      //   ];
+      //   myChart.setOption(option, true);
+      // }, 2000);
+    </script>
+  </body>
+</html>
