@@ -148,28 +148,35 @@
             data: [
               {
                 symbol: "image://./images/pointer-select.png",
-                value: 0,
+                value: 15,
                 symbolSize: 12,
                 label: {
+                  // 1px 1px 15px rgba(50, 50, 50, 0.1)
                   borderWidth: 1,
-                  shadowColor: "#111",
-                  shadowBlur: 5,
-                  borderColor: "#fff",
-                  shadowOffsetX: 0,
-                  shadowOffsetX: -5,
-                  borderRadius: 5,
-                  padding: 10,
-                  formatter: ["{a|￥{c}\n}", "{b|消费合计}"].join("\n"),
+                  shadowColor: "#ccc",
+                  shadowBlur: 10,
+                  // borderColor: "#cacaca",
+                  backgroundColor: "#fff",
+                  shadowOffsetX: 1,
+                  shadowOffsetY: 1,
+                  borderRadius: 8,
+                  padding: [10, 20],
+                  formatter: ["{a|￥}{d|{c}}", "{b|消费合计}"].join("\n"),
                   show: true,
-                  // formatter: "{a|￥{c}}",
                   rich: {
                     a: {
-                      color: "red",
-                      lineHeight: 10,
-                      fontSize: 16
+                      color: "#ff7b1b",
+                      fontSize: 14
                     },
                     b: {
-                      color: "#777"
+                      color: "#bebebe",
+                      fontSize: 12
+                    },
+                    d: {
+                      fontSize: 18,
+                      color: "#ff7b1b",
+                      fontWeight: "bold",
+                      lineHeight: 30,
                     }
                   }
                 }
