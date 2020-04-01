@@ -1,0 +1,24 @@
+<script>
+  var node = {
+    val: 1,
+    children: [
+      { val: 2, children: [5] },
+      { val: 3, children: [6] },
+      { val: 4, children: [7] }
+    ]
+  };
+  var obj = { index: 0 };
+  var globIndex = 0;
+
+  const travse = (node, obj) => {
+    console.log(obj.index);
+    if (node.children && node.children.length) {
+      obj.index++;
+      node.children.forEach(item => {
+        travse(item, obj);
+      });
+    }
+  };
+
+  travse(node, obj);
+</script>

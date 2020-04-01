@@ -35,5 +35,8 @@
     "mongodb": "^3.3.3",
     "recast": "^0.18.5",
     "vuex": "^0.6.3"
+  },
+  "learnUrls": {
+    "木易杨前端进阶": "https://muyiy.cn/"
   }
 }
