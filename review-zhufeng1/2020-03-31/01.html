@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>width height</title>
+  <style>
+    #outer {
+      width: 400px;
+      height: 400px;
+      border: 10px solid sienna;
+      position: relative;
+    }
+
+    #inner {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #f00;
+      margin: auto;
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .box {
+      height: 200px;
+      float: left;
+      width: 33.333%;
+      border: 1px solid #00f;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="outer">
+    <div id="inner">
+      <div id="box1" class="box"></div>
+      <div id="box2" class="box"></div>
+      <div id="box3" class="box"></div>
+    </div>
+  </div>
+
+  <script>
+    var oOuter = document.getElementById('outer')
+    var oInner = document.getElementById('inner')
+    var oBox1 = document.getElementById('box1')
+    var oBox2 = document.getElementById('box2')
+    var oBox3 = document.getElementById('box3')
+
+    // console.dir(oOuter.offsetParent === document.body)
+    console.dir(oOuter.clientWidth)
+    console.dir(oInner.offsetParent)
+    console.dir(oInner.clientTop)
+    console.dir(oBox1.offsetParent)
+    console.log(oOuter.clientWidth)
+    console.log(oOuter.clientTop)
+    // console.log(oBox1.clientWidth);
+    
+  </script>
+
+</body>
+
+</html>
