@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>offset</title>
+    <style>
+      #outer {
+        border: 10px solid #f00;
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+        /* box-sizing: border-box; */
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      #inner {
+        border: 1px solid #00f;
+        width: 200px;
+        height: 200px;
+        margin: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner"></div>
+    </div>
+    <script>
+      function getCss(elem, attr) {
+        if (window.getComputedStyle === undefined) {
+          throw new SyntaxError("浏览器版本太低");
+        }
+
+        var styleList = getComputedStyle(elem, null) || {};
+        var value = styleList[attr];
+        var reg = /^-?\d+(\.\d+)?(px|pt|rem|em)/i;
+        reg.test(value) ? (value = parseFloat(value)) : null;
+        return value;
+      }
+
+      function setCss(elem, attr, value) {
+        var reg = /^((width|height|fontSize)?(margin|padding)?(top|left|bottom|right)?)+$/;
+        reg.test(attr)
+          ? value.indexOf("px") >= 0
+            ? null
+            : (value += "px")
+          : null;
+        elem.style[attr] = value;
+      }
+
+      function setGroupCss(elem, options) {
+        for (var i in options) {
+          setCss(elem, i, options[i]);
+        }
+      }
+
+      function get2BodyTop(elem) {
+        var p = elem.offsetParent;
+        var ret = elem.offsetTop;
+        while (p.tagName != "BODY") {
+          ret += p.clientTop;
+          ret += p.offsetTop;
+          p = p.offsetParent;
+        }
+
+        return ret;
+      }
+      // function bodyOffset(elem) {}
+      var oOuter = document.getElementById("outer");
+      var oInner = document.getElementById("inner");
+      // console.log(getCss(oOuter, "offsetWidth"));
+      // console.log(oOuter.offsetWidth);
+      // console.log(oOuter.clientWidth);
+      // console.log(oOuter.offsetParent.tagName);
+      console.log(get2BodyTop(oOuter));
+      console.log(get2BodyTop(oInner));
+      console.log(oInner.offsetTop);
+    </script>
+  </body>
+</html>

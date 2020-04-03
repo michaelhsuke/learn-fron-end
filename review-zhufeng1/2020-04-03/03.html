@@ -1,0 +1,11 @@
+<script>
+  var str = "abcabcabcaaabbccccc";
+  str = str
+    .split("")
+    .sort((a, b) => a.localeCompare(b))
+    .join("");
+  str.replace(/(.)\1*/g, function(...args) {
+    console.log(args);
+  });
+  console.log(str);
+</script>
