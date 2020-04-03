@@ -1,0 +1,32 @@
+<script>
+  function Person(name) {
+    this.name = name;
+    // return new Person.fn.init();
+    console.log(this);
+    console.log(this.__proto__ === Person.prototype);
+  }
+
+  // Person.fn = Person.prototype;
+  // Person.fn.init = function() {
+  //   console.log(this);
+  //   console.log(this.__proto__ === Person.fn.init.prototype);
+  //   // console.log(this.__proto__ === Object.prototype);
+  // };
+
+  // Person.prototype.ok = function() {
+  //   console.log(this.__proto__ === Person.prototype.ok.prototype);
+  // };
+
+  // console.log(Person());
+  // console.log(new Person.prototype.ok());
+
+  Person.hello = function() {
+    console.log(this);
+    console.log(this.__proto__ === Function.prototype);
+    console.log(this.__proto__ === Person.hello.prototype);
+  };
+
+  // console.log(Person.hello());
+  new Person.hello();
+  new Person();
+</script>
