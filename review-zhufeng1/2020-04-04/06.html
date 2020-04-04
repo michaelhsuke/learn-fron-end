@@ -1,0 +1,28 @@
+<html>
+<meta charset="utf-8">
+<script>
+  let str = "珠峰培训zhufeng哈哈，javascript高级程序设计，good good study!"
+  str = str.replace(/([a-zA-Z]+)/g, ' $& ')
+  console.log(str)
+
+  // var reg1 = /(?:[a-z]+(?=([A-Z][a-z]+)*$))/
+  // var reg2 = /[a-z]+([A-Z][a-z]+)*/g
+  // var str2 = 'fontSizeWeight'
+  // str2 = str2.replace(reg2, (...args) => {
+  //   const [val1, val2] = args
+  //   return val1 + '-' + val2.toLowerCase()
+  //   // console.log(args);
+  // })
+  // console.log(str2);
+
+  var reg3 = /([A-Z])/g
+  var str3 = 'fontSizeWeight'
+  str3 = str3.replace(reg3, (...args) => {
+    const [, val] = args
+    return '-' + val.toLowerCase()
+  })
+  console.log(str3)
+
+</script>
+
+</html>

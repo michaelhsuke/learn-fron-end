@@ -1,0 +1,17 @@
+<script>
+
+  let a = 3,
+    b = 4;
+  function A(a) {
+    "use strict";
+    console.log('outer=====', this)
+    A = function (b) {
+      console.log('inner=====', this)
+      console.log('aaaaa', a)
+      alert(a + (--b));
+    };
+    alert(++a);
+  }
+  A(5);
+  A(6);
+</script>

@@ -1,0 +1,28 @@
+<script>
+  // let test = (i => () => i *= 2)(2);
+  // console.log(test(5));
+
+  // "use strict"
+
+  let n = 2,
+    fn = () => {
+      "use strict"
+      this.n *= 3;
+      console.log(this)
+      // console.log(this.n)
+      n++;
+      return m => console.log((++n) + m);
+    };
+  let f = fn(4);
+  f(5);
+  fn(4)(5);
+  f(6);
+  console.log(n);
+
+  function aaa() {
+    "use strict"
+    console.log(this)
+  }
+
+  aaa()
+</script>
