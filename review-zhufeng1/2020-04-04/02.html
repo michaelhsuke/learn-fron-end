@@ -1,0 +1,28 @@
+<script>
+  let ary = [1, [2, [3, [4, 5]]], [6, 7, [8, 9, [11, 12]], 10]];
+
+  var str = JSON.stringify(ary)
+  str = str.replace(/(\[|\])/g, '')
+  // console.log(str.split(','))
+  console.log(eval('[' + str + ']'))
+
+  var ret = []
+  function visit(arr) {
+    if (arr instanceof Array) {
+      arr.forEach(val => {
+        if (isArray(val)) {
+          visit(val)
+        } else {
+          ret.push(val)
+        }
+      })
+    }
+  }
+
+  function isArray(value) {
+    return value instanceof Array
+  }
+
+  visit(ary)
+  console.log(ret)
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+</head>
+
+<body>
+  <div id="outer">
+    <div id="title">hello</div>
+    <div id="desc">dooooooo</div>
+  </div>
+  <script>
+    var oOuter = window.outer
+    var oTitle = window.title
+    // console.log(oOuter)
+    // console.log(oOuter.nextSibling)
+    // console.log(oOuter.insertBefore);
+    // console.log(oOuter.insertAfter);
+    // console.log(oTitle.nextSibling);
+    // console.log(oTitle.nextElementSibling);
+
+
+    function insertAfter(newElem, targetElem) {
+      var next = targetElem.nextElementSibling
+      var parentNode = targetElem.parentNode || null
+      if (next) {
+        parentNode.insertBefore(newElem, next)
+      } else {
+        parentNode.appendChild(newElem)
+      }
+    }
+
+    var subTitle = document.createElement('div')
+    subTitle.id = 'subTitle'
+    subTitle.innerHTML = 'sub title'
+    insertAfter(subTitle, oTitle)
+
+  </script>
+
+</body>
+
+</html>
