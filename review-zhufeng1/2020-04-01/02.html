@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>echarts demo</title>
+    <style>
+      #myChart {
+        width: 600px;
+        height: 600px;
+      }
+    </style>
+    <!-- <script src="http://weixin.10010js.com/lib/js/echartsAll.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./config/option1.js"></script>
+  </head>
+  <body>
+    <div id="myChart"></div>
+    <script>
+      var chartElem = document.getElementById("myChart");
+      var myChart = echarts.init(chartElem);
+
+      var option = {
+        xAxis: {
+          // boundaryGap: false,
+          type: "category",
+          data: ["202002", "202001", "201912", "201911", "201910", "201909"],
+          axisLine: {
+            lineStyle: {
+              color: "#f5f5f5",
+              width: 4
+            }
+          },
+          axisPointer: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            color: "#c8c8c8"
+          }
+        },
+        yAxis: {
+          show: false,
+          type: "value"
+        },
+        series: [
+          {
+            data: [120, 200, 150, 80, 70, 110, 130],
+            type: "bar",
+            showBackground: false,
+            backgroundStyle: {
+              color: "#ff7a1a",
+              color: "#ffceaa"
+            },
+            data: [
+              {
+                value: 200,
+                itemStyle: {
+                  color: "#ff7a1a"
+                }
+              },
+              {
+                value: 100,
+                itemStyle: {
+                  color: "#ffceaa"
+                }
+              },
+              {
+                value: 150,
+                itemStyle: {
+                  color: "#ff7a1a"
+                }
+              }
+            ],
+            barWidth: 20,
+            label: {
+              show: true,
+              position: "top",
+              formatter: "{a|￥}{b|{c}}",
+              show: true,
+              rich: {
+                a: {
+                  color: "#ff7b1b",
+                  fontSize: 14
+                },
+                b: {
+                  fontSize: 18,
+                  color: "#ff7b1b",
+                  fontWeight: "bold",
+                  lineHeight: 30
+                }
+              }
+            }
+          }
+        ]
+      };
+
+      myChart.setOption(option);
+      myChart.on("click", function(params) {
+        console.log("params====", params);
+      });
+      console.log(myChart);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<script>
+  function Person(name) {
+    this.name = name;
+  }
+
+  var p1 = new Person("xuke");
+  // console.log(p1.say());  // 位置1
+
+  Person.prototype.say = function() {
+    return this.name;
+  };
+
+  var p2 = new Person("michael");
+  console.log(p1.say());  // 位置2
+  console.log(p2.say());
+</script>
