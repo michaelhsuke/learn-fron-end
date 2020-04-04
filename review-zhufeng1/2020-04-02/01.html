@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="outer"></div>
+
+  <script>
+    function getCss(elem, attr) {
+      if (typeof window.getComputedStyle === undefined) {
+        throw new Error('unsupported')
+      }
+
+      var value = getComputedStyle(elem, null)[attr] || null
+      var reg = /^-?\d+(\.\d+)?(px|rem|em|pt)?$/i
+      return reg.test(value) ? parseFloat(value) : value
+    }
+
+    function setCss(elem, attr, value) {
+      if (!isNaN(value)) {
+        var reg = /^(width|height|fontSize|((margin|padding)?(top|left|right|bottom)?))$/i
+        reg.test(attr) ? value += 'px' : null
+      }
+      elem['style'][attr] = value
+    }
+
+    var oDom = document.getElementById('outer')
+    console.log(getCss(oDom, 'width'))
+    setCss(oDom, 'width', '200px')
+    setCss(oDom, 'height', '200px')
+    setCss(oDom, 'border', '1px solid #f00')
+
+
+
+  </script>
+
+</body>
+
+</html>
