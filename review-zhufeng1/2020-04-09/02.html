@@ -1,0 +1,22 @@
+<script>
+  function myInstanceOf(object, targetClass) {
+    var proto = object.__proto__
+    while (proto) {
+      if (proto === targetClass.prototype) {
+        return true
+      }
+      proto = proto.__proto__
+    }
+
+    return false
+  }
+
+  var a = []
+  console.log(myInstanceOf(a, String))
+  console.log(a instanceof String)
+
+  var s = new String('hello')
+  console.log(typeof s)
+  var s2 = 'hello'
+  console.log(typeof s2)
+</script>
