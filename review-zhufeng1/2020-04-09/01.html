@@ -1,0 +1,43 @@
+<script>
+  function MyPromise(fn) {
+    this.value = undefined;
+    this.myResolvedCallbacks = [];
+    this.status = "pending";
+
+    const resolve = (value) => {
+      setTimeout(() => {
+        if (this.status === "pending") {
+          this.status = "resolved";
+          this.value = value;
+          for (var i = 0, len = this.myResolvedCallbacks.length; i < len; i++) {
+            var oneCallback = this.myResolvedCallbacks[i];
+            this.value = oneCallback(this.value);
+          }
+          this.myResolvedCallbacks = [];
+        } else {
+          this.value = value;
+        }
+      }, 0);
+    };
+
+    fn(resolve);
+  }
+
+  MyPromise.prototype.then = function (resolveCallback) {
+    return new MyPromise((resolve) => {
+      resolve(resolveCallback);
+    });
+  };
+
+  var p1 = new MyPromise((resolve) => {
+    resolve(200);
+  })
+    .then((ret) => {
+      console.log("tttt", ret);
+      return 300;
+    })
+    .then((ret) => {
+      console.log(ret);
+    });
+  // // console.log("p1=====", p1);
+</script>
