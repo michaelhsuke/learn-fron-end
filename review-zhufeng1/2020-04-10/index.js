@@ -74,40 +74,90 @@ var t2 = createElement('ul', { class: 'list-new' }, [
 // var patches = domDiff(t1, t2)
 // var newDomTree = updateDomTree(t1, patches)
 // renderDom(renderNode(t1), document.getElementById('root'))
+
 var nodeIndex = 0
-// visitTree(t1, nodeIndex)
-var patches = []
+var patches = {}
+
 const TYPES = {
   ATTR: 'ATTR',
   REMOVE: 'REMOVE',
   TAG: 'TAG',
-  ADD: 'ADD'
+  ADD: 'ADD',
+  TEXT: 'TEXT',
+  REPLACE: 'REPLACE',
 }
-function domDiff(t1, t2) {
-  if (t1) {
-    nodeIndex++
-    if (!t2) {
-      patches.push({
-        type: TYPES.REMOVE,
-        index: nodeIndex
-      })
-    } else {
-      // 比较tag
-      if (t1.tag !== t2.tag) {
-        patches.push({
-          type: TYPES.TAG,
-          index: nodeIndex,
-          newValue: t2.tag
+
+function diffChildren(oldChildren, newChildren) {
+  (oldChildren || []).forEach((child, idx) => {
+    domDiff(child, newChildren[idx], ++nodeIndex)
+  })
+}
+
+function isString(node) {
+  return typeof node === 'string'
+}
+
+function domDiff(t1, t2, index) {
+  console.log('index===', index)
+  let currentPatches = []
+  if (!t2) {
+    currentPatches.push({
+      type: TYPES.REMOVE,
+    })
+  } else {
+    if (t1.tag == t2.tag) {
+      // 比较属性
+      let attrs = compareAttr(t1.props, t2.props)
+      if (Object.keys(attrs).length) {
+        currentPatches.push({
+          type: TYPES.ATTR,
+          attrs
         })
-        compareAttr(t1.props, t2.props, nodeIndex)
       }
-      // 比较props
+      diffChildren(t1.children, t2.children)
+    } else {
+      if (isString(t1) && isString(t2)) {
+        if (t1 !== t2) {
+          currentPatches.push({
+            type: TYPES.TEXT,
+            text: t2
+          })
+        }
+      } else {
+        currentPatches.push({
+          type: TYPES.REPLACE,
+          newNode: t2
+        })
+      }
     }
+  }
+
+  if (currentPatches.length > 0) {
+    patches[index] = currentPatches
   }
 }
 
-function compareAttr(props1, props2, nodexIndex) {
-  Object.keys(props1).forEach(key => {
-    
-  })
+function compareAttr(oldProps, newProps) {
+  let ret = {}
+  if (oldProps && newProps) {
+    Object.keys(oldProps).forEach(key => {
+      if (oldProps[key] !== newProps[key]) {
+        ret[key] = newProps[key]
+      }
+    })
+
+    Object.keys(newProps).forEach(key => {
+      if (!oldProps[key]) {
+        ret[key] = newProps[key]
+      }
+    })
+  }
+
+  return ret
 }
+
+var el = renderNode(t1)
+console.log('el===', el);
+
+domDiff(t1, t2, nodeIndex)
+console.log('patches===', patches)
