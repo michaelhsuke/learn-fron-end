@@ -71,13 +71,6 @@ var t2 = createElement('ul', { class: 'list-new' }, [
   createElement('div', { class: 'item' }, ['c']),
 ])
 
-// var patches = domDiff(t1, t2)
-// var newDomTree = updateDomTree(t1, patches)
-// renderDom(renderNode(t1), document.getElementById('root'))
-
-var nodeIndex = 0
-var patches = {}
-
 const TYPES = {
   ATTR: 'ATTR',
   REMOVE: 'REMOVE',
@@ -86,6 +79,15 @@ const TYPES = {
   TEXT: 'TEXT',
   REPLACE: 'REPLACE',
 }
+
+// var patches = domDiff(t1, t2)
+// var newDomTree = updateDomTree(t1, patches)
+
+
+var nodeIndex = 0
+var patches = {}
+
+
 
 function diffChildren(oldChildren, newChildren) {
   (oldChildren || []).forEach((child, idx) => {
@@ -157,7 +159,59 @@ function compareAttr(oldProps, newProps) {
 }
 
 var el = renderNode(t1)
-console.log('el===', el);
+renderDom(el, document.getElementById('root'))
 
 domDiff(t1, t2, nodeIndex)
-console.log('patches===', patches)
+
+function doPatch(node, myPatches) {
+  if (myPatches && myPatches.length) {
+    myPatches.forEach(item => {
+      switch (item.type) {
+        case TYPES.ATTR:
+          updateAttr(node, item.attrs)
+          break;
+        case TYPES.REPLACE:
+          node.parentNode.remove(node)
+          node.parentNode.appendChild(renderNode(item.newNode))
+
+          // node = item.newNode
+          break;
+      }
+    })
+  }
+
+
+
+  function updateAttr(node, attrs) {
+    var mapper = {
+      'class': 'className'
+    }
+    console.log('aaaaa', node, attrs)
+    Object.keys(attrs).forEach(key => {
+      let newkey = mapper[key] || key
+      node[newkey] = attrs[key]
+    })
+  }
+}
+
+function patchDom(el, patches) {
+  var nodeIndex = 0
+  walk(el, 0)
+  function walk(el, index) {
+    // el.childNodes
+    if (el) {
+      doPatch(el, patches[index]);
+      // console.log('2222patches====', index, patches[index]);
+      (el.childNodes || []).forEach(node => {
+        walk(node, ++nodeIndex)
+      })
+    }
+  }
+}
+
+patchDom(el, patches)
+
+
+
+// console.log('childNodes===', patchDom(el, patches));
+// console.log('el====', el)
