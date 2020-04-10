@@ -171,8 +171,9 @@ function doPatch(node, myPatches) {
           updateAttr(node, item.attrs)
           break;
         case TYPES.REPLACE:
-          node.parentNode.remove(node)
-          node.parentNode.appendChild(renderNode(item.newNode))
+          // node.parentNode.remove(node)
+          // node.replaceChild(renderNode(item.newNode))
+          node.parentNode.replaceChild(renderNode(item.newNode), node)
 
           // node = item.newNode
           break;
@@ -198,20 +199,15 @@ function patchDom(el, patches) {
   var nodeIndex = 0
   walk(el, 0)
   function walk(el, index) {
-    // el.childNodes
     if (el) {
-      doPatch(el, patches[index]);
-      // console.log('2222patches====', index, patches[index]);
+
       (el.childNodes || []).forEach(node => {
         walk(node, ++nodeIndex)
       })
+      doPatch(el, patches[index]);
     }
   }
 }
 
 patchDom(el, patches)
 
-
-
-// console.log('childNodes===', patchDom(el, patches));
-// console.log('el====', el)
