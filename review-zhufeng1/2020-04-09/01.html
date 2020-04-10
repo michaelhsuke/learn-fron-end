@@ -41,3 +41,17 @@
     });
   // // console.log("p1=====", p1);
 </script>
+<script src="./my-promise.js"></script>
+<script>
+  new MyPromise((resolve, reject) => {
+    resolve(100)
+  }).then(ret => {
+    console.log('p2:', ret)
+    throw new Error('hello')
+    return ret + 2
+  }).then(ret => {
+    console.log('p3:', ret)
+  }).catch(reason => {
+    console.log('reason', reason)
+  })
+</script>
