@@ -1,0 +1,87 @@
+<script>
+  class MyPromise {
+    constructor(executor) {
+      this.value = undefined
+      this.status = 'pending'
+      this.resolvedCallbacks = []
+      this.rejectedCallbacks = []
+
+      const resolveFn = (result) => {
+        setTimeout(() => {
+          if (this.status !== 'pending') {
+            return
+          }
+
+          this.status = 'fulfilled'
+          this.value = result
+          this.resolvedCallbacks.forEach(fn => {
+            fn.call(this, this.value)
+          })
+        }, 0)
+      }
+
+      const rejectFn = reason => {
+        setTimeout(() => {
+          if (this.status !== 'pending') {
+            return
+          }
+
+          this.status = 'rejectd'
+          this.value = reason
+          this.rejectedCallbacks.forEach(fn => {
+            fn.call(this, reason)
+          })
+        }, 0)
+      }
+      try {
+        executor(resolveFn, rejectFn)
+      } catch (e) {
+        rejectFn(e)
+      }
+    }
+
+    then(fulfilledCallback, rejectedCallback) {
+      if (!fulfilledCallback) {
+        fulfilledCallback = result => result
+      }
+
+      if (!rejectedCallback) {
+        rejectedCallback = reason => {
+          throw new Error(reason instanceof Error ? reason.message : reason)
+        }
+      }
+      return new MyPromise((resolve, reject) => {
+        this.resolvedCallbacks.push(() => {
+          try {
+            let ret = fulfilledCallback(this.value)
+            ret instanceof MyPromise ? ret.then(resolve, reject) : resolve(ret)
+          } catch (reason) {
+            reject(reason)
+          }
+        })
+
+        this.rejectedCallbacks.push(() => {
+          try {
+            let ret = rejectedCallback(this.value)
+            ret instanceof MyPromise ? ret.then(resolve, reject) : resolve(ret)
+          } catch (reason) {
+            reject(reason)
+          }
+        })
+      })
+    }
+
+    catch(rejectedCallback) {
+      return this.then(null, rejectedCallback)
+    }
+  }
+
+  new MyPromise((resolve, reject) => {
+    reject(100)
+    // throw new Error('100')
+  }).then(res => {
+    console.log(res)
+  }).catch(err => {
+    console.log('error', err)
+  })
+</script>

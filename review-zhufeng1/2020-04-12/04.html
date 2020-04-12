@@ -1,0 +1,18 @@
+<script>
+  function* fun() {
+    yield 1
+    yield 2
+    return 3
+  }
+
+  let a = fun()
+  console.log(a)
+  let tmp = a.next()
+  while (!tmp['done']) {
+    console.log(tmp['value'])
+    tmp = a.next()
+  }
+  console.log(tmp['value'])
+
+
+</script>
