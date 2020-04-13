@@ -1,0 +1,32 @@
+<script>
+  // var myObj = {
+  //   foo: 1,
+  //   bar: 2,
+  //   get baz() {
+  //     return this.foo + this.bar;
+  //   },
+  // };
+
+  // console.log(Reflect.get(myObj, 'foo'))
+  // console.log(Reflect.get(myObj, 'bar'))
+  // console.log(Reflect.get(myObj, 'baz'))
+
+  // ===================================
+
+  // console.log(Function.prototype.apply.call(Math.floor, undefined, [1.75]))
+
+  var myObj = {
+    foo: 1,
+    set bar(value) {
+      return (this.foo = value);
+    },
+  };
+
+  var myObjReceiver = {
+    foo: 1,
+  };
+
+  Reflect.set(myObj, "bar", 200, myObjReceiver);
+  console.log(myObj.foo);
+  console.log(myObjReceiver.foo);
+</script>

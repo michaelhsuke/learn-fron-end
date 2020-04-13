@@ -1,0 +1,10 @@
+<script>
+  var proxy = new Proxy({}, {
+    get(target, propKey, receiver) {
+      return 'hello'
+    } 
+  })
+
+  console.log(proxy.a);
+  
+</script>

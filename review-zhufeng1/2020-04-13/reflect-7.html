@@ -1,0 +1,22 @@
+<script>
+  const queuedObservers = new Set();
+  const set = (target, key, value, reciever) => {
+    Reflect.set(target, key, value, reciever);
+    queuedObservers.forEach((observer) => observer());
+    return value;
+  };
+
+  const observe = (fn) => queuedObservers.add(fn);
+  const observable = (obj) => new Proxy(obj, { set });
+
+  observe(() => {
+    console.log("observe1");
+  });
+  observe(() => {
+    console.log("observe2");
+  });
+
+  let p = observable({});
+  p.name = "xuke";
+  console.log(p.name);
+</script>

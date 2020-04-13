@@ -1,0 +1,19 @@
+<script>
+  var myObj = {
+    a: 1,
+  };
+  let proxy = new Proxy(myObj, {
+    set(target, propKey, value, receiver) {
+      console.log("set");
+      Reflect.set(target, propKey, value, receiver);
+    },
+    defineProperty(target, p, attrs) {
+      console.log("defineProperty", p, attrs);
+      Reflect.defineProperty(target, p, attrs);
+    },
+  });
+
+  proxy.a = 100;
+
+  console.log(Reflect.has(myObj, "b"));
+</script>

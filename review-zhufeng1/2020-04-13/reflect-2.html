@@ -1,0 +1,15 @@
+<script>
+  var myObj = {
+    foo: 1,
+    get bar() {
+      // this.foo = 2;
+      return 200;
+    },
+  };
+
+  // Reflect.now;
+  console.log(Reflect.get(myObj, "bar"));
+
+  Reflect.set(myObj, "time", Date.now());
+  console.log(myObj.time);
+</script>

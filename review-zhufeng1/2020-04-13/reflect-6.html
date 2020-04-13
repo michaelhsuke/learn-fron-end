@@ -1,0 +1,11 @@
+<script>
+  var myObj = {};
+  Object.defineProperty(myObj, "hidden", {
+    value: true,
+    enumerable: false,
+  });
+
+  console.log(Object.getOwnPropertyDescriptor(myObj, "hidden"));
+
+  
+</script>

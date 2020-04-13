@@ -1,0 +1,27 @@
+<script>
+  class Person {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+
+  let p = Reflect.construct(Person, ["xuke"]);
+  console.log(p);
+
+  console.log(Object.getPrototypeOf(p) === Person.prototype);
+  console.log(Reflect.getPrototypeOf(p) === Person.prototype);
+
+  console.log(Object.getPrototypeOf(1));
+  // console.log(Reflect.getPrototypeOf(null));
+
+  console.log(Object.setPrototypeOf(p, Array.prototype));
+  // console.log(Reflect.setPrototypeOf(null, Array.prototype));
+  // console.log(Reflect.setPrototypeOf(p, {}));
+
+  // Reflect.defineProperty(p, "name", {
+  //   writable: false,
+  // });
+  p.name = 'okkk'
+  console.log(p);
+  
+</script>
