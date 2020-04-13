@@ -1,0 +1,10 @@
+<script>
+  let obj = {
+    name: "xuke",
+    age: 28,
+    [Symbol("score")]: 100,
+  };
+  console.log(Reflect.ownKeys(obj));
+  console.log(Object.getOwnPropertySymbols(obj));
+  
+</script>

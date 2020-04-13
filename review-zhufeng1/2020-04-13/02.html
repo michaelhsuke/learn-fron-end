@@ -1,0 +1,26 @@
+<script>
+  const obj = {
+    get foo() {},
+    set foo(x) {},
+  };
+
+  // obj.foo.name;
+  const descriptor = Object.getOwnPropertyDescriptor(obj, "foo");
+  console.log(descriptor.get.name);
+
+  console.log(new Function().name);
+
+  function goods() {}
+  console.log(goods.bind().name);
+
+  let s1 = Symbol("s111111");
+  let s2 = Symbol("s222222");
+
+  let obj2 = {
+    [s1]() {
+      console.log("ook");
+    },
+  };
+
+  console.log(obj2[s1].name);
+</script>

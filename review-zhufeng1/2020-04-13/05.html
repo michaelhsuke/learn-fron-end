@@ -1,0 +1,22 @@
+<script>
+  const proto = {
+    foo: "hello",
+  };
+
+  const obj = {
+    foo: "world",
+    find() {
+      return super.foo;
+      // return this.foo;
+    },
+  };
+
+  Object.setPrototypeOf(obj, proto);
+  console.log(obj.find());
+
+  // const obj2 = {
+  //   foo: function () {
+  //     return super.foo;
+  //   },
+  // };
+</script>

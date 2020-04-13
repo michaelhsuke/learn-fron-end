@@ -1,0 +1,41 @@
+<script>
+  let obj = {
+    name: "xuke",
+    age: 28,
+    [Symbol("score")]: 100,
+  };
+
+  console.log(Object.getOwnPropertyNames(obj));
+
+  Object.defineProperty(obj, "name", {
+    enumerable: false,
+  });
+
+  // iterator
+
+  // console.log(Object.keys(obj))
+  // for (let i of obj) {
+  //   console.log(i)
+  // }
+
+  // console.log(Object.values(obj));
+  // console.log(Object.entries(obj));
+
+  // for (let i in obj) {
+  //   console.log(i);
+  // }
+
+  // console.log(JSON.stringify(obj));
+
+  let obj2 = Object.assign({}, obj);
+  console.log('obj2====', obj2);
+
+  console.log(
+    Object.getOwnPropertyDescriptor(
+      class {
+        foo() {}
+      }.prototype,
+      "foo"
+    ).enumerable
+  );
+</script>
