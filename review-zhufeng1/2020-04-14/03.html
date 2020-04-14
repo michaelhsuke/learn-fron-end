@@ -1,0 +1,21 @@
+<script>
+  (function (w) {
+    let listeners = new Set();
+    let oldFn = window.addEventListener;
+    window.addEventListener = function (eventName, fn) {
+      listeners.add(fn);
+      oldFn.apply(window, arguments);
+    };
+
+    window.listeners = listeners;
+  })(window);
+
+  window.addEventListener("resize", function () {
+    console.log(11111);
+  });
+  window.addEventListener("resize", function () {
+    console.log(22222);
+  });
+
+  console.log(window.listeners);
+</script>
