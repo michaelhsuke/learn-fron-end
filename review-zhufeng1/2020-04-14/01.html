@@ -1,0 +1,20 @@
+<script>
+  class Test {
+    constructor(props) {
+      this.index = 0;
+    }
+
+    [Symbol.iterator]() {
+      return this;
+    }
+
+    next() {
+      return { value: this.index++, done: this.index === 10 };
+    }
+  }
+
+  let o1 = new Test();
+  for (let i of o1) {
+    console.log(i);
+  }
+</script>
