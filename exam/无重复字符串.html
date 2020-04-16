@@ -1,0 +1,25 @@
+<script>
+  const maxNoRepeatStrLength = (str) => {
+    str = str + "";
+    if (!str) {
+      return 0;
+    }
+
+    let result = str.length;
+    for (let len = result; len > 0; len--) {
+      let found = false;
+      for (let i = 0, iLen = str.length - len; i < iLen; i++) {
+        let copyStr = str.substr(i, len);
+        if (isNoRepeat(copyStr)) {
+          found = true;
+          break;
+        }
+      }
+      if (found) {
+        return len;
+      }
+    }
+
+    return 0;
+  };
+</script>

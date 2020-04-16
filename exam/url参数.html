@@ -1,0 +1,10 @@
+<script>
+  let url =
+    "https://www.baidu.com?from=top&username=xuke&rank=100&timestamp=10000132";
+  let reg = /([^=&?]+)=([^=&?]+)?/g;
+  let obj = {};
+  url.replace(reg, (a, b, c) => {
+    obj[b] = c;
+  });
+  console.log(obj)
+</script>

@@ -1,0 +1,12 @@
+<script>
+  let str =
+    "I'm a little sheep! aasd dkjfkdjf lklsjfldsjf kkjkfjkdjfkdj \r\n dfdfkdjdkfd \rttookk";
+  let reg = /(?:(\s+))([a-z])/g;
+  let result = str.replace(reg, function (a, b, c) {
+    console.log(arguments);
+    b = b + c.toLocaleUpperCase();
+    console.log("====%s===%s%====%s", a, b, c);
+    return b;
+  });
+  console.log("result====", result);
+</script>

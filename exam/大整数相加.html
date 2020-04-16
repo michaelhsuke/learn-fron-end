@@ -1,0 +1,30 @@
+<script>
+  let a = "12343434343443434";
+  let b = "343434343434343434343";
+  let num1Arr = a
+    .split("")
+    .reverse()
+    .map((item) => parseInt(item));
+  let num2Arr = b
+    .split("")
+    .reverse()
+    .map((item) => parseInt(item));
+  let result = new Array(Math.max(a.length, b.length) + 1);
+  result = result.map((item) => 0);
+  for (let i = 0, len = result.length; i < len; i++) {
+    num1Arr[i] = num1Arr[i] || 0;
+    num2Arr[i] = num2Arr[i] || 0;
+    result[i] = num1Arr[i] + num2Arr[i];
+    if (result[i] > 10) {
+      result[i] -= 10;
+      result[i + 1]++;
+    }
+  }
+  console.log(a, b);
+
+  result = result
+    .reverse()
+    .filter((item) => item)
+    .join("");
+  console.log(result);
+</script>
