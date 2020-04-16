@@ -1,0 +1,12 @@
+<script>
+  // let arr1 = ["c", "d"];
+  // console.log(["a", "b"].concat(arr1, "e"));
+  // console.log(arr1);
+  // console.log(arr1[Symbol.isConcatSpreadable]);
+
+  let arr1 = ["c", "d"];
+  arr1[Symbol.isConcatSpreadable] = false;
+  console.log(["a", "b"].concat(arr1, "e"));
+  console.log(arr1);
+  console.log(arr1[Symbol.isConcatSpreadable]);
+</script>

@@ -1,0 +1,10 @@
+<script>
+  class Even {
+    static [Symbol.hasInstance](value) {
+      return value % 2 === 0;
+    }
+  }
+
+  console.log(1 instanceof Even);
+  console.log(22 instanceof Even);
+</script>

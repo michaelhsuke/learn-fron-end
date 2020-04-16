@@ -1,0 +1,19 @@
+<script>
+  // class MyClass {
+  //   [Symbol.hasInstance](foo) {
+  //     return foo instanceof Array;
+  //   }
+  // }
+
+  // console.log([] instanceof new MyClass());
+  // console.log({} instanceof new MyClass());
+
+  class MyClass {
+    static [Symbol.hasInstance](foo) {
+      return foo instanceof Array;
+    }
+  }
+
+  console.log([] instanceof MyClass);
+  console.log({} instanceof MyClass);
+</script>
