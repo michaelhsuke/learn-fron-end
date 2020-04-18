@@ -27,7 +27,9 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "express-session": "^1.17.0",
-    "traceur": "^0.0.111"
+    "html-webpack-plugin": "^4.2.0",
+    "traceur": "^0.0.111",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "bootstrap": "^3.4.1",

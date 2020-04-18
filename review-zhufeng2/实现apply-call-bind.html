@@ -1,0 +1,13 @@
+<script>
+  Function.prototype.myCall = function (context) {
+    context = context ? Object(context) : window
+    context.fn = this
+    let args = []
+    for (let i = 1, len = arguments.length; i < len; i++) {
+      args.push('arguments[' + i + ']')
+    }
+    let result = eval(`context.fn(${args.join()})`)
+    delete context.fn
+    return result
+  }
+</script>
