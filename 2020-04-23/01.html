@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class TreeNode {
+        constructor(val) {
+          this.val = val;
+          this.left = null;
+          this.right = null;
+        }
+      }
+
+      function createNum(base = 100) {
+        return Math.ceil(Math.random() * (base - 1) + 1);
+      }
+
+      function createArr(num = 10) {
+        let i = 0;
+        let result = [];
+        while (i++ < num) {
+          result.push(createNum());
+        }
+        return result;
+      }
+
+      let myArr = [66, 66, 94, 37, 24, 19, 50, 12, 81, 42];
+      console.log(myArr);
+
+      function createTree(arr = [], parent = null) {
+        let root = null;
+        for (let val of arr) {
+          let node = new TreeNode(val);
+          if (root === null) {
+            root = node;
+            continue;
+          }
+          let parent = null;
+          let curNode = root;
+          while (curNode) {
+            parent = curNode;
+            if (val <= curNode.val) {
+              curNode = curNode.left;
+              flag = 1;
+            } else {
+              curNode = curNode.right;
+              flag = 2;
+            }
+          }
+          if (flag == 1) {
+            parent.left = node;
+          } else {
+            parent.right = node;
+          }
+        }
+
+        return root;
+      }
+
+      let tree = createTree(myArr);
+      // console.log(tree);
+
+      function prevVisit(root) {
+        if (root) {
+          console.log(root.val);
+          prevVisit(root.left);
+          prevVisit(root.right);
+        }
+      }
+      prevVisit(tree)
+    </script>
+  </body>
+</html>
