@@ -8,17 +8,40 @@
 </head>
 
 <body>
-  <script src="https://cdn.bootcss.com/vue/2.6.11/vue.js"></script>
-  <div id="root">
+  <script src="./vue.js"></script>
+  <div id="root" v-show="firstName">
     {{ fullName }}
+    <div v-for="item in myNodes" :key="item.id">
+      <input type="checkbox" :value="item.check" > {{item.check}}
+    </div>
+    <div @click="deleteNode">删除</div>
+    <hello></hello>
+    <!-- <smile></smile> -->
   </div>
   <script>
+    Vue.component('hello', {
+      data() {
+        return { msg: 'okkk' }
+      },
+      template: `<div class="hello">{{ msg }}</div>`
+    })
+
     new Vue({
       el: '#root',
+      components: {
+        smile: {
+          template: '<div>smile</div>'
+        }
+      },
       data() {
         return {
           firstName: 'XU',
-          lastName: 'KE'
+          lastName: 'KE',
+          myNodes: [
+            { check: true, id: 0 },
+            { check: false, id: 1 },
+            { check: true, id: 2 },
+          ]
         }
       },
       computed: {
@@ -28,9 +51,15 @@
       },
       mounted() {
         // console.log('okkkk')
+        console.log(this)
         setTimeout(() => {
           this.firstName = 'HSU'
         }, 3000)
+      },
+      methods: {
+        deleteNode() {
+          this.myNodes.shift()
+        }
       }
     })
   </script>
