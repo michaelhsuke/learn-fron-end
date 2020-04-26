@@ -1,0 +1,89 @@
+<script>
+  class MyPromise {
+    constructor(executor) {
+      this.status = "pending";
+      this.value = null;
+      this.resolvedCallbacks = [];
+      this.rejectedCallbacks = [];
+
+      const resolveFn = (result) => {
+        setTimeout(() => {
+          if (this.status === "pending") {
+            this.status = "resolved";
+            this.value = result;
+            try {
+              this.resolvedCallbacks.forEach((fn) => {
+                fn(result);
+              });
+            } catch (e) {
+              rejectFn(e);
+            }
+          }
+        }, 0);
+      };
+
+      const rejectFn = (error) => {
+        setTimeout(() => {
+          if (this.status === "pending") {
+            this.status = "rejected";
+            this.value = error;
+            try {
+              this.rejectedCallbacks.forEach((fn) => {
+                fn(result);
+              });
+            } catch (e) {
+              // rejectFn
+              console.log("error", e);
+            }
+          }
+        }, 0);
+      };
+
+      try {
+        executor(resolveFn, rejectFn);
+      } catch (e) {
+        rejectFn(e);
+      }
+    }
+
+    then(fufiledCallback, rejectedCallback) {
+      return new MyPromise((resolve, reject) => {
+        this.resolvedCallbacks.push(() => {
+          var x = fufiledCallback(this.value);
+          if (x instanceof MyPromise) {
+            x.then(resolve);
+          } else {
+            resolve(x);
+          }
+        });
+
+        this.rejectedCallbacks.push(() => {
+          var x = rejectedCallback(this.value);
+          if (x instanceof MyPromise) {
+            x.then(resolve);
+          } else {
+            reject(x);
+          }
+        });
+      });
+    }
+  }
+
+  var p1 = new MyPromise((resolve, reject) => {
+    console.log("hello");
+    reject(300);
+    resolve(100);
+  })
+    .then(
+      (res) => {
+        console.log(res);
+        return 200;
+      },
+      (error) => {
+        console.log(error);
+      }
+    )
+    .then((res) => {
+      console.log(res);
+    });
+</script>

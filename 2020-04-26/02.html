@@ -1,0 +1,118 @@
+<script>
+  class MyPromise {
+    constructor(executor) {
+      this.status = "pending";
+      this.value = undefined;
+      this.fulfilledAry = [];
+      this.rejectedAry = [];
+
+      const resolveFn = (result) => {
+        let timer = setTimeout(() => {
+          clearTimeout(timer);
+          timer = null;
+          if (this.status === "pending") {
+            this.status = "fulfilled";
+            this.value = result;
+            this.fulfilledAry.forEach((fn) => fn(this.value));
+          }
+        }, 0);
+      };
+
+      const rejectFn = (result) => {
+        let timer = setTimeout(() => {
+          clearTimeout(timer);
+          timer = null;
+          if (this.status === "pending") {
+            this.status = "rejected";
+            this.value = result;
+            this.rejectedAry.forEach((fn) => fn(this.value));
+          }
+        }, 0);
+      };
+
+      try {
+        executor(resolveFn, rejectFn);
+      } catch (e) {
+        rejectFn(e);
+      }
+    }
+
+    then(fulfilledCallback, rejectedCallback) {
+      return new MyPromise((resolve, reject) => {
+        typeof fulfilledCallback != "function"
+          ? (fulfilledCallback = (result) => result)
+          : null;
+        typeof rejectedCallback != "function"
+          ? (rejectedCallback = (err) => {
+              throw new Error(err);
+            })
+          : null;
+
+        this.fulfilledAry.push(() => {
+          try {
+            let x = fulfilledCallback(this.value);
+            x.then instanceof MyPromise ? x.then(resolve, reject) : resolve(x);
+          } catch (e) {
+            reject(e);
+          }
+        });
+
+        this.rejectedAry.push(() => {
+          try {
+            let x = rejectedCallback(this.value);
+            x.then instanceof MyPromise ? x.then(resolve, reject) : resolve(x);
+          } catch (e) {
+            reject(e);
+          }
+        });
+      });
+    }
+
+    catch(rejectedCallback) {
+      return this.then(null, rejectedCallback);
+    }
+
+    static resolve(result) {
+      return new MyPromise((resolve) => {
+        resolve(result);
+      });
+    }
+
+    static reject(err) {
+      return new MyPromise((resolve, reject) => {
+        reject(err);
+      });
+    }
+
+    static all(fns) {
+      return new MyPromise((resolve, reject) => {
+        let count = 0;
+        let result = [];
+        for (let i = 0, len = fns.length; i < len; i++) {
+          fns[i].then((res) => {
+            result[i] = res;
+            count++;
+            if (count === fns.length) {
+              resolve(result);
+            }
+          }, reject);
+        }
+      });
+    }
+  }
+
+  console.log(MyPromise.resolve(100));
+  let p1 = MyPromise.resolve(100);
+  let p2 = MyPromise.resolve(200);
+  let p3 = MyPromise.resolve(300);
+  let p4 = MyPromise.reject("error");
+
+  MyPromise.all([p1, p2, p3, p4]).then(
+    (res) => {
+      console.log(res);
+    },
+    (err) => {
+      console.log(err);
+    }
+  );
+</script>
