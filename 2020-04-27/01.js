@@ -54,12 +54,32 @@ function deepClone(obj) {
 // })
 
 var obj3 = {
-  name: 'xuke'
+  name: 'xuke',
+  a: Symbol('a'),
+  [Symbol('b')]: 'bbbb'
 }
 
-var obj4 = Object.freeze(obj3)
+// var obj4 = Object.freeze(obj3)
+obj4 = obj3
 console.log(obj4)
-obj4.name = 'michael'
-console.log(obj4)
-obj4 = 'todo'
-console.log(obj4)
+// obj4.name = 'michael'
+// console.log(obj4)
+// obj4 = 'todo'
+// console.log(obj4)
+
+console.dir(Object)
+console.log(Object.getOwnPropertyDescriptors(obj4));
+console.log(Object.getOwnPropertyDescriptor(obj4, 'name'));
+console.log(Object.getOwnPropertyNames(obj4))
+console.log(Object.getOwnPropertySymbols(obj4));
+
+console.log(Object.keys(obj4))
+console.log(Object.values(obj4))
+console.log(Object.entries(obj4))
+console.log(Object.is(NaN, NaN))
+console.log(Object.is(+0, -0))
+console.log(Object.is(obj, obj3))
+console.log(Object.is(obj3, obj3))
+console.log(Object.getPrototypeOf(obj3))
+
+
