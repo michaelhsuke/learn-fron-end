@@ -1,0 +1,66 @@
+<script>
+  class TreeNode {
+    constructor(val) {
+      this.val = val;
+      this.left = null;
+      this.right = null;
+    }
+  }
+
+  const createTree = (arr) => {};
+
+  // 非递归算法
+  const preOrder = (root) => {
+    let s = [],
+      result = [],
+      p = root;
+    s.push(p);
+    while (s.length) {
+      p = s.pop();
+      result.push(p.val);
+
+      if (p.right) {
+        s.push(p.right);
+      }
+
+      if (p.left) {
+        s.push(p.left);
+      }
+    }
+  };
+
+  const inOrder = root => {
+    let s = [], result = [], p = root
+    do {
+      while (p) {
+        s.push(p)
+        p = p.left
+      }
+      
+      p = s.pop()
+      result.push(p.val)
+      p = p.right ? p.right : null
+    } while (s.length || p)
+  }
+
+  const postOrder = root => {
+    let s = [], result = [], p = root, flag = 1, t
+    do {
+      while (p) {
+        s.push(p)
+        p = p.left
+      }
+      p = s.pop()
+      result.push(p.val)
+      if (s.length) {
+        t = s.pop()
+        if (t.right == p && flag == 1) {
+          result.push(t.val)
+        } else {
+          flag = 0
+          s.push(t)
+        }
+      }
+    } while (s.length)
+  }
+</script>
