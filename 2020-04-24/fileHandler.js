@@ -1,5 +1,6 @@
 // const path = '/Users/xuke/projects/js-unicom/woService/woService-www/src/site'
-const paths = ['/Users/xuke/projects/js-unicom/woService/woService-www/src/site', '/Users/xuke/projects/js-unicom/wo-activity/src/actPage', '/Users/xuke/projects/js-unicom/vue-wo-activity/src']
+// const paths = ['/Users/xuke/projects/js-unicom/woService/woService-www/src/site', '/Users/xuke/projects/js-unicom/wo-activity/src/actPage', '/Users/xuke/projects/js-unicom/vue-wo-activity/src']
+const paths = ['/Users/xuke/projects/js-unicom/woService/woService-www/src/site']
 var fs = require('fs');
 var join = require('path').join;
 var reg = /\/actPage\/activity\/index.*\.html\??#([a-zA-Z0-9_\-\%\/\?\#\&]*)([\,\;\'\"\s]*)/g
@@ -10,7 +11,7 @@ function handleFile(filepath) {
   let pos = filepath.lastIndexOf('.')
   let ext = filepath.slice(pos)
 
-  if (['.gif', '.png', '.jpg', '.jpeg', '.mp4', '.java'].includes(ext)) {
+  if (['.gif', '.png', '.jpg', '.jpeg', '.mp4', '.java', '.eot', '.ttf', '.woff', '.map', '.zip'].includes(ext)) {
     return
   }
   try {
