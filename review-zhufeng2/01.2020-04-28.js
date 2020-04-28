@@ -34,7 +34,7 @@ console.log(typeof a)
 // console.log(isNaN(null));
 // console.log(isNaN({ a: 1 }))
 /**
- * 1.NaN: Not a Number
+ * 1. NaN: Not a Number
  * （1）isNaN的检测机制
  * 首先判断待检测值是否为数值类型，如果不是，先转换为数值类型
  * （2）基本数据类型转数值
@@ -80,6 +80,13 @@ var reg = /^(\d|([1-9]\d+))(\.\d+)?$/g
 console.log(reg.toString(), Number(reg.toString()))  // /^(\d|([1-9]\d+)(\.\d+)?)/g NaN
 
 /**
- * （4）
+ * （4）parseInt/parseFloat
+ * 等同于Number,和Number的区别在于字符串转换
+ * Number：出现任意非有效数字字符，结果为NaN
+ * parseInt: 把字符串开始部分的整数部分解析出来
+ * parseFloat: 把字符串开始部分的浮点数部分解析出来
  */
-
+console.log(parseInt('13.4px'))  // 13
+console.log(Number('13.4px'))  // NaN
+console.log(parseInt(''))  // NaN
+console.log(Number(''))  // 0
