@@ -173,4 +173,46 @@
 // [] null {} /aaa/ => typeof => 结果都是'object'
 // switch case 中的每一种case都是基于'==='来比较的
 
-console.log(null == undefined)
+// console.log(null == undefined)
+
+/**
+ * （五）创建变量并赋值的详细步骤
+ * 例：var n = 10
+ * - 变量提升阶段（js代码未执行前），先把变量n声明，var n，默认值为undefined
+ * - 开辟一个位置或空间，把值存储起来
+ * - 让变量和值关联起来，基于等号完成赋值，这一步成为变量的定义
+ */
+
+ /**
+  * （六）'=='比较时，如果左右两边的数据类型不一样，则先转化为相同的类型，再进行比较
+  * 1. 对象==对象：不一定相等，因为对象操作的是引用地址，地址不相同则不同
+  * 2. 对象==数字：把对象转换为数字
+  * 3. 对象==布尔：把对象转换为数字，把布尔也转换为数字
+  */
+//  console.log({a: 1} == true)
+//  console.log([1] == true)
+//  console.log([0] == false)
+//  console.log([null] == false)
+//  console.log([undefined] == false)
+//  console.log(Number(undefined))
+//  console.log([''] == false)
+//  console.log({ a: 1} == false)
+//  var obj = { a: 1 }
+//  console.log(Number(obj))
+
+//  console.log(Number([undefined]))
+//  console.log(parseInt(undefined))
+//  console.log(Number([null]))
+//  console.log(parseInt(null))
+//  console.log(Number([0]))
+//  console.log(parseInt(0))
+// console.log(parseInt(''))
+
+// 4. 对象 == 字符串：把对象转换为数字，把字符串也转换为数字
+console.log({a: 1} == 'aaaa')
+console.log(Object.is({a: 1}, 'aaaa'))
+console.log(Object.is(1, '1'))
+console.log(Object.is(+0, -0))
+
+
+
