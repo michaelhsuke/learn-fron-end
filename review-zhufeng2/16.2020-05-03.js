@@ -69,4 +69,26 @@ class MyPromise {
       })
     })
   }
+
+  catch(rejectCallback) {
+    return this.then(null, rejectCallback)
+  }
+
+  static all(promiseArr) {
+    var n = promiseArr.length
+    var result = []
+    var count = 0
+    return new MyPromise((resolve, reject) => {
+      for (var i = 0; i < n; i++) {
+        promiseArr[i].then(res => {
+          result[i] = res
+          count++
+          if (count === n) {
+            resolve
+          }
+        }, reject)
+      }
+    })
+    
+  }
 }
