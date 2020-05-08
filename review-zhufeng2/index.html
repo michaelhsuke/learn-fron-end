@@ -7,4 +7,16 @@
   </head>
   <body></body>
   <script src="./37.2020-05-07.js"></script>
+
+  <div>
+    <div id="name">xuke</div>
+  </div>
+  <script>
+    var $name = document.querySelector("#name");
+    console.log($name);
+    var $age = document.createElement('div')
+    $age.innerHTML = '31'
+    $container = $name.parentNode
+    $container.insertBefore($age, $name)
+  </script>
 </html>
