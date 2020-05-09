@@ -44,3 +44,54 @@
 // var proxy = new Proxy(target, handler);
 // proxy.foo = 'bar' // 不会生效
 // console.log(proxy.foo)
+
+
+// var proto = {}
+
+// var p = new Proxy({}, {
+//   getPrototypeOf(target) {
+//     return proto
+//   }
+// })
+
+// console.log(Object.getPrototypeOf(p) === proto)
+
+// Object.getOwnPropertyNames
+// Object.getOwnPropertySymbols
+// Object.keys
+// for...in 
+
+
+// var target = {
+//   a: 1,
+//   b: 2,
+//   c: 3
+// }
+
+// var proxy = new Proxy(target, {
+//   ownKeys(target) {
+//     console.log('ownKeys===')
+//     return ['a']
+//   }
+// })
+
+// for (var i in proxy) {
+//   console.log(proxy)
+// }
+
+
+var target = {
+  _bar: 'foo',
+  _prop: 'bar',
+  prop: 'baz'
+}
+
+var proxy = new Proxy(target, {
+  ownKeys(target) {
+    return Reflect.ownKeys(target).filter(key => key[0] !== '_')
+  }
+})
+
+for (var val of Object.keys(proxy)) {
+  console.log(val)
+}
