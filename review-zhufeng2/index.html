@@ -5,10 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <ul id="mylist">
+      <li><a href="https://www.mi.com">xiaomi</a></li>
+      <li><a href="https://www.miui.com">miui</a></li>
+    </ul>
+  </body>
+  <script>
+    var data = [
+      {
+        name: "tom",
+        url: "https://www.baidu.com",
+      },
+      {
+        name: "ann",
+        url: "https://www.techFE.com",
+      },
+    ];
+
+    function appendNode($node, data) {
+      var a, li;
+      for (var i = 0, max = data.length; i < max; i++) {
+        a = document.createElement("a");
+        li = document.createElement("li");
+        a.href = data[i].url;
+
+        a.appendChild(document.createTextNode(data[i].name));
+        li.appendChild(a);
+        $node.appendChild(li);
+      }
+    }
+  </script>
   <script src="./37.2020-05-07.js"></script>
 
-  <div>
+  <!-- <div>
     <div id="name">xuke</div>
   </div>
   <script>
@@ -18,5 +48,5 @@
     $age.innerHTML = '31'
     $container = $name.parentNode
     $container.insertBefore($age, $name)
-  </script>
+  </script> -->
 </html>
