@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .demo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f00;
+  }
+</style>
+<body>
+  <div class="demo"></div>
+  <script>
+    var text = '这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本这是一段很长的文本'
+    var totalTextLen = text.length
+    var content = ''
+    var formatStr = function () {
+      var elem = document.getElementsByClassName('demo')[0]
+      var lineNum = 2
+      var baseWidth = window.getComputedStyle(elem).width
+      var baseFontSize = window.getComputedStyle(elem).fontSize
+      var lineWidth = +baseWidth.slice(0, -2)
+      baseFontSize = +baseFontSize.slice(0, -2)
+      var strNum = Math.floor(lineWidth / baseFontSize)
+      var strTotalNum = lineNum * strNum
+      var lastIndex = strTotalNum - totalTextLen
+      if (totalTextLen > strTotalNum) {
+        content = text.slice(0, lastIndex - 3).concat('...')
+      } else {
+        content = text
+      }
+      elem.innerHTML = content
+
+      // console.log(baseWidth, baseFontSize, lineWidth, strNum)
+
+    }
+
+    formatStr()
+
+
+  </script>
+</body>
+
+</html>

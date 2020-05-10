@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box {
+      padding: 20px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #f00;
+      /* box-sizing: border-box; */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+  <script>
+    var box = document.getElementById('box')
+    var style = window.getComputedStyle(box)
+    alert(box.offsetHeight)
+    alert(style.height)
+    
+    // console.log(style.paddingTop)
+    // console.log(style.paddingBottom)
+  </script>
+</body>
+
+</html>
