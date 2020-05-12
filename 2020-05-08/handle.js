@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const iconv = require('iconv-lite')
-const dir = '/Users/xuke/Downloads/dien'
+const dir = '/Users/xuke/projects/js-unicom/woService/woService-www/src/site/service/jf'
 
 
 
@@ -26,24 +26,22 @@ function getExt(filepath) {
 }
 
 var fileExts = new Set()
-var okExts = ['css', 'php', 'htm', 'xml', 'js']
+var okExts = ['css', 'php', 'htm', 'xml', 'js', 'html']
 
 handleFile(dir, function (filepath) {
   var ext = getExt(filepath)
-  fs.readFile(filepath, (err, data) => {
-    if (err) {
-      return 
-    }
-    data = iconv.decode(data, 'GBK')
-    fs.writeFileSync(filepath, data)
-  })
-  // fs.readFile(filepath, (err, data) => {
-  //   var content = iconv.decode(data, 'GBK')
-  //   console.log(content)
-  //   fs.writeFileSync()
-  // })
-  // var ext = getExt(filepath)
-  // fileExts.add(ext)
+  if (okExts.includes(ext)) {
+    var content = fs.readFileSync(filepath, { encoding: 'utf-8' })
+    // console.log(content)
+    var reg = /(\d{1,})px/g
+    content = content.replace(reg, function (a, b) {
+      var c = (b / 37.5).toFixed(4)
+      console.log(c)
+      return c + 'rem'
+    })
+    fs.writeFileSync(filepath, content)
+  }
+
 })
 
 console.log(fileExts)
