@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="square" width="10" height="10"></canvas>
+    <canvas id="circle" width="10" height="10"></canvas>
+
+    <script>
+      var canvas = document.getElementById("square");
+      var context = canvas.getContext("2d");
+      context.fillStyle = "#f00";
+      context.fillRect(0, 0, 10, 10);
+
+      canvas = document.getElementById("circle");
+      context = canvas.getContext("2d");
+      context.beginPath();
+      context.arc(5, 5, 5, 0, 2 * Math.PI, true);
+      context.fillStyle = "#00f";
+      context.fill();
+    </script>
+  </body>
+</html>

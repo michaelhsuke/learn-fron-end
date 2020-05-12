@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- https://www.runoob.com/w3cnote/html5-canvas-intro.html -->
+    <canvas
+      id="canvas"
+      width="400"
+      height="400"
+      style="border: 1px solid #f00;"
+    ></canvas>
+
+    <script>
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      // console.table(c);
+      // c.beginPath();
+      // c.moveTo(100, 100);
+      // c.lineTo(200, 200);
+      // c.lineTo(100, 200);
+      // c.closePath()
+      // c.strokeStyle = "red";
+      // c.lineWidth = 10;
+
+      // c.stroke();
+      // c.fill();
+
+      // function polygon(c, n, x, y, r, angle, counterclockwise) {
+      //   console.log('output==========')
+      //   angle = angle || 0;
+      //   counterclockwise = !!counterclockwise;
+      //   const [a, b] = [x + r * Math.sin(angle), y - r * Math.cos(angle)];
+      //   console.log(a, b);
+      //   c.moveTo(a, b);
+
+      //   var delta = (2 * Math.PI) / n;
+      //   for (var i = 0; i < n; i++) {
+      //     // console.log(angle);
+      //     angle += counterclockwise ? -delta : delta;
+      //     const [x2, y2] = [x + r * Math.sin(angle), y - r * Math.cos(angle)];
+      //     console.log(x2, y2);
+      //     c.lineTo(x2, y2);
+      //   }
+      //   c.closePath();
+      //   c.fill();
+      // }
+      // polygon(c, 3, 50, 70, 50);
+      // polygon(c, 4, 150, 60, 50, Math.PI / 4);
+
+      // c.fillStyle = "rgb(200, 0, 0)";
+      // c.fillRect(10, 10, 55, 50);
+
+      // c.fillStyle = "rgba(0, 0, 200, .5)";
+      // c.fillRect(30, 30, 55, 50);
+
+      // c.fillRect(10, 10, 100, 50);
+      // c.strokeRect(10, 70, 100, 50);
+      // c.clearRect(15, 15, 50, 25);
+
+      // c.beginPath()
+      // c.moveTo(50, 50)
+      // c.lineTo(200, 50)
+      // c.closePath()
+      // c.stroke()
+
+      // c.beginPath()
+      // c.arc(50, 50, 40, 0, Math.PI, false)
+      // c.stroke()
+
+      // ctx.beginPath();
+      // ctx.moveTo(50, 50);
+      // //参数1、2：控制点1坐标   参数3、4：控制点2坐标  参数4：圆弧半径
+      // ctx.arcTo(200, 50, 200, 200, 100);
+      // ctx.lineTo(200, 200);
+      // // ctx.stroke();
+      // ctx.fill()
+
+      // ctx.beginPath();
+      // ctx.rect(50, 50, 10, 10);
+      // ctx.rect(200, 50, 10, 10);
+      // ctx.rect(200, 200, 10, 10);
+      // ctx.fill();
+
+      ctx.beginPath();
+      ctx.moveTo(10, 200); //起始点
+      var cp1x = 40,
+        cp1y = 100; //控制点
+      var x = 200,
+        y = 200; // 结束点
+      //绘制二次贝塞尔曲线
+      ctx.quadraticCurveTo(cp1x, cp1y, x, y);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.rect(10, 200, 10, 10);
+      ctx.rect(cp1x, cp1y, 10, 10);
+      ctx.rect(x, y, 10, 10);
+      ctx.fill();
+    </script>
+  </body>
+</html>
