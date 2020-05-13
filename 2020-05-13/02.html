@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自由落体</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      var w, h; // 窗口宽高
+      var ballNum = 1;
+      var GRAVITY = 0.8;
+      var FIRCTION = 0.9;
+      var ballArray = [];
+      var colorArray = [
+        "rgb(65, 105, 225)",
+        "rgb(65, 166, 225)",
+        "rgb(65, 214, 225)",
+        "rgb(65, 225, 190)",
+        "rgb(65, 225, 132)",
+      ];
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      function getWindowSize() {
+        w = window.innerWidth;
+        h = window.innerHeight;
+        canvas.width = w;
+        canvas.height = h;
+      }
+
+      function randomIntForRange(lower, upper) {
+        return Math.floor(Math.random() * (upper - lower)) + lower;
+      }
+
+      function init(clientX, clientY) {
+        for (var i = 0; i < ballNum; i++) {
+          var radius = randomIntForRange(10, 30);
+          var x = clientX;
+          var y = clientY;
+          var dx = randomIntForRange(-5, 5);
+          var dy = randomIntForRange(1, 2);
+          var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+          ballArray.push(new Ball(x, y, dx, dy, radius, color));
+        }
+      }
+
+      function animation() {
+        requestAnimationFrame(animation);
+        //清除每个小球的运动痕迹
+        // ctx.clearRect(0, 0, w, h);
+        for (let n of ballArray) {
+          n.update();
+        }
+      }
+
+      function Ball(x, y, dx, dy, radius, color) {
+        
+        this.x = x;
+        this.y = y;
+        this.dx = dx;
+        this.dy = dy;
+        this.radius = radius;
+        this.color = color;
+
+        this.draw = function () {
+          console.log(this.x.toFixed(0), this.y.toFixed(0), this.dx.toFixed(0), this.dy.toFixed(0))
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+          ctx.fillStyle = this.color;
+          ctx.closePath();
+          ctx.fill();
+        };
+
+        //实时更新动画
+        this.update = function () {
+          //y 轴临界值判断
+          //如果小球在下降过程中到达底部时(及绘制小球的中心坐标位置超出窗口高度时)
+          // alert(this.dy)  //不太清楚的可以 alert 一下
+          if (this.y + this.radius + this.dy + GRAVITY > h) {
+            //小球 y轴方向改变 （往上）
+            this.dy = -this.dy;
+            this.dy *= FIRCTION;
+            this.dx *= FIRCTION;
+          } else {
+            //小球  y轴坐标递增 (往下)
+            this.dy += GRAVITY;
+          }
+          //x 轴临界值判断
+          if (
+            this.x + this.radius + this.dx >= w ||
+            this.x - this.radius + this.dx <= 0
+          ) {
+            //小球 x轴方向改变
+            this.dx = -this.dx;
+          }
+          //小球 x,y坐标位置改变（因为之前的 dy,dx有取反过，所以此处会实现上下，左右的运动路线）
+          this.y += this.dy;
+          this.x += this.dx;
+          //根据改变后的坐标位置绘图
+          this.draw();
+        };
+      }
+
+      window.onload = function () {
+        getWindowSize();
+
+        document.addEventListener("mousedown", function (event) {
+          ctx.clearRect(0, 0, w, h);
+          init(event.clientX, event.clientY);
+        });
+        animation();
+      };
+    </script>
+  </body>
+</html>
