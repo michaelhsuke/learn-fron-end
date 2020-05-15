@@ -53,13 +53,37 @@
 // console.log(set[Symbol.iterator] === set.values)
 // console.log([...set])
 
-var go = function* () {
-  yield 1
-  yield 2
-  yield 3
-}
+// var go = function* () {
+//   yield 1
+//   yield 2
+//   yield 3
+// }
 
-var it = go()
-// console.log(it[Symbol.iterator])
-// console.log(it.next())
-console.log([...it])
+// var it = go()
+// // console.log(it[Symbol.iterator])
+// // console.log(it.next())
+// console.log([...it])
+
+// const toArray = (() => Array.from ? Array.from : obj => [].slice.call(obj) )()
+
+
+// function toArray = (function () {
+//   return function (obj) { return [].slice.call(obj) }
+// })()
+
+// console.log(toArray({ length: 1 }))
+
+// var a = { length: 3 }
+// console.log([].slice.call(a))
+
+// function typesOf() {
+//   return Array.from(arguments, x => typeof x)
+// }
+
+// console.log(typesOf(null, 1, 'hello', NaN))
+
+var letter = [...'abc']
+var entries = letter.entries()
+console.log(entries.next().value)
+console.log(entries.next().value)
+console.log(entries.next().value)
