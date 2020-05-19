@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+  <style>
+    #container {
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 600px;
+      position: relative;
+      height: 1000px;
+    }
+
+    .item {
+      float: left;
+      width: 200px;
+      box-sizing: border-box;
+      display: inline-block;
+      border: 1px solid #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn">click Me!</button>
+  <div id="container"></div>
+  
+  <script>
+    var $container = document.getElementById('container')
+    var $btn = document.getElementById('btn')
+    var heights = [0, 0, 0]
+    $btn.addEventListener('click', generateDom)
+    function randomHeight(base) {
+      base = base || 200
+      return Math.floor(Math.random() * (200 - 10)) + 10
+    }
+
+    function generateDom() {
+      var height = randomHeight()
+      var $el = document.createElement('div')
+      $el.className = "item"
+      $el.style.height = height + 'px'
+      $el.style.position = 'absolute'
+
+      // 调整元素位置
+      adjustPos($el, height)
+      $container.appendChild($el);
+    }
+
+    function adjustPos($el, height) {
+      // 寻找三列高度最低的，获取高度和坐标
+      var min = Math.min(...heights)
+      var indexOfMin = heights.indexOf(min)
+      var max = Math.max(...heights)
+      console.log(min, indexOfMin, max)
+      var left = 200 * indexOfMin
+      
+      var top = min
+      $el.style.top = top + 'px'
+      $el.style.left = left + 'px'
+      heights[indexOfMin] += height
+    }
+  </script>
+</body>
+
+</html>

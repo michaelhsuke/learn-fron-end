@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06.html</title>
+</head>
+
+<body>
+
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <script>
+    var canvas = document.getElementById('canvas')
+    var ctx = canvas.getContext('2d')
+
+    // ctx.beginPath()
+    // ctx.moveTo(10, 200)
+    // var cp1x = 40, cp1y = 100
+    // var x = 200, y = 200
+
+    // ctx.quadraticCurveTo(cp1x, cp1y, x, y)
+    // ctx.stroke()
+
+    // ctx.beginPath()
+    // ctx.fillRect(10, 200, 10, 10)
+    // ctx.fillRect(cp1x, cp1y, 10, 10)
+    // ctx.fillRect(x, y, 10, 10)
+    // ctx.fill()
+
+    // for (var i = 0; i < 6; i++) {
+    //   for (var j = 0; j < 6; j++) {
+    //     ctx.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' +
+    //       Math.floor(255 - 42.5 * j) + ',0)';
+    //     ctx.fillRect(j * 50, i * 50, 50, 50);
+    //   }
+    // }
+
+    // function randomInt(from, to){
+    //   return parseInt(Math.random() * (to - from + 1) + from);
+    // }
+
+    // for (var i = 0; i < 6; i++) {
+    //   for (var j = 0; j < 6; j++) {
+    //     ctx.strokeStyle = `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+    //     ctx.strokeRect(j * 50, i * 50, 40, 40);
+    //   }
+    // }
+
+    // var lineCaps = ["butt", "round", "square"];
+
+    // for (var i = 0; i < 3; i++) {
+    //   ctx.beginPath();
+    //   ctx.moveTo(20 + 30 * i, 30);
+    //   ctx.lineTo(20 + 30 * i, 100);
+    //   ctx.lineWidth = 20;
+    //   ctx.lineCap = lineCaps[i];
+    //   ctx.stroke();
+    // }
+
+    // ctx.beginPath();
+    // ctx.moveTo(0, 30);
+    // ctx.lineTo(300, 30);
+
+    // ctx.moveTo(0, 100);
+    // ctx.lineTo(300, 100)
+
+    // ctx.strokeStyle = "red";
+    // ctx.lineWidth = 1;
+    // ctx.stroke();
+
+
+
+    var lineJoin = ['round', 'bevel', 'miter'];
+    ctx.lineWidth = 20;
+
+    for (var i = 0; i < lineJoin.length; i++) {
+      ctx.lineJoin = lineJoin[i];
+      ctx.beginPath();
+      ctx.moveTo(50, 50 + i * 50);
+      ctx.lineTo(100, 100 + i * 50);
+      ctx.lineTo(150, 50 + i * 50);
+      ctx.lineTo(200, 100 + i * 50);
+      ctx.lineTo(250, 50 + i * 50);
+      ctx.stroke();
+    }
+  </script>
+
+</body>
+
+</html>

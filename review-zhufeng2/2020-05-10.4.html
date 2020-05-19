@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 200px;
+      height: 100px;
+      border: 1px solid #f00;
+    }
+
+    .inner {
+      height: 1000px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="box">
+  </div>
+
+  <script>
+    function debounce(fn, wait = 1000) {
+      var timer = null
+      var context = this
+
+      return function (event) {
+        if (timer) {
+          clearTimeout(timer)
+          timer = null
+        }
+        setTimeout(() => {
+          fn.apply(context, event)
+        }, wait)
+      }
+    }
+
+    var dom = document.getElementById('box')
+    var count = 0
+    dom.addEventListener('touchmove', debounce(function () {
+      console.log(count++)
+    }, 1000))
+
+  </script>
+
+</body>
+
+</html>
