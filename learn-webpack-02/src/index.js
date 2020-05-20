@@ -1,3 +1,4 @@
+import './test.ts'
 let s = 'hello'
 console.log(s)
 
@@ -10,3 +11,4 @@ function* gen() {
 for (let i of gen()) {
   console.log(i)
 }
+

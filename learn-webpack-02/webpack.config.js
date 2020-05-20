@@ -21,6 +21,10 @@ const webpackConfig = {
           plugins: ['@babel/plugin-transform-runtime'],
           // plugins: ['@babel/plugin-transform-runtime', '@babel/plugin-propsal-class-properties'],
         }
+      },
+      {
+        test: /\.ts$/,
+        use: ['ts-loader'],
       }
     ]
   },
