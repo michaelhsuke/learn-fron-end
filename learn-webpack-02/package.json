@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile": "npx babel src/index.js -o compiled.js",
     "dev": "webpack-dev-server --progress --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
