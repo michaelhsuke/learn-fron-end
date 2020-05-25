@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #f00;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">hello</div>
+  <script>
+    var $container = document.querySelector('#container')
+    $container.onclick = function () {
+      setTimeout(function () {
+        $container.innerHTML = 'xuke'
+      })
+    }
+  </script>
+
+  
+</body>
+</html>

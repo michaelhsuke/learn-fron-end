@@ -51,3 +51,6 @@ Parent.prototype.minus = function () {
 obj.minus()
 
 
+var s = new Set().add('a').add('b').add('c')
+console.log(s[Symbol.iterator] === s.keys)
+
