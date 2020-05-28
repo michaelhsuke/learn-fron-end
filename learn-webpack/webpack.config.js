@@ -14,6 +14,11 @@ module.exports = {
     open: true,
     port: 8888
   },
+  resolveLoader: {
+    modules: [
+      'node_modules', path.resolve(__dirname, 'loader')
+    ]
+  },
   module: {
     rules: [
       {
@@ -29,6 +34,17 @@ module.exports = {
             loader: 'less-loader'
           }
         ]
+      },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'test-loader',
+          options: {
+            presets: [
+              '@babel/preset-env'
+            ]
+          }
+        }
       }
     ]
   },

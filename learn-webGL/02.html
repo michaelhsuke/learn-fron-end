@@ -1,0 +1,53 @@
+<script>
+  function sendRequest(urls, max, callback) {
+    var runQueue = [];
+    var waitQueue = Object.assign({}, urls);
+    var result = {
+      // url { maxCount: 0, status, result, reason }
+    };
+    var curRequestCount = 0;
+    // runQueue = waitQueue.splice(0, max);
+    while (waitQueue.length) {
+      // runQueue.forEach(url => {
+      //   fetch(url).then(res => {
+      //     result[url] = {
+      //       status: 'ok',
+      //       result: res
+      //     }
+
+      //   }).catch(reason => {
+
+      //   })
+      // })
+      if (curRequestCount >= max) {
+        continue
+      }
+      var pickOne = waitQueue.splice(0, 1);
+      if (pickOne) {
+        curRequestCount++;
+        fetch(pickOne)
+          .then((res) => {
+            result[url] = {
+              status: "ok",
+              result: res,
+            };
+            curRequestCount--;
+          })
+          .catch((reason) => {
+            result[url] = result[url] || {};
+            const { status, requestCount } = result;
+            if (status === "fail") {
+              if (requestCount <= 3) {
+                result[url]["requestCount"]++;
+                waitQueue.push(url); // 放到队列继续请求
+              } else {
+                curRequestCount--;
+              }
+            }
+          });
+      }
+    }
+    console.log(result)
+    callback()
+  }
+</script>
