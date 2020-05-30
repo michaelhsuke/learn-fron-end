@@ -9,12 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelhsuke/learn-fron-end.git"
-  },
+  "repository": "git+https://github.com/michaelhsuke/learn-fron-end.git",
   "keywords": [],
-  "author": "",
+  "author": "徐可 <xuk21@chinaunicom.cn>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/michaelhsuke/learn-fron-end/issues"
