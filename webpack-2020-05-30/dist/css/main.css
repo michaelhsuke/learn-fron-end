@@ -1,0 +1,23 @@
+body div {
+  border: 1px solid #f60;
+}
+
+* {
+  padding: 0;
+  margin: 0
+}
+body {
+  background-color: red;
+  /* transform: rotate(45deg); */
+ 
+}
+
+div {
+  width: 300px;
+  height: 600px;
+  background: url(https://weixin.10010js.com/e286f279bb3b9ff83926db8ac9e82bb9.png) no-repeat;
+  -webkit-background-size: 100% auto;
+     -moz-background-size: 100% auto;
+       -o-background-size: 100% auto;
+          background-size: 100% auto;
+}

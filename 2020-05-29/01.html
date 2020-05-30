@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // var p1 = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     console.log(1)
+    //     resolve()
+    //   }, 1000)
+    // })
+
+    // var p2 = new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     console.log(2)
+    //     reject()
+    //   }, 2000)
+    // }).catch(e => {
+    //   console.log('p2 catched')
+    // })
+
+    // Promise.all([p1, p2]).then(res => {
+    //   console.log('okkkkk')
+    // }).catch(err => {
+    //   console.log('catch')
+    // })
+
+    // function fn() {
+
+    // }
+
+    // var o = new fn()
+    
+
+    // fn.prototype.speak = function () {
+    //   console.log('hello')
+    // }
+
+    // console.log(o.speak())
+
+    function Person(name) {
+      this.name = name
+    }
+
+    // var obj = new Person('xuke')
+    // console.log(obj)
+
+    console.log(Person.__proto__ === Function.prototype)
+
+  </script>
+
+</body>
+</html>
