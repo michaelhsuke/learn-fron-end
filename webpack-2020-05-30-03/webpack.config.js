@@ -29,7 +29,8 @@ module.exports = {
                 '@babel/preset-react',
               ]
             }
-          }
+          },
+          'thread-loader'
         ]
       }
     ]
