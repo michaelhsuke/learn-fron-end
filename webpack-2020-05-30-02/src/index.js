@@ -1,4 +1,7 @@
 console.log('home');
+import 'bootstrap'
+
+console.log(DEV)
 
 class Log {
   constructor() {
@@ -7,4 +10,11 @@ class Log {
 }
 
 var log = new Log()
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', '/user', true)
+xhr.onload = function () {
+  console.log(xhr.response)
+}
+xhr.send()
 
