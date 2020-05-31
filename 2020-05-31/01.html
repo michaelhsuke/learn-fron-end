@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var parent = {
+      name: 'xuke'
+    }
+    var obj = Object.create(parent)
+    console.log(obj)
+    // console.log(Object.getPrototypeOf(obj))
+
+    function myNew() {
+      var result = new Object()
+      var constructor = [].shift.call(arguments)
+      result.__proto__ = constructor.prototype
+      var ret = constructor.apply(result, [].slice.call(arguments, 1))
+      return typeof ret === 'object' ? ret : result
+    }
+
+    function Person() {
+      console.log('good')
+    }
+
+    Person.prototype.hello = function () {
+      console.log('hello')
+    }
+
+    var obj = myNew(Person)
+    console.log(obj)
+
+  </script>
+</body>
+</html>
