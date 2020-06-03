@@ -3,6 +3,7 @@
     <h1>{{ title }}</h1>
     <p>{{ myname }}</p>
     <!-- <son></son> -->
+    <input type="text" v-model="title">
   </div>
 </template>
 
