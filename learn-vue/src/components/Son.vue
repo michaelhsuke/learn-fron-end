@@ -2,6 +2,7 @@
   <div>
     <h2>{{ title }}</h2>
     <grand-son></grand-son>
+    <slot></slot>
   </div>
 </template>
 <script>

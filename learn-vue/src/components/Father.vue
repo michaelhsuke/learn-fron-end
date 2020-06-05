@@ -1,9 +1,11 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ myname }}</p>
+    <input type="text"
+           v-model="title">
+    <!-- <p>{{ myname }}</p> -->
     <!-- <son></son> -->
-    <input type="text" v-model="title">
+    <!-- <h1 @click="onClick">{{ title }}</h1> -->
   </div>
 </template>
 
@@ -17,21 +19,33 @@ export default {
   },
   mounted() {
     console.log('Father', this)
-    setTimeout(() => {
-      this.title = '更新了'
-      this.lastname = 'Xu'
-    }, 1000)
+    // setTimeout(() => {
+    //   this.title = '更新了'
+    //   this.lastname = 'Xu'
+    // console.log(this.$children)
+    // console.log(this)
+    // setTimeout(() => {
+    //   this.title = '标题变化了'
+    //   this.firstname = 'Ke'
+    // }, 1000)
   },
   data() {
     return {
       title: '父组件',
       firstname: 'Michael',
       lastname: 'Hsu'
+      firstname: 'Michael'
     }
   },
   computed: {
     myname() {
       return `${this.firstname} ${this.lastname}`
+      return this.firstname
+    }
+  },
+  methods: {
+    onClick() {
+      console.log("title clicked")
     }
   }
 }
