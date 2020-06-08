@@ -1,16 +1,17 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <input type="text"
-           v-model="title">
+    <input type="text" v-model="title">
     <!-- <p>{{ myname }}</p> -->
     <!-- <son></son> -->
     <!-- <h1 @click="onClick">{{ title }}</h1> -->
+    <div v-demo:foo.a.b="title"></div>
   </div>
 </template>
 
 <script>
 import Son from './Son'
+import '../directives/demo.js'
 export default {
   name: 'Father',
   components: { Son },
@@ -19,22 +20,12 @@ export default {
   },
   mounted() {
     console.log('Father', this)
-    // setTimeout(() => {
-    //   this.title = '更新了'
-    //   this.lastname = 'Xu'
-    // console.log(this.$children)
-    // console.log(this)
-    // setTimeout(() => {
-    //   this.title = '标题变化了'
-    //   this.firstname = 'Ke'
-    // }, 1000)
   },
   data() {
     return {
       title: '父组件',
       firstname: 'Michael',
       lastname: 'Hsu'
-      firstname: 'Michael'
     }
   },
   computed: {
