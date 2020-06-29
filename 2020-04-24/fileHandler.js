@@ -1,6 +1,7 @@
 // const path = '/Users/xuke/projects/js-unicom/woService/woService-www/src/site'
 // const paths = ['/Users/xuke/projects/js-unicom/woService/woService-www/src/site', '/Users/xuke/projects/js-unicom/wo-activity/src/actPage', '/Users/xuke/projects/js-unicom/vue-wo-activity/src']
-const paths = ['/Users/xuke/projects/js-unicom/woService/woService-www/src/site']
+// const paths = ['/Users/xuke/projects/js-unicom/wo-activity/src/actPage']
+const paths = ['/Users/xuke/projects/js-unicom/vue-wo-activity/src']
 var fs = require('fs');
 var join = require('path').join;
 var reg = /\/actPage\/activity\/index.*\.html\??#([a-zA-Z0-9_\-\%\/\?\#\&]*)([\,\;\'\"\s]*)/g
@@ -31,7 +32,7 @@ function handleFile(filepath) {
 
 function recordMap(route) {
   let key = route.split('?')[0]
-  let value = `https://weixin.10010js.com/actPage/activity/index3.html#${key}`
+  let value = `https://weixin.10010js.com/actPage/activity/index4.html#${key}`
   let path = './file.json'
   try {
     let content = fs.readFileSync(path, 'utf8')
