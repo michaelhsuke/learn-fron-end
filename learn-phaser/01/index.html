@@ -19,7 +19,7 @@
     })
 
     function preload() {
-      console.log('preload')
+      // console.log('preload')
       game.load.image('sky', 'assets/sky.png')
       game.load.image('ground', 'assets/platform.png')
       game.load.image('star', 'assets/star.png')
@@ -27,10 +27,10 @@
     }
 
     function create() {
-      console.log('create')
+      // console.log('create')
       game.physics.startSystem(Phaser.Physics.ARCADE)
       game.add.sprite(0, 0, 'sky')
-      // game.add.sprite(0, 0, 'star')
+      game.add.sprite(0, 0, 'star')
     }
 
     function update() {

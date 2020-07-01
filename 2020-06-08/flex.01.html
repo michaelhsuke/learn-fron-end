@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-basis</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 200px;
+      margin: 100px auto;
+      display: flex;
+      border: 1px solid #f00;
+      flex-direction: column;
+    }
+
+    .inner {
+      border: 1px solid #00f;
+      width: 200px;
+      height: 100px;
+      /* flex-basis: 100px; */
+      /* flex-basis: 200px; */
+      flex-basis: 200px;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- https://blog.csdn.net/m0_37058714/article/details/80765562 flex三兄弟 -->
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+</body>
+</html>

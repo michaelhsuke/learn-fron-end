@@ -8,6 +8,7 @@
     <!-- <p>{{ myname }}</p> -->
     <!-- <son></son> -->
     <!-- <h1 @click="onClick">{{ title }}</h1> -->
+    <div v-demo:foo.a.b="title"></div>
   </div>
 </template>
 
@@ -26,15 +27,6 @@ export default {
   mounted() {
     // console.log('Father', this.$options._base ===  Vue)
     console.log('Father', this)
-    // setTimeout(() => {
-    //   this.title = '更新了'
-    //   this.lastname = 'Xu'
-    // console.log(this.$children)
-    // console.log(this)
-    // setTimeout(() => {
-    //   this.title = '标题变化了'
-    //   this.firstname = 'Ke'
-    // }, 1000)
   },
   data() {
     return {
