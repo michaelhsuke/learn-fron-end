@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue源码解析</title>
+  <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div @click.stop="myclick">{{ msg }}</div>
+    <input type="text" v-model="msg">
+  </div>
+  <script>
+    var testMixins = {
+      mounted() {
+        console.log("mixin mounted")
+      }
+    }
+    var vm = new Vue({
+      el: '#app',
+      mixins: [ testMixins ],
+      data() {
+        return {
+          msg: 'xuke'
+        }
+      },
+      methods: {
+        myclick() {
+          console.log('myclick~~~~~')
+        }
+      }
+    })
+  </script>
+</body>
+</html>
