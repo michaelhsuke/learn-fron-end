@@ -1,0 +1,4923 @@
+﻿活动规则|Promotion Rules
+活动时间|Promotion time
+活动未开始|Promotion does not start
+活动时间|Promotion time
+活动时间|Promotion time
+活动已结束|The event is over
+金额上限|Maximum amount
+金额下限|Minimum amount
+享受优惠的会员等级|Eligible member level
+优惠方式|promotion method
+优惠范围|Offer Range
+优惠商品|Offer
+库存|In stock
+销量|Sold
+此处没有内容|There is no content here
+赠品|Gifts
+特惠品|Specials
+库存|in stock
+销量|Sold
+活动页|Events page
+异步数据|Asynchronous data
+订单列表|Order List
+活动未开始|Promotion does not start
+活动已结束|The event is over
+此处没有内容|There is no content here
+手机|Mobile
+系统配置|System Setttings
+更新字段检测|Updates field detection
+操作提示|Operation notification
+收起提示|Collapse notification
+目的|Purpose
+兼容|Compatibility
+严格模式|Strict Mode
+更新数据表字段的默认值|Update the default value of data table field
+仅显示需要更新兼容性的数据表|Display only​ compatible data to be updated
+你可以选择更新全部|You can choose to update all
+或者更新单个表|Or to update a single table
+防止意外|Prevent accidental
+建议更新前备份一下全部数据库|Backup database before update is highly recommended
+更新|Update
+更新全部|Update All
+数据表名|Data table
+状态|status
+操作|operating
+有兼容问题|There are compatibility issues
+更新|Update
+更新|Update
+收起提示|Collapse notification
+提示相关设置操作时应注意的要点|Pay attention to the main points when display notification
+可视化装修|Visualization
+去除火狐默认事件|Remove Firefox default event
+可视化装修|Visualization
+去除火狐默认事件|Remove Firefox default event
+可视化装修|Visualization
+去除火狐默认事件|Remove Firefox default event
+手机|Mobile
+系统配置|System Settings
+更新字段检测|Updates field detection
+操作提示|Operation notification
+收起提示|Collapse notification
+目的|purpose
+兼容|compatible
+严格模式|Strict Mode
+更新数据表字段的默认值|Update the default value of data table field
+仅显示需要更新兼容性的数据表|Display only​ compatible data to be updated
+你可以选择更新全部|You can choose to update all
+或者更新单个表|Or to update a single table
+防止意外|Prevent accidental
+建议更新前备份一下全部数据库|Backup database before update is highly recommended
+更新|Update
+更新全部|Update All
+数据表名|Data table
+状态|status
+操作|operating
+有兼容问题|There are compatibility issues
+更新|Update
+更新|Update
+收起提示|Collapse notification
+提示相关设置操作时应注意的要点|Pay attention to the main points when display notification
+评论列表|comment list
+评论列表|comment list
+评论回复|Reply to comment
+我是回复用户|Reply to users
+我是回复用户|Reply to users
+此处没有内容|There is no content here
+快来发表下评论吧|Please write a review
+发送|send
+文章频道|Article Channel
+初始化对象|Object Initialization
+设置|Set up
+设置手型|set cursor hand
+创建监听|Create the listener
+设置需要复制的代码|Set the code to be copied
+覆盖至指定|cover to
+分享弹框|share popup box
+回复文章|Reply to this article
+回复|Reply
+店铺信息商品滚动|store info product ticker
+晒单列表|testimonial list
+关联商品|Related Products
+评论列表|comment list
+评论列表|comment list
+评论回复|Reply to comment
+我是回复用户|Reply to users
+我是回复用户|Reply to users
+查看更多评论|Read more comments
+快来发表下评论吧|Please write a review
+发送|send
+文章频道|Article Channel
+初始化对象|Object Initialization
+设置|Set up
+设置手型|set cursor hand
+创建监听|Create the listener
+设置需要复制的代码|Set the code to be copied
+覆盖至指定|cover to
+回复文章|Reply to this article
+回复|Reply
+店铺信息商品滚动|store info product ticker
+文章头部|Articles head
+阳光小狗|Sunshine puppy
+人关注|Followers
+全部推荐|All Recommended
+资讯|Information
+单品|A single product
+清单|Inventory
+无图模式|No map mode
+匿名用户|Anonymous User
+单图模式|Single image mode
+三图模式|Triple image mode
+此处没有文章|There is no article here 
+正在加载|loading
+快捷导航|Quick Navigation
+正在加载|loading
+没有更多了|No more
+首次加载显示第一个分类|Showing first category on the first load
+切换到第一个|Switch to the first
+速度为|Speed
+加载|load
+搜索|search
+请输入搜索关键字|please enter keyword to search
+微信素材文章内容|Wechat material content of the article
+出价记录|Bid History
+出局|Out
+领先|Lead
+一口价|Fixed price
+保证金|Security deposit
+加价幅度|Markups
+拍送机构|Auction agency
+未开始|has not started
+最低加价|lowest bit
+恭喜您|congratulations
+您已|You have
+拍得本次活动商品|current bid products
+已结束|ended
+竞拍流程|Bidding process
+获取资格|Qualify
+用户账号当前积分大于出价所需积分|user current point is bigger than bid point
+拍的商品|Bid products
+保证竞拍结束出价最低且唯一|Ensure the bid price is lowest and unique when the bid ended
+获得竞拍商品|get auction products
+确认订单|Confirm Order
+填写订单信息|Fill Order Information
+提交订单|Submit Order
+支付订单|Payment orders
+支付已提交的订单|pay already submitted order
+竞拍成功|Auction success
+支付成功后等待收货|Awaiting delivery after successful payment
+竞拍完成|The auction is completed
+展开|Expansion
+收起|Collapse
+展开|Expansion
+展开|Expansion
+出价记录|Bid History
+领先|Lead
+出局|Out
+查看更多|see more
+推荐拍品|Recommended auction
+拍卖介绍|Auction Description
+服务保障|Service Guarantee
+竞拍攻略|Auction strategy
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+悬浮|float
+客服|Customer Service
+客服|Customer Service
+店铺|Store
+收藏|Collect
+未开始|has not started
+我要出价|I want to bid
+立即购买|Buy now
+已结束|Ended
+悬浮|float
+快捷导航|Quick Navigation
+拍卖活动|Auction
+相册|Gallery
+展开全部内容|Expand all content
+现在已经是最低拍价|Now is the lowest Bid
+商品详情相册切换|Product Details album switching
+店铺信息商品滚动|store info product ticker
+倒计时|Countdown
+解析字符串|Parsing a string
+返回整数|Returns an integer
+如果未定义时间|If no time has been set
+则我们设定倒计时日期是|then countdown time is set to
+现在将来秒差值|Second difference between present and future
+月份|month
+以实际平均每月秒数计算|based on average monthly second to calculate
+年份|year
+按按回归年|according to tropical year
+秒算|Seconds count
+结束了|ended
+商品名称|product name
+默认|default
+开始时间|Starting time
+结束时间|End Time
+起拍价|Starting price
+一口价|Fixed Price
+我要出价|I want to bid
+立即购买|Buy now
+竞拍结束|The auction is ended
+此处没有内容|There is no content here
+搜索|search
+请输入搜索关键字|please enter keyword to search
+提示|prompt
+商家中心|Merchant Center
+页面将在|The page will redirect in
+秒后跳转| seconds
+点击返回|click back
+自动跳转|Automatically redirect
+页面将在|The page will redirect in
+秒后跳转|seconds
+提示|prompt
+批发首页|Wholesale Home
+批发列表|Wholesale list
+进货单|Purchased list
+求购信息|Procurement info
+获取节点|Get node
+绑定|Binding
+事件|event
+阻止页面的滑动默认事件|Prevent page default scrolling event 
+快速导航|Quick navigation
+顶部|Top
+首页|Home
+搜索|Seach
+分类|Category
+购物车|Shopping Sart
+个人中心|Profile
+图片放大后模版|Image enlarged template
+分享内容|Share content
+用户确认分享后执行的回调函数|Execute callback function after user confirmed sharing
+分享统计|Share Statistics
+配置注入|Configuration injection
+事件注入|Event injection
+分享内容|Share content
+用户确认分享后执行的回调函数|Execute callback function after user confirmed sharing
+分享统计|Share Statistics
+配置注入|Configuration injection
+事件注入|Event injection
+点击美洽|Click MeiQia
+打开会话|Open Session
+检查登录状态|Check login status
+这是美洽的嵌入代码|This is MeiQia embedded code
+设置|Set up
+会员|member
+传递顾客信息|Transfer customer information
+姓名|Full name
+性别|gender
+电话|phone
+邮箱|email
+网站名称|Site Name
+自定义字段|Custom Fields
+来源网站名称|Source Site Name
+在这里开启无按钮模式|No button mode starts here
+常规情况下|Under normal circumstances
+需要紧跟在美洽嵌入代码之后|Need to append after MeiQia embed code
+毫秒|millisecond
+秒后执行|seconds then execute
+方法|method
+获取节点|Gets node
+绑定|Binding
+事件|event
+阻止页面的滑动默认事件|Prevent default page scrolling event
+快速导航|Quick navigation
+顶部|Top
+首页|Home
+分类|Category
+购物车|shopping cart
+个人中心|Profile
+批发首页|Wholesale Home
+批发列表|Wholesale list
+进货单|Purchased list
+求购信息|Procurement info
+获取节点|Gets node
+绑定|Binding
+事件|event
+阻止页面的滑动默认事件|Prevent default page scrolling event
+快捷导航|Quick Navigation
+快速导航|Quick navigation
+顶部|Top
+首页|Home
+分类|classification
+拼团频道|Group Buy Channel
+排行|ranking
+个人中心|Profile
+元可用|Dollars available
+去使用|Use Now
+已领完|Already claimed
+领取|Received
+使用期限|Period of use
+还没有红包哦|No red envelopes yet
+快捷导航|Quick Navigation
+切换|Switch
+列表|List
+领取|received
+还未登录|Not logged in
+请登录之后领取|Please claim after login
+确定|confirm
+取消|Cancel
+去使用|Use now
+品牌商品搜索|Brand Search
+搜索|search
+共有|Total
+件商品|Items
+进入专区|Enter
+品牌关联分类|Brand association classification
+全部商品|all products
+新品|New
+热销|Best Selling
+热门产品|Hot Products
+库存|in stock
+销量|Sold
+此处没有内容|There is no content here
+查看更多|see more
+商品搜索|product search
+搜索|search
+最近搜索|Recent Searches
+点击关闭|Click to close
+快捷导航|Quick Navigation
+品牌街|Brand Street
+全部品牌|All Brands
+品牌列表|Brand list
+切换到第一个|Switch to the first
+速度为|Speed ​​of
+今日最大牌|Today, the biggest brand
+每日精选|Daily Picks
+品牌大促|Brand big promotion
+日期|date
+品牌|Brands
+导航按钮|Navigation buttons
+热门大牌|Hot brand
+轮播图|Carousel Image
+共有|A total of
+件商品|Items
+进入专区|Enter
+推荐大牌|Recommended brand
+查看更多|see more
+快捷导航|Quick Navigation
+品牌街|Brand Street
+品牌搜索|Brand Search
+搜索|search
+筛选|filter
+内容|content
+此处没有内容|There is no content here
+筛选|filter
+关闭|close
+分类|classification
+全部|all
+全部|all
+清空选项|Clear Options
+确定|confirm
+快捷导航|Quick Navigation
+正在加载|loading
+异步数据|Asynchronous data
+请求|request
+商品列表|Product List
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+固定图片所在|Fixed picture is located
+大小|size
+防止列表错位|Prevent list dislocation 
+筛选品牌分类|Filter Brand
+获取需要改变值的|retrieve value to be changed
+标签|label
+当点击非|When clicked is not
+的时候删除其选中状态|then delete selected
+获取当前选中|Gets the currently selected
+的文本值|Text value
+品牌分类|Brand category
+收缩|shrink
+分类列表|Category List
+筛选品牌分类|Filter Brand
+点击全部|Click All
+获取值为|Gets value
+全部|All
+获取需要改变值的|retrieve value to be changed
+标签|label
+的值赋值给需要改变的|assign value to the values to be changed
+标签|label
+收缩|shrink
+分类列表|Category List
+筛选按钮中清空选项|Filter button clear the Options
+全部|All
+综合|All
+综合|All
+综合|All
+价格|price
+价格|price
+价格|price
+销量|Sold
+销量|Sold
+销量|Sold
+此处没有内容|There is no content here
+悬浮|float
+已加入购物车的活动商品|Products in cart
+总价|Total price
+悬浮|float
+正在加载|loading
+引用|Quote
+凑单|add-on item
+活动商品列表|Activities Product List
+凑单|add-on item
+加入购物车|add to Shopping Cart
+凑单|add-on item
+添加活动商品到购物车|adding promotional products to Shopping Cart
+检查是否有商品规格|Check for product specifications
+模板堂|Template center
+仓库|warehouse
+地区|area
+模板堂|Template center
+仓库|warehouse
+凑单|add-on item
+处理添加活动商品到购物车的反馈信息|Adding products to cart feedback
+如果需要缺货登记|If you need to record out of stock
+跳转|redirect
+确定|confirm
+取消|cancel
+没选规格|Did not choose Specifications
+弹出属性选择框|Select Properties pop-up box
+更新购物车数量|Update cart quantity 
+商品已加入购物车|Product Added to Cart
+立即去购物车查看|View shopping cart
+确定|confirm
+取消|cancel
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+库存|in stock
+库存|in stock
+商品属性弹出层|product attribute pop-up layer
+库存|in stock
+颜色|colour
+尺寸|size
+数量|quantity 
+加入购物车|add to Shopping Cart
+商品属性弹出层|product attribute pop-up layer
+引用|Quote
+库存|in stock
+店铺信息商品滚动|store info product ticker
+领取优惠券|claim coupons
+元可用|Dollars available
+已领取|already claimed
+已抢完|already sold out
+立即|immediately
+领取|receive
+全部优惠券|All Coupons
+可选促销|Available promotions
+切换促销|Switching promotion type
+勾选效果|Check the effect
+请求|request
+按店铺显示商品|sort by store
+领取优惠券|claim coupons
+满赠|Buy more get free
+满足最低消费|Meet the minimum spending
+领取赠品|Receiving gifts
+查看赠品|View gifts
+去凑单|go to add-on
+再逛逛|Shop around
+满足最低消费|Meet the minimum spending
+领取赠品|Receiving gifts
+查看赠品|View gifts
+去凑单|go to add-on
+再逛逛|Shop around
+满减|Spend over get discount
+满足最低消费|Meet the minimum spending
+去凑单|go to add-on
+再逛逛|Shop around
+折扣|discount
+满足最低消费|Meet the minimum spending
+去凑单|go to add-on
+再逛逛|Shop around
+优惠活动商品|products on special
+门店名称|Store name
+配件|Accessories
+已失效|expired
+收藏|Collect
+删除|delete
+可选促销|Available promotions
+每个优惠活动只有大于一个商品|Every promotion requires at least one product
+赠品开始|Gifts start
+已失效|expired
+普通商品可修改数量|You can modify the number of general products
+收藏|Collect
+删除|delete
+赠品结束|gift offer ended
+如果活动存在赠品|If there is free gift in a promotion
+显示赠品列表|Display gift list
+取消|cancel
+确定|confirm
+普通商品开始|General merchandise start
+门店名称|Store name
+配件|Accessories
+已失效|expired
+收藏|Collect
+删除|delete
+普通商品结束|End general merchandise
+按店铺显示商品|sort by store
+购物车什么也没有|Nothing in cart
+去逛逛|Go shopping
+登录|log in
+推荐商品|Featured Products
+编辑|edit
+按店铺显示商品|sort by store
+领取优惠券|claim coupons
+满赠|Buy more get free
+满足最低消费|Meet the minimum spending
+领取赠品|Receiving gifts
+查看赠品|View gifts
+去凑单|go to add-on
+再逛逛|Shop around
+满足最低消费|Meet the minimum spending
+领取赠品|Receiving gifts
+查看赠品|View gifts
+去凑单|go to add-on
+再逛逛|Shop around
+满减|Spend over get discount
+满足最低消费|Meet the minimum spending
+去凑单|go to add-on
+再逛逛|Shop around
+折扣|discount
+满足最低消费|Meet the minimum spending
+去凑单|go to add-on
+Shop around|Shop around
+优惠活动商品|products on special
+门店名称|Store name
+配件|Accessories
+已失效|expired
+收藏|Collect
+删除|delete
+可选促销|Available promotions
+每个优惠活动只有大于一个商品|Every promotion requires at least one product
+赠品开始|gifts start
+已失效|expired
+普通商品可修改数量|You can modify the number of general product
+收藏|Collect
+删除|delete
+赠品结束|gift offer ended
+如果活动存在赠品|If there is free gift in a promotion
+显示赠品列表|Display gift list
+取消|cancel
+确定|confirm
+普通商品开始|General merchandise start
+门店名称|Store name
+配件|Accessories
+已失效|expired
+收藏|Collect
+删除|delete
+普通商品结束|End general merchandise
+按店铺显示商品|sort by store
+猜你喜欢|you may also like
+猜你喜欢|you may also like
+库存|in stock
+销量|Sold
+可选促销|Available promotions
+没写样式|empty style
+暂时用属性的代替|Temporary replacement properties with
+可选促销|Available promotions
+领取优惠券|claim coupons
+异步加载|Asynchronous loading
+领取优惠券|claim coupons
+悬浮|float
+全选|select all
+合计|total
+不含运费|Free shipping
+已节省|Have saved
+收藏|Collect
+移至收藏|Move to Collection
+删除|delete
+首页|Home
+分类|classification
+搜索|search
+购物车|shopping cart
+中心|center
+社区|community
+悬浮|float
+地区选择|Select area
+地区选择|Select area
+首次加载|First load
+购物车返回|back to shopping cart
+根据|according to
+选中相对应的商品|Select the corresponding products
+获取购物车已选|Get selected products from cart
+获取购物车已选商品活动|Get selected promo products from cart
+优惠活动|Promotions
+点击结算|Check out
+门店|Stores
+至少选中一个商品|Select at least one product
+门店|Stores
+门店|Stores
+收藏购物车商品|Save products in cart to collection
+批量|batch
+登录|log in
+取消|cancel
+单个商品移入收藏|move single product into Collection
+用于异步返回|Asynchronous return
+不能使用|cannot use
+的问题|issue
+确定|confirm
+取消|cancel
+登录|log in
+取消|cancel
+单个删除购物车商品|To delete a single product
+商品|products
+店铺|Store
+相同店铺下商品件数|Number of products in a store
+活动|Promotion
+用于异步返回|Asynchronous return
+不能使用|cannot use
+的问题|issue
+移除优惠活动标题|Remove promotion title
+Delete store name e.g.|Delete the first product link
+店铺下仅一件商品|Only one item at the store
+删除店铺名称等|Delete store name
+店铺下多件商品|multiple items under one store
+仅删除一件商品|Delete single product
+只去除一件商品的|Removing single product
+删除商品的|Deleted items
+商品存在配件|product accessories
+移除配件|remove accessories
+清空购物车|Empty Shopping Cart
+批量删除|batch deletion
+至少选中一个商品|Select at least one product
+购物车商品数量加减|product qty add/substract in a cart
+店铺|Store
+自营为|Self operated
+当前优惠活动|Current promotions
+减少|decrease
+已选的优惠活动|Selected promotions
+单价|unit price
+更新优惠活动信息|update offer information
+不能小于最小数量|Not less than the minimum number of
+增加|increase
+不能超过限购数量|Not exceed the limit
+限购|Purchase Limit
+已选的优惠活动|Selected promotions
+单价|unit price
+更新优惠活动信息|update offer information
+不能超过最大数量|Not exceed the maximum number of
+该商品未勾选不能增减|This product was not checked can not increase or decrease
+直接修改购物车数量|Directly modify the number of shopping cart
+店铺|Store
+自营为|Self-operated
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+不能超过限购数量|Not exceed the limit
+已选的优惠活动|Selected promotions
+单价|unit price
+更新优惠活动信息|update offer information
+该商品未勾选不能增减|This product was not checked can not increase or decrease
+多选|Multiple choice
+全选|select all
+全不选|unselect all
+全选|select all
+多选|Multiple choice
+只点击单选按钮|Just click the Single choice button
+部分多选|Part multiple choice
+同商家只能选择一个|can only select one from the same company 
+优惠活动|Promotions
+多选|Multiple choice
+单选|Single choice
+套餐|Package
+主商品与配件|Main Product and Accessories
+同步勾选与取消|Check synchronization and canceled
+且更新购物车|And update cart
+配件主商品|main product accessories
+有配件|Has accessories
+多选|Multiple choice
+勾选与取消|Check and Cancel
+套餐|Package
+主商品与配件|Main Product and Accessories
+同步勾选与取消|Check synchronization and canceled
+且更新购物车|And update cart
+店铺信息商品滚动|store info product ticker
+推荐商品|Featured Products
+图片不是|Pictures are not
+时对图片限制|put restrictions on the picture
+判断选中状态|determine selected status
+点击领取赠品|Click Receiving gifts
+关闭|close
+取消|cancel
+同位置确定按钮下的活动|At the same location to determine the activity of a button
+勾选赠品|Check gifts
+最多可领取赠品数量|maximum number of gifts
+您当前最多可领取赠品|the maximum number of gifts you can have
+已领取多少件|number of gifts claimed
+确定|confirm
+提交选中赠品|Submit selected gifts
+最多可领取赠品数量|maximum number of gifts
+您当前最多可领取赠品|the maximum number of gifts you can have
+商品|products
+赠品|Gifts
+当前赠品主商品购物车记录|Gift & Product History
+编辑购物车|Edit cart
+批量选择|Batch Selection
+编辑|edit
+完成|completed
+编辑|edit
+优惠券|coupon
+展开弹窗|Expand popupup
+促销|Promotions
+展开弹窗|Expand popup
+添加活动商品|add promotional products
+赠品|Gifts
+到购物车|Go to cart
+处理添加活动商品|Add event handling merchandise
+赠品|Gifts
+到购物车的反馈信息|Feedback to the shopping cart
+如果需要缺货登记|If you need to record out of stock
+跳转|redirect
+确定|confirm
+取消|cancel
+更新优惠活动信息|update offer information
+优惠活动|Promotions
+显示再逛逛|Display Shop around
+显示去凑单|go to add-on display
+满赠|Buy more get free
+再逛逛|Shop around
+遍历|Traversal
+赠品列表|Gifts list
+去凑单|go to add-on
+隐藏选中按钮|Hide Select button
+满减|Spend over get discount
+折扣|discount
+遍历|Traversal
+删除赠品|Delete gifts
+推荐套餐|Recommended Package
+修改主件商品同步更新配件商品数量|change main product synchronized update new accessory quantity
+商品|products
+店铺搜索|Store Search
+筛选|filter
+首页|Home
+分类|classification
+分期购|Installment purchase
+购物车|shopping cart
+中心|center
+社区|community
+悬浮菜单|Floating menu
+取出上次位置的值并保存|get last position value and save
+返回之前页面的操作位置|return to previous page
+存储到|Save to
+字段|Field
+保存滚动位置|Save scroll position
+取出并滚动到上次保存位置|go to last saved position
+存储到|Save to
+字段|Field
+保存|save
+商品|products
+店铺搜索|Store Search
+筛选|filter
+综合|All
+综合|All
+综合|All
+新品|New
+销量|Sold
+价格|price
+价格|price
+价格|price
+内容|content
+库存|in stock
+销量|Sold
+此处没有内容|There is no content here
+筛选|filter
+关闭|close
+自营产品|Sole trader products
+配送至|deliver to
+货到付款|Cash on delivery
+仅看有货|show only available stock
+促销|Promotions
+价格区间|The price range
+品牌|Brands
+清空选项|Clear Options
+确定|confirm
+快捷导航|Quick Navigation
+正在加载|loading
+筛选价格区间|Filter by price range
+异步数据|Asynchronous data
+通过埋点判断是否使用缓存|Determine cache execution base on event tracking
+缓存|Cache
+请求|request
+商品列表|Product List
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+点击保存模式切换|click Save Mode switching
+存入|Deposit
+替换|replace
+参数值|Parameter Value
+聊天列表|Chat list
+返回|return
+消息列表|Message List
+在线客服|online agent
+及以下支持|And the following support
+自动适配移动端与|Automatic adaptation of the mobile terminal
+需要登录的用户|Users need to log in
+申请的|apply
+需要登录的用户的密码|need logged in user password
+客服|Customer Service
+展示效果配置项|Showing the effect settings
+默认显示小图|display thumbnail as default
+点击放大图片|Click image to enlarge
+登录用户的头像|Login User avatar
+移动端推荐|Recommended mobile app
+屏幕宽度|Screen width
+聊天对象的头像|Chatting avatar
+在移动端推荐|Recommend mobile app
+是否显示顶部|Whether to show the top
+自定义区域|Custom area
+输入框默认文案|Enter the default script
+显示在对方消息位置的默认欢迎文案|show default welcome script
+隐藏登录成功时的提示文案|Hide login success message
+消息相关配置项|Message related settings
+的消息类型|The message type
+默认|default
+使用客服模式即给淘宝|use customer Customer Service Mode is Taobao
+千牛客服发送消息|QianNiu Customer Service send message
+默认|default
+如果是|if
+千牛那边收不到客户发送的信息|QianNiu could not receive message
+客服模式|Customer Service Mode
+可以传入分组|You can pass the packet
+上传自定义数据|Upload custom data
+在千牛插件中显示|display in QianNiu plug-in
+在线客服|online agent
+来自|Come from
+链接|link
+默认|default
+如果是|if
+千牛那边收不到客户发送的信息|QianNiu could not receive message
+及以下支持|And the following support
+自动适配移动端与|Automatic adaptation of the mobile terminal
+需要登录的用户|Users need to log in
+申请的|apply
+需要登录的用户的密码|need logged in user password
+客服|Customer Service
+展示效果配置项|Showing the effect settings
+默认显示小图|display thumbnail as default
+点击放大图片|Click image to enlarge
+登录用户的头像|Login User avatar
+移动端推荐|Recommended mobile terminal
+屏幕宽度|Screen width
+聊天对象的头像|Chatting avatar
+在移动端推荐|Recommend mobile terminal
+是否显示顶部|Whether to show the top
+自定义区域|Custom area
+输入框默认文案|Enter the default script
+显示在对方消息位置的默认欢迎文案|show default welcome script
+隐藏登录成功时的提示文案|Hide login success message
+消息相关配置项|Message related settings
+来自|Come from
+链接|link
+的消息类型|The message type
+默认|default
+使用客服模式即给淘宝|use customer Customer Service Mode is Taobao
+千牛客服发送消息|QianNiu Customer Service send message
+默认|default
+如果是|if
+千牛那边收不到客户发送的信息|QianNiu could not receive message
+客服模式|Customer Service Mode
+可以传入分组|You can pass the packet
+上传自定义数据|Upload custom data
+在千牛插件中显示|display in QianNiu plug-in
+关联商品|Related Products
+帖子详情|Post details
+分享|share
+分享方式弹出层|Share mode pop-up layer
+分享到|share to
+评论列表|comment list
+此处没有内容|There is no content here
+回复帖子|Reply to posts
+发送|send
+快捷导航|Quick Navigation
+社区首页|Community Home
+引用|Quote
+回复帖子|Reply to posts
+提交|submit
+请填写回复内容|Please fill out the reply
+店铺信息商品滚动|store info product ticker
+输入框遮挡问题|Input box masking issue
+消息框获取焦点|The message box gets focus
+消息框失去焦点|The message box loses focus
+回复|Reply
+回复|Reply
+社区首页|Community Home
+我的帖子|My posts
+头部导航|Head navigation
+讨论贴|Discussion threads
+问答贴|Q & A posted
+圈子贴|Group posts
+晒单贴|Testimonial posts
+店铺信息商品滚动|store info product ticker
+店铺信息商品滚动|store info product ticker
+讨论贴|Discussion threads
+问答贴|Q & A posted
+圈子贴|Group posts
+晒单贴|Testimonial posts
+店铺信息商品滚动|store info product ticker
+异步数据|Asynchronous data
+回复列表|Reply List
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+社区首页|Community Home
+引用|Quote
+晒单列表|Testimonial list
+此处没有内容|There is no content here
+尾部浮动导航|Tail floating navigation
+快捷导航|Quick Navigation
+社区首页|Community Home
+引用|Quote
+确实要删除该帖吗|Are you sure you want to delete the post
+确定|confirm
+取消|cancel
+删除成功|successfully deleted
+头部导航|Head navigation
+已购买|bought
+购物车|shopping cart
+已收藏|collected
+已浏览|Viewed
+悬浮|float
+确定|confirm
+悬浮|float
+快捷导航|Quick Navigation
+社区首页|Community Home
+去发帖|Go post
+引用|Quote
+店铺信息商品滚动|store info product ticker
+首次加载|First loads
+请选着一件商品|Please select a product
+异步调用相关类型帖子|Asynchronous call the relevant type of posts
+此处没有发帖内容|There is no post content here
+讨论帖|Discussion thread
+问答贴|Q & A posted
+圈子贴|Group posts
+晒单贴|Testimonial posts
+标题|title
+留下点文字吧|say something
+取消|cancel
+确定|confirm
+悬浮|float
+社区首页|Community Home
+我的帖子|My posts
+悬浮|float
+快捷导航|Quick Navigation
+异步请求|Asynchronous request
+请选择帖子主题|Please select post topic
+请填写标题|Please fill in title
+请填写帖子内容|Please fill in the post content
+请选择关联商品|Please select Related Products
+在线可视化装修|Online visualization
+自营的首页|Self-employed home
+商家的店铺页|Merchant store page
+平台的专题页|Platform Featured Pages
+去除火狐默认事件|Firefox remove the default event
+好券集市|Coupon market
+任务集市|Freelance
+购物满|Spent 
+元即送|dollars get
+元优惠券|dollars coupons
+去购物|go shopping
+还没有优惠券哦|Oh no coupons
+快捷导航|Quick Navigation
+好券集市|coupon market
+切换|Switch
+加载列表|Load List
+去使用|To use
+购物|shopping
+好券集市|coupon market
+任务集市|Freelance
+全场券|general coupon
+会员券|member coupons
+免邮券|Free postage coupons
+免邮|Free postage
+元可用|Dollars available
+已领取|already claimed
+图片标示|picture sign
+立即|immediately
+使用|use
+已抢完|already sold out
+立即|immediately
+领取|receive
+还没有优惠券哦|Oh no coupons
+快捷导航|Quick Navigation
+调整子菜单样式|Adjustment sub menu style
+切换|Switch
+加载列表|Load List
+切换主菜单|Switch the main menu
+切换子菜单|Switching submenu
+领取|receive
+还未登录|Not logged in
+请登录之后领取|Please log in after receiving
+确定|confirm
+取消|cancel
+去使用|To use
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+所在地区|Region
+详细信息|details
+详细地址|Address
+保存|save
+地区选择|Select area
+地区选择|Select area
+收货人姓名不能为空|Consignee name can not be empty
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+详细地址不能为空|Address can not be empty
+默认地址|default address
+编辑|edit
+删除|delete
+新增收货人信息|Add consignee information
+还没有收货地址哦|Oh no shipping address
+点击添加一个收货地址|Click Add a shipping address
+引用|Quote
+点击设置地址|Click Address Settings 
+您确定要删除收货地址吗|Are you sure you want to delete the delivery address?
+是否删除|delete or not
+请选择配送地址|Select shipping address
+岁月无声|Sui Yue Wu Sheng
+已筹资金|money raised
+支持人|supporter
+支持|support
+配送方式|Delivery Method
+请选择|please choose
+配送方式|Delivery Method
+免运费|free shipping
+配送费用|Shipping fees
+免运费|free shipping
+支付方式|payment method
+手续费|Fees
+请选择|please choose
+支付方式|payment method
+支付方式|payment method
+手续费|Fees
+支付方式|payment method
+买家留言|Buyers message
+选填|Optional
+件商品|Items
+合计|total
+悬浮|float
+实付款|real payment
+提交订单|Submit Order
+悬浮|float
+商品属性弹出层|product attribute pop-up layer
+快捷导航|Quick Navigation
+微筹广场|WeiChou Plaza
+微筹中心|WeiChou center
+悬浮菜单|Float Menu
+引用|Quote
+配送方式切换|change delivery
+请先择配送方式|Please select Delivery
+请先择支付方式|Please select payment method
+商品|products
+详情|Detail
+话题|topic
+评论|comment
+评论回复|Reply to comment
+此处没有内容|There is no content here
+异步数据|Asynchronous data
+付款金额|Payment amount
+订单号|order number
+配送方式|Delivery Method
+余额支付已完成|The balance of payments has been completed
+其他方式|other methods
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+所在地区|Region
+详细信息|details
+详细地址|Address
+保存|save
+地区选择|Select area
+地区选择|Select area
+引用|Quote
+项目搜索|Project Search
+搜索|search
+最近搜索|Recent Searches
+点击关闭搜索|Close search
+搜索验证|Search verification
+请输入搜索内容|Enter search content
+清空搜索记录|Clear search history
+删除失败|failed to delete
+商品|products
+店铺搜索|Store Search
+综合排序|Comprehensive sorting
+全部商品|all products
+综合排序|Comprehensive sorting
+最新上线|Latest
+金额最多|The largest amount
+支持最多|Most support
+全部商品|all products
+支持人数|number of supporters
+剩余时间|Time left
+已筹|raised
+目标|target
+此处没有内容|There is no content here
+商品属性弹出层|product attribute pop-up layer
+悬浮菜单|Float Menu
+首页|Home
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+悬浮菜单|Float Menu
+异步数据|Asynchronous data
+商品|products
+详情|Detail
+话题|topic
+咨询|advisory
+项目状态|project status
+还剩|Left
+目标资金|Target funds
+已筹资金|money raised
+支持人数|number of supporters
+查看项目详情|View Project Details
+发货时间|Delivery time
+运费|Freight
+顺丰包邮|ShunFeng Post
+发货时间|Delivery time
+方案回报|Return program
+支持|support
+剩余|remain
+回报时间|Payback time
+项目成功|Project Success
+天内|Days
+配送费用|Shipping fees
+免运费|free shipping
+实时话题|Real-time topic
+的支持者|Supporters
+项目动态|Project News
+话题列表|Topics List
+更多|More
+评论|comment
+回复内容|Reply
+此处没有内容|There is no content here
+支持|support
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+悬浮|float
+关注|subscribe
+分享|share it
+话题|topic
+项目状态|project status
+支持|support
+商品属性弹出层|product attribute pop-up layer
+方案回报|Return program
+支持|support
+剩余|remain
+回报时间|Payback time
+项目成功|Project Success
+天内|Days
+配送费用|Shipping fees
+免运费|free shipping
+数量|quantity 
+合计|total
+请选择|please choose
+确定|confirm
+快捷导航|Quick Navigation
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+悬浮菜单|Float Menu
+相册|Gallery
+商品详情相册切换|change Product Details album
+店铺信息商品滚动|store info product ticker
+商品详情切换|Product Details switching
+请先择回报方案|Please select return option
+该方案已售罄|The option has been sold
+请选择其他方案|Please select other options
+点选可选属性或改变数量时修改商品价格的函数|when click optional attribute or change quantity changes price function
+接收返回的信息|Receiving the returned information
+添加商品到关注|Add items to Watch
+处理收藏商品的反馈信息|process favourited products feedback
+未登录不能使用收藏功能|Not Logged collection function can not be used
+是否登录|Whether Login
+折扣|discount
+配送费用|Shipping fees
+保价费用|Insurance fee
+支付费用|Pay
+包装费用|Packaging costs
+贺卡费用|Greeting card fee
+余额|Balance
+积分|points
+红包|Red envelope
+优惠券|coupon
+优惠券|coupon
+商品|products
+详情|Detail
+话题|topic
+项目主页|Project Home
+风险说明|Risk Description
+切换|Switch
+填写话题内容|Fill topic content
+取消|cancel
+提交|submit
+话题内容不能为空|Topics content can not be empty
+异常提示|Abnormal Prompt
+异常提示|Abnormal Prompt
+大商创|DA SHANG CHUANG
+自营|Self-employed
+积分|points
+市场价|Price
+销量|Sold
+库存|in stock
+促销|Promotions
+兑换|exchange
+积分可抵|points can use
+现金|cash
+服务|service
+发货并提供售后服务|Delivery and provide after-sales service
+发货并提供售后服务|Delivery and provide after-sales service
+服务信息|Service Information
+服务说明|Service Description
+货到付款|Cash on delivery
+支持送货上门后再收款|Support payment after delivery 
+支持现金|support cash payment
+机刷卡等方式|Credit card machine, etc.
+天退货|Day return
+自实际收货日期的次日起|The next day from the actual date of receipt
+天内|Days
+商品完好|Goods in good condition
+可进行无理由退换货|Can be no reason to return
+极速达|Speed ​​up
+上午下单|Order in the morning
+下午送达|dispatch in the afternoon
+服务信息|Service Information
+货到付款|Cash on delivery
+天退货|Day return
+极速达|Speed ​​up
+已选|selected
+请选择|please choose
+商品属性弹出层|product attribute pop-up layer
+积分|points
+库存|in stock
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+普通商品可修改数量|You can modify the number of general products
+数量|quantity 
+已经兑完|already exchanged
+立即兑换|Redeem Now
+商品属性弹出层|product attribute pop-up layer
+用户评价|User rating
+好评率|Positive feedback
+人评论|People Comments
+有图评价|comment with image
+全部评价|Total
+查看商品详情|View Product Details
+已经有|already have
+人关注|Followers
+商品|products
+服务|service
+时效|time limit
+爆款新品|New explosion models
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+进入店铺|enter a shop
+商品详情|product details
+规格参数|Specifications
+悬浮|float
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+收藏|Collect
+已经兑完|already exchanged
+立即兑换|Redeem Now
+悬浮|float
+相册|Gallery
+商品详情相册切换|change Product Details album
+店铺信息商品滚动|store info product ticker
+商品详情属性弹出层|Product Details properties pop-up layer
+模板堂|Template center
+限购|Purchase
+不能超过限购数量|Not exceed the limit
+接收返回的信息|Receiving the returned information
+属性图片|attribute picture
+用户可购买的数量|Amount can be purchased
+更改数量的同时显示|display while changing the amount
+获取被选中|Get selected
+该地区暂不支持配送|Delivery is not availbale in the region
+您最多可积分兑换|You can redeem a maximum of
+件商品|Items
+对不起|Sorry
+您现有的积分值不够兑换本商品|You do not have enought point to redeem
+切换|Switch
+默认|default
+兑换量|Redemption amount
+积分值|point value
+积分|points
+市场价|Market Price
+立即兑换|Redeem Now
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+优惠活动商品商品列表|list of products on sale
+活动商品开始|On-sale Products start
+优惠活动商品结束|End product promotions
+赠品|Gifts
+赠品结束|gift offer ended
+普通商品开始|General merchandise start
+普通商品结束|End general merchandise
+活动商品结束|product promotions ended
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入联系电话|Please enter contact phone number
+请选择所在地区|Please select your area
+所在地区|Region
+详细信息|details
+详细地址|Address
+请输入详细地址|Please enter the full address
+保存|save
+获取微信收货地址|Obtaining Wechat delivery address
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+收货地址|Shipping address
+微信获取共享收货地址|Wechat to obtain a shared delivery address
+配置注入|Configuration injection
+事件注入|Event injection
+用户成功拉去出地址|address successfully retrieved
+用户拒绝授权获取共享收货地址|User refused to authorize to acess a shared delivery address
+默认|default
+选择|select
+编辑|edit
+删除|delete
+新增收货人信息|Add consignee information
+还没有收货地址哦|Oh no shipping address
+点击添加一个收货地址|Click Add a shipping address
+快捷导航|Quick Navigation
+点击设置地址|Click Settings Address
+余额支付成功|Balance of payment success
+已付款金额|Amount paid
+应付款金额|Amount payable
+订单号|order number
+订单号|order number
+门店信息|Store information
+如果是线上支付则显示支付按钮|If payment is online payment, button will be displayed
+查看订单|check order
+快捷导航|Quick Navigation
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+所在地区|Region
+详细信息|details
+详细地址|Address
+保存|save
+地区选择|Select area
+地区选择|Select area
+服务电话|service line
+营业时间|Hours
+门店地址|Store address
+请选择配送地址|Select shipping address
+默认|default
+商品信息|Product information
+小于|Less than
+件仅显示图片|items only contain photo
+活动商品|items on sale
+配件标识|Accessories logo
+赠品|Gifts
+赠品标识|Gift logo
+普通商品|General merchandise
+配件标识|Accessories logo
+优惠活动商品|products on special
+大于|more than the
+折叠展开显示|A foldable display
+商品列表|Product List
+活动商品开始|On-sale Products start
+配件标识|Accessories logo
+该地区支持配送|delivery available in this region
+优惠活动商品结束|End product promotions
+赠品|Gifts
+该地区支持配送|delivery available in this region
+赠品结束|gift offer ended
+普通商品开始|General merchandise start
+配件标识|Accessories logo
+该地区支持配送|delivery available in this region
+普通商品结束|End general merchandise
+活动商品结束|product promotions ended
+活动商品开始|On-sale Products start
+配件标识|Accessories logo
+该地区支持配送|delivery available in this region
+普通商品开始|General merchandise start
+超级礼包|Super Gift Pack
+套餐价|Package price
+已优惠|discounted
+含商品|With goods
+超级礼包|Super Gift Pack
+配件标识|Accessories logo
+该地区支持配送|delivery available in this region
+普通商品结束|End general merchandise
+活动商品结束|product promotions ended
+配送方式|Delivery Method
+未设置|Is not set
+该地区不支持配送|delivery is not available in this region
+配送方式|Delivery Method
+配送方式|Delivery Method
+未设置|Is not set
+自营商家有自提点|self-employed merchants with pickup location
+配送方式|Delivery Method
+自营商家|Self-employed merchants
+上门自提|pickup
+自提点|pickup location
+关闭|close
+地址|address
+电话|phone
+自提日期|pickup date
+该时间无法配送|The delivery time is not available
+请另选配送时间|Please select another delivery time
+买家留言|Buyers message
+选填|Optional
+件商品|Items
+合计|total
+商品信息|Product information
+支付方式|payment method
+手续费|Fees
+请选择|please choose
+支付方式|payment method
+支付方式|payment method
+手续费|Fees
+支付方式|payment method
+发票信息|Invoice Information
+发票类型|invoice type
+普通发票|Ordinary invoices
+增值发票|Tax invoices
+电子发票是税务局认可的有效凭证|Digital invoice is a proof approved by Tax Department 
+其法律效力|Legal effect
+基本用途及使用规定|The basic purpose and requirements
+个人|personal
+单位|Company
+单位名称|company name
+可填写单位名称|You can fill company name
+纳税人识别号|Taxpayer Identification Number
+纳税人识别号|Taxpayer Identification Number
+发票内容|invoice content
+确定|confirm
+红包|Red envelope
+红包金额|The amount of red envelopes
+不使用红包|Do not use red envelopes
+使用期限|Period of use
+关闭|close
+确定|confirm
+优惠券|coupon
+优惠金额|Discounted price
+不使用优惠券|Do not use coupons
+免邮|Free postage
+范围|range
+有效期至|Valid until
+免邮|Free postage
+范围|range
+不可用原因|The reason is not valid
+有效期至|Valid until
+关闭|close
+确定|confirm
+储值卡|stored value card
+储值卡|stored value card
+储值卡余额|stored value card balance
+不使用储值卡|Cannot use stored value card
+金额|Amount
+过期时间|expire date
+面值|face value
+关闭|close
+确定|confirm
+商品包装|Product packaging
+免费额度|Limit
+不要包装|Do not packaging
+商品包装|Product packaging
+不要包装|Do not packaging
+订单满|Orders over
+免费|free
+是否使用余额|Whether to use the balance
+支付密码|Payment password
+请输入支付密码|Please enter payment password
+可使用|is usable
+积分抵扣|Points deduction
+团购若有保证金|Group Buy if there is a security deposit
+第一次只需支付保证金和相应的支付费用|The first deposit and pay the appropriate fee payment
+悬浮|float
+检测单个商品是否支持配送|check if delivery is available for single product
+实付款|real payment
+积分|points
+继续购物|continue shopping
+确认兑换|Confirm redemption
+提交订单|Submit Order
+悬浮|float
+快捷导航|Quick Navigation
+内容自动获取高度|Content automatically get height
+配送方式切换|change delivery
+上门自提选择|pickup selection
+上门自提|pickup
+选择的配送方式|Select delivery method
+自提点选择|pickup location selection
+订单确认页面|Order confirmation page
+显示红包|Display Red envelope
+订单确认页面|Order confirmation page
+显示储值卡|Display stored-value card
+订单确认页面|Order confirmation page
+显示优惠券|Show the coupon
+红包|Red envelope
+优惠券|coupon
+储值卡|stored value card
+选择点击效果|Click to select the effect
+新红包选择效果|The new red selection effect
+使用红包|Use red envelopes
+关闭|close
+新优惠券选择效果|The new coupon selection effect
+优惠券|coupon
+关闭|close
+新储值卡选择效果|The new stored value card selection effect
+使用储值卡|Using a stored value card
+关闭|close
+使用积分|Use Points
+使用余额|Balance
+发票|invoice
+没有增值发票|No Tax invoices
+确定去添加吗|Are you sure you want to add
+确定|confirm
+取消|cancel
+增值发票正在审核|Tax invoices under review
+单选|Single choice
+检测单个商品是否支持配送|check if delivery is available for single product
+获取配送方式|Gets Delivery
+获取配送方式|Gets Delivery
+获取配送方式|Gets Delivery
+获取配送方式|Gets Delivery
+获取配送方式|Gets Delivery
+获取配送方式|Gets Delivery
+切换使用余额|Switch balance
+检查是否选择了支付配送方式|Check if paid shipping is selected
+显示支付密码|Show Payments password
+隐藏支付密码|Hide payment Password
+商品优惠|Product discount
+折扣|discount
+配送费用|Shipping fees
+保价费用|Insurance fee
+支付费用|Pay
+包装费用|Packaging costs
+贺卡费用|Greeting card fee
+余额|Balance
+积分|points
+红包|Red envelope
+优惠券|coupon
+运费优惠|Freight concessions
+优惠券|coupon
+优惠券|coupon
+储值卡|stored value card
+储值卡折扣|Stored value card discount
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入联系电话|Please enter contact phone number
+请选择所在地区|Please select your area
+所在地区|Region
+详细信息|details
+详细地址|Address
+请输入详细地址|Please enter the full address
+确认提货|Confirm delivery
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+提交|submit
+礼品卡卡号|Gift card number
+退出礼品卡|Exit Gift Card
+提货|Delivery
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+退出礼品卡|Exit Gift Card
+确定退出礼品卡|OK to exit Gift Card
+确定|confirm
+取消|cancel
+提货|Delivery
+卡号|card number
+待发货|to be delivered
+确认收货|Items received confirmation
+完成|completed
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+确认收货|Items received confirmation
+确定收到商品了吗|Receive the goods yet determined
+确定|confirm
+取消|cancel
+商品|products
+详情|Detail
+评论|comment
+全部评价|Total
+好评|Good reviews
+中评|Neutral
+差评|Bad review
+有图|There are pictures
+全部评价|Total
+判断商品属性|Determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Review's Photos
+管理员回复|Administrator's Reply
+回复|Reply
+此处没有内容|There is no content here
+好评|Good reviews
+中评|Neutral
+差评|Bad review
+有图|There are pictures
+正在加载|loading
+快捷导航|Quick Navigation
+点击分享弹窗|Click the Share popup
+验证登录|Verify Login
+首次加载|First loads
+加载效果处理|Load effects processing
+头像|Avatar
+评论图片|Review's Photos
+正在加载|loading
+没有更多了|No more
+分享回调|Share callback
+页面层|Page Layers
+组合配件|Set Accessories
+主商品|Main Product
+属性|Attributes
+商品属性弹出层|product attribute pop-up layer
+库存|in stock
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+复选|Multiple choices
+确定|confirm
+商品属性弹出层|product attribute pop-up layer
+推荐配件|Recommended Accessories
+配件|Accessories
+配件|Accessories
+属性|Attributes
+商品属性弹出层|product attribute pop-up layer
+库存|in stock
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+复选|Multiple choices
+确定|confirm
+商品属性弹出层|product attribute pop-up layer
+限购|Purchase Limit
+购买|buy
+套餐价|Package price
+加入购物车|add to Shopping Cart
+组合配件|Set Accessories
+快捷导航|Quick Navigation
+动态获取内容高度并且赋值|dynamically obtain content height then assign value
+切换|Switch
+首次加载|First loads
+更新主件商品属性与价格|Update the main items and property prices
+主件商品|Main items
+点击属性弹窗|Click Properties popupup
+判断是否勾选配件商品|determine if accessory products are selected
+至少一件|At least one
+配件商品|Accessories Product
+点击属性弹窗|Click Properties popup
+判断是否勾选配件商品|determine if accessory products are selected
+当前勾选商品|current selected products
+点击属性弹窗|Click Properties popup
+更新配件商品属性|Updates accessories product attributes
+属性选择确定|Property selection confirmation
+配件选择|Select Accessories
+勾选即加入|Selected are added
+取消则删除|Cancel means deleted
+删除基本件|Delete basic pieces
+配件|Accessories
+主件|Main items
+新增配件|New Accessories
+配件|Accessories
+主件|Main items
+套餐数量|Number of packages
+减少|decrease
+不能小于最小购买数量|Not less than the minimum purchase quantity 
+套餐数量|Number of packages
+增加|increase
+限购商品|Limit Purchase Products
+不能超过限购数量|Cannot exceed the limit
+检查限购套餐数量|Check the number of purchase packages
+不能超过最大库存数量|Cannot exceed the limit
+加入套餐到购物车|Added packages to cart
+套餐组名|Package Group Name
+主商品|Main Product
+点选可选属性修改商品价格的函数|Click to select optional properties to modify product price function
+当前商品|Current product
+主件|Main items
+配件|Accessories
+主件商品|Main items
+套餐组名|Package Group Name
+获取商品属性|Obtain product attributes
+获取商品属性组|Obtain product attribute group
+处理添加商品属性到组合购买购物车的反馈信息|Process adding product attributes to a combined purchase cart feedback
+商品|products
+表单|Forms
+属性图片|attribute picture
+用户可购买的数量|Amount can be purchased
+购买数量大于商品限购数量|The quantity is over the product purchase limit
+更改数量的同时显示|display while changing the amount
+获取被选中|Get selected
+该地区暂不支持配送|Delivery is not availbale in the region
+移除勾选|Remove the tick
+删除基本件|Delete basic pieces
+配件|Accessories
+主件|Main items
+该商品库存不足|not enough stock for this product
+移除勾选|Remove the tick
+删除基本件|Delete basic pieces
+配件|Accessories
+主件|Main items
+套餐区间价|Package price range
+首次加载|First loads
+套餐价|Package price
+参考价|Reference Price
+优惠价格异步替换|discount price Asynchronously replace
+切换属性|Switching Attributes
+获得选定的商品属性封装函数|get selected product atttribute encapsulation function
+主件|Main items
+配件|Accessories
+获得选定的商品属性组|Get selected product attribute group
+主件|Main items
+配件|Accessories
+勾选搭配商品|Check with commodities
+添加套餐商品到购物车|Package add items to the shopping cart
+获取当前|Get the current
+配件|Accessories
+商品属性|product attribute
+获取主件商品属性|get main product attribute
+获取当前|Get the current
+配件|Accessories
+商品属性组|product attribute Group
+获取主件商品属性组|get main product attribute group
+当前|current
+配件|Accessories
+商品属性|product attribute
+主件商品属性|Main product attribute
+处理勾选搭配商品|process selected matched product
+添加套餐商品到购物车的反馈信息|add packaged items to cart feedback
+如果需要缺货登记|If you need to record out of stock
+跳转|redirect
+确定|confirm
+取消|cancel
+套餐价|Package price
+参考价|Reference Price
+优惠价格异步替换|discount price asynchronously replace
+处理取消勾选搭配商品|process unticked matched product
+获取主件商品属性|get main product attribute
+处理取消勾选搭配商品的反馈信息|processing unticked matched product feedback
+套餐价|Package price
+节省价|Saved price
+参考价|Reference Price
+市场价|Market Price
+套餐提交到购物车|Packages submitted to cart
+最终|ultimate
+套餐数量|Number of packages
+检查套餐限购数量|Check the package Quota
+套餐提交到购物车|Packages submitted to cart
+回调|Callback
+去购物车|Go to cart
+禁用加入购物车|Disable Add to Cart
+商品|products
+详情|Detail
+评论|comment
+视频|video
+距促销结束还剩|Time until promotion end is
+自营|Self-employed
+可用积分|Points Available
+销量|Sold
+当前库存|Current inventory
+可用积分|Points Available
+价格阶梯|The price ladder
+更多|More
+数量|quantity 
+优惠价格|Discounted prices
+套装|Set
+优惠套装|Special packages
+最高优惠|the biggest discount
+促销|Promotions
+满赠|Buy more get free
+立减|discount immediately
+折扣|discount
+团购活动|Group Buy
+满减|Spend over get discount
+领取优惠券|claim coupons
+送至|Sent to
+运费|Freight
+包邮|Free shipping
+免运费|free shipping
+该地区不支持配送|delivery is not available in this region
+默认仓库|The default warehouse
+已选|selected
+门店服务|Stores Services
+门店自提|Stores pickup
+可选择门店|Selectable stores
+服务|service
+发货并提供售后服务|Delivery and provide after-sales service
+发货并提供售后服务|Delivery and provide after-sales service
+正品保证|Authenticity Guaranteed
+包退服务|guaranteed return service
+闪速配送|Flash Delivery
+网友讨论圈|User discussion circle
+商品反馈|Product Feedback
+用户评价|User rating
+好评率|Positive feedback
+人评论|People Comments
+有图评价|comment with image
+全部评价|Total
+已经有|already have
+人关注|Followers
+商品|products
+服务|service
+时效|time limit
+关联商品|Related Products
+上拉查看图文详情|Scroll up to check photo details
+下拉回到商品信息|scrolll down go back to product info
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+猜你喜欢|you may also like
+此处没有内容|There is no content here
+商品属性弹出层|product attribute pop-up layer
+库存|in stock
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+数量|quantity 
+普通商品可修改数量|You can modify the number of general products
+暂时下架|Temporarily off the shelf
+暂时缺货|Temporarily out of stock
+立即购买|Buy now
+加入购物车|add to Shopping Cart
+商品属性弹出层|product attribute pop-up layer
+门店属性弹出层|Layer properties pop-up stores
+库存|in stock
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+数量|quantity 
+普通商品可修改数量|You can modify the number of general products
+暂时下架|Temporarily off the shelf
+暂时缺货|Temporarily out of stock
+确认|confirm
+门店属性弹出层|Layer properties pop-up stores
+飞入购物车小图|Flying into the shopping cart inset
+飞入购物车小图|Flying into the shopping cart inset
+悬浮|float
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+收藏|Collect
+购物车|shopping cart
+飞入购物车位置|Flying into the cart location
+飞入购物车位置|Flying into the cart location
+店铺|Store
+暂时下架|Temporarily off the shelf
+暂时缺货|Temporarily out of stock
+我要|I need to
+加入购物车|add to Shopping Cart
+样式不怎么好|Style is not very good
+后期调整|Later adjustment
+立即购买|Buy now
+立即购买|Buy now
+加入购物车|add to Shopping Cart
+立即购买|Buy now
+仓库|warehouse
+关闭|close
+仓库|warehouse
+服务信息|Service Information
+服务说明|Service Description
+正品保证|Authenticity Guaranteed
+包退服务|guaranteed return service
+闪速配送|Flash Delivery
+服务信息|Service Information
+领取优惠券|claim coupons
+领取优惠券|claim coupons
+元可用|Dollars available
+已领取|already claimed
+已抢完|already sold out
+立即|immediately
+领取|receive
+领取优惠券|claim coupons
+选择门店|Select store
+所在地区|Region
+请选择|please choose
+查看路线|View route
+此处没有内容|There is no content here
+到店时间|Time to the shop
+手机号码|mobile number
+输入手机号码|Enter the phone number
+关闭|close
+马上自提|pickup now
+到店时间|Time to the shop
+信息提示|message notification
+到店时间|Time to the shop
+默认为一天后的当前时间|default to next day same time
+手机号码|mobile number
+手机号码将获取取货码订单|the phone number will be used to get order number
+选择门店|Select store
+视频|video
+图片|image
+促销|Promotions
+促销|Promotions
+满赠|Buy more get free
+立减|support
+折扣|discount
+团购活动|Group Buy
+满减|Spend over get discount
+促销|Promotions
+套装|Set
+推荐配件|Recommended Accessories
+优惠套装|Special packages
+最高优惠|the biggest discount
+套装|Set
+服务信息|Service Information
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+视频|video
+分享|share
+优惠券|coupon
+首次加载|First loads
+倒计时|Countdown
+相册|Gallery
+选择门店|Select store
+验证登录|Verify Login
+请先登录|please log in first
+确定|confirm
+取消|cancel
+检查是否有商品规格|Check for product specifications
+异步加载门店列表|Asynchronous loading stores list
+关闭门店属性框|Exit Store Attribute Dialogue
+选择门店|Select store
+添加页面滚动|Add a page scroll
+选择地区|Select Area
+请选择|please choose
+请选择|please choose
+自提|pickup
+请填写手机号码|please fill in mobile number
+请选择门店|Please select stores
+时间日期|The date and time
+点选可选属性或改变数量时修改商品价格的函数|when click optional attribute or change quantity changes price function
+购买数量|Purchase quantity 
+不能为|Can not be
+并且必须为整数|And it must be an integer
+模板堂|Template center
+限购|Purchase Limit
+不能超过限购数量|Not exceed the limit
+获得选定的商品属性组|Get selected product attribute group
+接收返回的信息|Receiving the returned information
+属性图片|attribute picture
+用户可购买的数量|Amount can be purchased
+更改数量的同时显示|display while changing the amount
+获取被选中|Get selected
+获取被选中|Get selected
+该地区暂不支持配送|Delivery is not availbale in the region
+总价|Total price
+是否显示门店服务|Whether the service stores
+是否缺货|Whether out of stock
+检查是否申请分销商|Check whether to apply for distributor
+是否申请成为|Whether to apply for
+确定|confirm
+取消|cancel
+加入购物车的模式|Add to Cart Mode
+立即购买|Buy now
+首页浏览记录|Home Visit History
+将商品信息存储|save product info
+元素以及其他一些变量|Elements and other variables
+抛物线运动|Parabolic movement
+抛物线速度|Parabolic velocity
+控制抛物线弧度|Control parabolic arc
+绑定点击事件|Bind the click event
+滚动大小|Scroll size
+需要重定位|Require relocation
+禁止|Ban
+双击穿透|Double-click penetration
+点击弹出搜索层|Click the Search pop-up layer
+默认选择属性弹窗|The default selection Properties pop
+门店选择属性弹窗|Select Properties pop stores
+门店提示|Store Notification
+关闭选择门店|Close select stores
+服务|service
+优惠券|coupon
+促销弹窗|Promotional pop
+套装|Set
+点击分享弹窗|Click the Share pop
+验证登录|Verify Login
+分享回调|Share callback
+页面层|Page Layers
+详情上拉等|scroll up for details 
+商品|products
+详情|Detail
+评论|comment
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+切换|Switch
+分享|share it
+我是|I'm
+测试机器人|Test Robot
+我为|I'm
+大商场官方|Large shopping malls official
+代言|Endorsement
+森马夹克|Semir jacket
+冬装新款男士飞行夹克贴布绣立领休闲外套韩版潮流|Winter new men's flight jacket embroidered patch collar casual jacket Korean tide
+分享规则|Share Rules
+凯瑞甘没人看吗坑人吗好看吗痛苦明后天哭了好吗他开门红太快了美好太空棉痛苦没开门卡通漫画看|Kerrigan deceptive you look good no one would watch it tomorrow or the day the pain he cried, okay good start too fast for a better space cotton pain did not open the door to see cartoons
+点击右上角分享给朋友|Top right, click Send to a friend
+快捷导航|Quick Navigation
+套装列表|Set list
+优惠套餐|Package
+套装商品列表|Set the Product List
+韩都衣舍|Korean Fashion
+韩版女装新款黑白拼接插肩棒球服春季短外套|Korean women's new black and white raglan baseball stitching clothes spring jacket
+朴信惠同款|Park Shin Hye Outfit
+黑白拼接|Black and white stitching
+插肩袖|Raglan sleeve
+棒球服|Baseball uniform
+套装商品列表|Set the Product List
+套装商品列表|Set the Product List
+韩都衣舍|Korean Fashion
+韩版女装新款黑白拼接插肩棒球服春季短外套|Korean women's new black and white raglan baseball stitching clothes spring jacket
+朴信惠同款|Park Shin Hye Outfit
+黑白拼接|Black and white stitching
+插肩袖|Raglan sleeve
+棒球服|Baseball uniform
+套装商品列表|Set the Product List
+优惠套装|Special packages
+原价|Price
+立省|Provincial legislation
+加入购物车|add to Shopping Cart
+套装列表|Set list
+快捷导航|Quick Navigation
+自营|Self-employed
+市场价|Price
+保证金额|Guaranteed payment
+保证金|Security deposit
+销量|Sold
+库存|in stock
+价格阶梯|The price ladder
+更多|More
+服务|service
+发货并提供售后服务|Delivery and provide after-sales service
+发货并提供售后服务|Delivery and provide after-sales service
+货到付款|Cash on delivery
+天退货|Day return
+极速达|Speed ​​up
+已选|selected
+请选择|please choose
+用户评价|User rating
+好评率|Positive feedback
+人评论|People Comments
+有图评价|comment with image
+全部评价|Total
+已经有|already have
+人关注|Followers
+商品|products
+服务|service
+时效|time limit
+该商铺的其他团购|Other Group Buy at shop
+客服|Customer Service
+联系客服|Contact Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+进入店铺|Enter
+上拉查看图文详情|Scroll up to check photo details
+下拉回到商品信息|scrolll down go back to product info
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+商品属性弹出层|product attribute pop-up layer
+价格|price
+库存|in stock
+限购数量|Sales quota
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+普通商品可修改数量|You can modify the number of general products
+数量|quantity 
+团购结束|Group Buy ended
+立刻团|Immediately Group
+商品属性弹出层|product attribute pop-up layer
+悬浮|float
+客服|Customer Service
+收藏|Collect
+团购结束|Group Buy ended
+立即团|immediately Group
+立即团购|Buy Now
+悬浮|float
+阶梯价格|ladder price
+价格阶梯|The price ladder
+数量|quantity 
+优惠价格|Discounted prices
+服务信息|Service Information
+服务说明|Service Description
+货到付款|Cash on delivery
+支持送货上门后再收款|Support payment after delivery 
+支持现金|support cash payment
+机刷卡等方式|Credit card machine, etc.
+天退货|Day return
+自实际收货日期的次日起|The next day from the actual date of receipt
+天内|Days
+商品完好|Goods in good condition
+可进行无理由退换货|Can be no reason to return
+极速达|Speed ​​up
+上午下单|Order in the morning
+下午送达|Afternoon dispatch
+首次加载|First loads
+倒计时|Countdown
+相册|Gallery
+点选可选属性或改变数量时修改商品价格的函数|when click optional attribute or change quantity changes price function
+模板堂|Template center
+限购|Purchase Limit
+不能超过限购数量|Not exceed the limit
+接收返回的信息|Receiving the returned information
+属性图片|attribute picture
+用户可购买的数量|Amount can be purchased
+更改数量的同时显示|display while changing the amount
+获取被选中|Get selected
+该地区暂不支持配送|Delivery is not availbale in the region
+已抢完|already sold out
+总价|Total price
+库存|in stock
+限购数量|Sales quota
+您最多可团购|You can buy up to
+件商品|Items
+库存不足|Inventory shortage
+您最多可团购|You can buy up to
+件商品|Items
+团购详情倒计时|Group Buy details Countdown
+解析字符串|Parsing a string
+返回整数|Returns an integer
+如果未定义时间|If no time
+则我们设定倒计时日期是|Then we set the countdown date
+现在将来秒差值|Second difference between present and future
+默认选择属性弹窗|The default selection Properties pop
+服务|service
+阶梯价格|Price ladder
+详情上拉等|scroll up for details 
+活动名称|Event name
+搜索|search
+默认|default
+最新|up to date
+评论数|Reviews
+已结束|ended
+件已团|Group members have been
+剩余|remain
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+请输入搜索关键字|please enter keyword to search
+切换|Switch
+首页|Home
+下载连接|Download link
+首页广告|Home Advertising
+广告|ad
+页面向上滚动|Page scroll up
+下有|There are lower
+所以用以下方式|Therefore, in the following manner
+点击关闭顶部层|Click off the top layer
+点击后关闭|Click to close
+秒关闭弹窗广告|Seconds Close popup ads.
+城市关键词|City Keyword
+当前|current
+未知|unknown
+定位|Locate
+重新定位|re-locate
+已定位城市|Targeted city
+未知|unknown
+最近访问城市|Recent visit to the city
+热门城市|Popular cities
+以下包含|The following contains
+的城市|city ​​of
+没有找到|could not find it
+相关的城市|Related cities
+热门|Popular
+弹出搜索|Pop-up search
+城市关键词|City Keyword
+搜索|search
+查询城市信息|City Information Query
+定位失败|Positioning faileded
+请启用位置服务|Please enable location services
+切换城市|Change City
+已切换到|Switched to
+重新定位|re-locate
+请输入您要查找的城市名称|Please enter the city name you want to find
+头部导航|Head navigation
+审核中|under review
+正在审核|Under review
+商城期待你的加入|We welcome you to join us
+端补全信息吧|terminal complete the info
+返回首页|Home
+审核通过|approved
+审核通过|approved
+商城欢迎你的加入|You are welcome to join the mall
+管理员|administrator
+恭喜您|congratulations
+您已经成功通过审核|You have successfully approved
+返回首页|Home
+审核未通过|Not approved by
+审核未通过|Not approved by
+商城等候您的加入|Mall waiting for you to join
+管理员|administrator
+返回首页|Home
+入驻须知|Welcome Notice
+认真填好个人信息|Carefully fill out personal information
+以下信息都为必填信息|The following info is required 
+姓名|Full name
+号码具有真实性|Phone number is valid
+店主姓名|Owner's name
+店主姓名|Owner's name
+性别|gender
+手机号|phone number
+手机号|phone number
+所在地区|Region
+请输入详细地址|Please enter the full address
+我已阅读|I have read
+入驻须知|Welcome Notice
+同意签署在线协议|Agreed to sign an online agreement
+下一步|The next step
+地区选择|Select area
+地区选择|Select area
+同意协议|Consent agreement
+选择性别|gender selection
+入驻指南|New Merchant Guide
+弹窗页面层|Popup layer
+关闭|close
+勾选为已读|Check as read
+验证|verification
+店主姓名不能为空|The owner's name can not be empty
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+请阅读|please read
+入驻须知|Welcome Notice
+同意签署在线协议|Agreed to sign an online agreement
+头部导航|Head navigation
+店铺名称|Store Name
+请输入店铺名称|Enter the store name
+期望登陆名|Expectations login name
+请输入期望登陆名|Please enter the desired login name
+店铺类型|Store Type
+店铺类型|Store Type
+旗舰店|flagship store
+子类型|Subtype
+经营类目|Business Category
+详细类目|Detailed category
+一级类目|1st Level Category
+二级类目|2nd level categories
+操作|operating
+图书音像|Audio books
+图书音像|Audio books
+删除|delete
+提交|submit
+筛选|filter
+关闭|close
+一级类目|1st level category
+二级类目|2nd level categories
+全选|select all
+反选|Invert Selection
+取消|cancel
+确定|confirm
+取消|cancel
+在验证成功后|After a successful authentication
+表单提交前执行的函数|Function to execute before the form is submitted
+参数是当前表单对象|Parameter is the current form object
+这里明确|Here clear
+的话表单将不会提交|Then the form will not submit
+验证添加详细类目|Verify add detailed category
+请添加详细类目|Please add a detailed category
+选择店铺类型|Select the type of store
+选中值|Select the value
+旗舰店|flagship store
+选择子类型|Select a subtype
+增加验证|Increased verification
+移除验证|Remove verification
+选择经营类目|Select business category
+选中值|Select the average
+恢复|restore
+全选初始状态|Select initial state
+请求下级分类|request for subcategory
+遍历|Traversal
+子分类|Sub-category
+多选|Multiple choice
+分类|classification
+全选|select all
+分类|classification
+添加详细类目|Add details Category
+并返回数据|And returns data
+选中值|Select the value
+一级类目|1st level category
+二级类目|2nd level categories
+操作|operating
+遍历|Traversal
+子分类|Sub-category
+删除|delete
+关闭弹窗|Close popup
+删除详细类目|Detailed category deleted
+返回|return
+手机|Mobile phone
+操作提示|Operation notification
+收起提示|Collapse notification
+请填写在第三方申请的有效的|Please fill in the application of valid third party
+等配置信息|wait for info settings
+为必填项|Is required
+微信登录|Log in Wechat
+申请地址在|Application address
+微信开放平台|WeChat open platform
+通过认证后需要绑定微信公众号|Required to bind Wechat public account after verification passed
+点击进入|click to enter
+微信公众平台|Wechat public platform
+填写微信公众号|Fill in Wechat public account
+版本|version
+排序|Sorting
+是否显示|Display/Hide
+显示|display
+关闭|close
+申请地址|Application Address
+立即申请|apply immediately
+编辑|edit
+重置|Reset
+验证表单|Verification form
+配置信息不能为空|Configuration information can not be empty
+收起提示|Collapse notification
+提示相关设置操作时应注意的要点|get the main point when writing relevant notification info
+手机|Mobile phone
+第三方登录插件|Log third-party plug-ins
+操作提示|Operation notification
+收起提示|Collapse notification
+列表页展示了所有手机端支持的第三方登录插件|List shows all support mobile device third-party login plug-in
+安装插件时需先到各第三方应用中申请|You are required to apply for each third-party account first before installing plug-in
+其中微信登录需要申请微信公众号并在微信客户端中方可使用|for Wechat login you need to apply for Wechat public account and able to use in Wechat client terminal
+编辑|edit
+卸载|Uninstall
+安装插件|Install plug
+版本|version
+收起提示|Collapse notification
+提示相关设置操作时应注意的要点|get the main point when writing relevant notification info
+手机|Mobile phone
+操作提示|Operation notification
+收起提示|Collapse notification
+请填写在第三方申请的有效的|Please fill in the application of valid third party
+等配置信息|wait for info settings
+为必填项|Is required
+微信登录|Log in Wechat
+申请地址在|Application address
+微信开放平台|WeChat open platform
+通过认证后需要绑定微信公众号|Required to bind Wechat public account after verification passed
+点击进入|click to enter
+微信公众平台|Wechat public platform
+版本|version
+作者|Author
+排序|Sorting
+是否显示|Whether
+显示|display
+关闭|close
+申请地址|Application Address
+立即申请|apply immediately
+安装|installation
+重置|Reset
+验证表单|Verification form
+配置信息不能为空|Configuration information can not be empty
+收起提示|Collapse notification
+提示相关设置操作时应注意的要点|get the main point when writing relevant notification info
+请输入用户名|please enter user name
+不能输入特殊字符|You can not enter special characters
+用户名|username
+手机号|phone number
+邮箱|email
+请输入密码|Please enter your password
+请输入密码|Please enter your password
+绑定已有帐号|Binding existing account
+没有帐号|no account
+您可以|you can
+自动绑定|Automatic Binding
+请输入图形验证码|Please enter the captcha code
+请输入图形验证码|Please enter the captcha code
+请输入手机号|Please enter phone number
+手机号格式不正确|Phone number format is incorrect
+请输入手机号|Please enter phone number
+请输入短信验证码|Please enter the verification code SMS
+请输入短信验证码|Please enter the verification code SMS
+获取短信验证码|obtain SMS verification code
+确定|confirm
+修正头像宽高|Avatar width and height correction
+请输入图片验证码|Please enter the image verification code
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+发送频繁|Send frequent
+刷新图片验证码|Refresh image verification code
+获取短信验证码|obtain SMS verification code
+重新获取|Reacquire
+请输入新用户名|Enter a new username
+不能输入特殊字符|You can not enter special characters
+新用户名|new user name
+手机号|phone number
+邮箱|email
+请输入新用户名登录密码|Enter a new username password
+请输入新用户名登录密码|Enter a new username password
+确定|confirm
+注意事项|Precautions
+重新绑定已有帐号|Rebind existing account
+会将原帐号数据合并至新帐号|The original account data will be merged into a new account
+将原帐号所有数据删除|All original account data will be deleted
+原帐号的关系|The relationship between the original account
+如推荐|As recommended
+不再有效|It is no longer valid
+此项操作不可恢复|This operation can not be restored
+请谨慎操作|Proceed with caution
+请输入用户名|please enter user name
+请输入|please enter
+位的用户名|username
+请输入用户名|please enter user name
+请设置密码|Please set a password
+密码范围在|Password range
+请输入密码|Please enter your password
+请再输入一次密码|Please re-enter the password
+两次输入的密码不一致|Passwords do not match
+再次输入密码|Enter the password again
+官方地图|Official Map
+提货码|Pickup code
+提货时请出示该提货码|Please show pickup code when pickup
+提货时间|pickup time
+实景图片|Real picture
+门店营业时间|Store opening hours
+查看地图|check the map
+引用|Quote
+所在地区|Region
+请选择区域|Please select region
+到店时间|Time to the shop
+默认为一天后的当前时间|default to next day same time
+手机号码|mobile number
+手机号码将获取取货码订单|the phone number will be used to get order number
+到店时间|Time to the shop
+默认为一天后的当前时间|default to next day same time
+手机号码将获取取货码订单|the phone number will be used to get order number
+选择该门店|The selection of stores
+查看路线|View route
+确定|confirm
+该区域还没有门店列表哦|The region is also a list of stores oh no
+地区选择|Select area
+快捷导航|Quick Navigation
+地区选择|Select area
+选择门店|Select store
+提交|submit
+县级|district level
+需要支付|need to pay
+在线支付方式|Online Payment
+需要支付|need to pay
+在线支付方式|Online Payment
+原价|Original Price
+套餐价|Package price
+已优惠|discounted
+起止时间|Start and end time
+简单描述|simple description
+立即购买|Buy now
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+商品详情相册切换|change Product Details album
+店铺信息商品滚动|store info product ticker
+自营|Self-employed
+市场价|Price
+销量|Sold
+库存|in stock
+预售规则|Pre-sale rules
+定金|deposit
+尾款|Balance due
+预售人数|The number of pre-sale
+所在地区|Region
+默认仓库|The default warehouse
+已选|selected
+服务|service
+发货并提供售后服务|Delivery and provide after-sales service
+发货并提供售后服务|Delivery and provide after-sales service
+货到付款|Cash on delivery
+天退货|Day return
+极速达|Speed ​​up
+用户评价|User rating
+好评率|Positive feedback
+人评论|People Comments
+有图评价|comment with image
+全部评价|Total
+已经有|already have
+人关注|Followers
+商品|products
+服务|service
+时效|time limit
+爆款新品|New explosion models
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+联系客服|Contact Customer Service
+进入店铺|enter a shop
+上拉查看图文详情|Scroll up to check photo details
+下拉回到商品信息|scrolll down go back to product info
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+商品属性弹出层|product attribute pop-up layer
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+数量|quantity 
+普通商品可修改数量|You can modify the number of general products
+活动已结束|The event is over
+立即预约|book now
+商品属性弹出层|product attribute pop-up layer
+仓库|warehouse
+关闭|close
+悬浮|float
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+客服|Customer Service
+收藏|Collect
+店铺|Store
+活动已结束|The event is over
+立即预约|book now
+立即预约|book now
+悬浮|float
+预售说明|pre-sale description
+预售说明|pre-sale description
+定金付款后|After the deposit payment
+若非|If not
+或商家责任|Or business liability
+根据|according to
+售后政策|After-sale policy
+和客服判断为准|at customer service discretion
+定金恕不退还|Non-refundable deposit
+预售结束时|pre-sale ended
+由系统自动更新确认尾款价格|remaining balance price is automatically confirmed
+无论下单顺序先后均可享受相同的预售价格|the same pre-sale price applied regardless the order of order placement
+预售结束后|After pre-sale ended
+请至|Go to
+我的订单|My Order
+内付尾款|to pay the balance due
+尾款开始支付时|Start paying the balance due time
+请在要求的时间|Make time required
+内支付尾款|to pay the balance due
+若超时将自动关闭订单|If pass the due date, the order will terminate automatically
+且定金不予退还|And a non-refundable deposit
+赠品不予赠送|gift will be offered
+请注意预售结束时间|Please note pre-sale end time
+并及时支付尾款|and pay the balance due on time
+对此我们会有提醒|we remind you regarding to this matter
+如果提供赠品|If gift is offered
+赠品赠送依据的排序按照定金付款成功时间来计算|the order of gift dispatchment base on deposit completed time
+而不是定金下单时间|not the time of deposit note generated time
+发货时间请以预售商品详情页中的|please note dispatch date within the pre-sale description 
+发货时间|Delivery time
+描述为准|based on info in the description
+预售说明|pre-sale description
+服务信息|Service Information
+服务说明|Service Description
+货到付款|Cash on delivery
+支持送货上门后再收款|Support payment after delivery 
+支持现金|support cash payment
+机刷卡等方式|Credit card machine, etc.
+天退货|Day return
+自实际收货日期的次日起|The next day from the actual date of receipt
+天内|Days
+商品完好|Goods in good condition
+可进行无理由退换货|Can be no reason to return
+极速达|Speed ​​up
+上午下单|Order in the morning
+下午送达|Afternoon dispatch
+服务信息|Service Information
+地区选择|Select area
+地区选择|Select area
+仓库|warehouse
+快捷导航|Quick Navigation
+首次加载|First loads
+相册|Gallery
+点选可选属性或改变数量时修改商品价格的函数|when click optional attribute or change quantity changes price function
+库存|in stock
+您最多可预约|You can be reserved up
+件商品|Items
+接收返回的信息|Receiving the returned information
+属性图片|attribute picture
+用户购买的数量|quantity of users to buy
+更改数量的同时显示|display while changing the amount
+获取被选中|Get selected
+该地区暂不支持配送|Delivery is not availbale in the region
+总价|Total price
+您最多可预约|You can be reserved up
+件商品|Items
+点击弹出搜索层|Click the Search pop-up layer
+默认选择属性弹窗|The default selection Properties pop
+服务|service
+详情上拉等|scroll up for details 
+分页器|Pager
+广告位|Advertising
+广告位|Advertising
+更多|More
+抢先订|be the first
+热门分类|Top Categories
+新品发布|new product release
+快捷导航|Quick Navigation
+产品|product
+综合|All
+价格|price
+新品|New
+筛选|filter
+已结束|ended
+距离开始|From the start
+剩余|remain
+此处没有内容|There is no content here
+关闭|close
+全部|All
+即将开始|About to start
+预约中|in reservation
+已结束|ended
+全部|All
+清空选项|Clear Options
+确定|confirm
+快捷导航|Quick Navigation
+请输入搜索关键字|please enter keyword to search
+产品|product
+筛选|filter
+已结束|ended
+距离开始|From the start
+剩余|remain
+此处没有内容|There is no content here
+关闭|close
+全部|All
+即将开始|About to start
+预约中|in reservation
+已结束|ended
+全部|All
+清空选项|Clear Options
+确定|confirm
+快捷导航|Quick Navigation
+请输入搜索关键字|please enter keyword to search
+按店铺显示商品|sort by store
+采购列表|Procurement List
+无属性|No property
+购物车什么也没有|Nothing in cart
+去逛逛|Go shopping
+全选|select all
+金额总计|Amounting
+不含运费|Free shipping
+去下单|To the next one
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入联系电话|Please enter contact phone number
+详细信息|details
+详细地址|Address
+请输入详细地址|Please enter the full address
+是否开发票|Invoice required?
+不开发票|Not invoiced
+普通发票|Ordinary invoices
+增值发票|Tax invoices
+发票抬头|Invoice
+发票抬头|Invoice
+纳税人识别号|Taxpayer Identification Number
+纳税人识别号|Taxpayer Identification Number
+支付方式|payment method
+线下支付|Offline payments
+备注|Remark
+取消|cancel
+确定|confirm
+快捷导航|Quick Navigation
+批发首页|Wholesale Home
+发票信息|Invoice Information
+提交订单|Submit Order
+提交订单|Submit Order
+点击提交按钮|Click on the submit button
+获取购物车信息|Gets shopping cart information
+获取|Obtain
+联系人信息|contact information
+联系人|Contact
+手机号|phone number
+收货地址|Shipping address
+不能为空|Can not be empty
+获取商品信息|Obtain product information
+请选择商品|Please Select
+提交订单之前|Prior to order submission
+检查购物车数量是否符合要求|Check the number of shopping cart for compliance
+不能小于最小数量|Not less than the minimum number of
+购物车计算|Shopping Cart computing
+选择所有列表|Select all list
+更新购物车数据|Update shopping cart data
+检查列表是否需要全选|check the list if select all is neededd
+商品属性|product attribute
+全选|select all
+更新页面购物车数据|Update shopping cart data
+门店|Stores
+至少选中一个商品|Select at least one product
+门店|Stores
+门店|Stores
+加载|load
+删除购物车商品|Delete Cart
+已删除|deleted
+请登录后关注|Please subscribe after login
+立即登录|log in immediately
+取消|cancel
+购物车商品数量加减|product qty add/substract in a cart
+起批量|piece wholesale
+小于|Less than
+本商品所有属性数量|all properties for this product
+更新购物车数量|Update cart quantity 
+不能小于最小数量|Not less than the minimum number of
+不能超过限购|Can not exceed the limit
+限购|Purchase
+不能超过最大数量|Not exceed the maximum number of
+更新购物车数量|Update cart quantity 
+该商品不能增减|This product can not increase or decrease
+直接修改购物车数量|Directly modify the number of shopping cart
+起批量|piece wholesale
+小于|Less than
+本商品所有属性数量|all properties for this product
+不能小于最小数量|Not less than the minimum number of
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+不能超过限购数量|Not exceed the limit
+更新购物车数量|Update cart quantity 
+多选|Multiple choice
+多选只点击单选按钮|Just click on the Single choice button multiple choice
+全选|select all
+全不选|unselect all
+选择所有属性|Select all properties
+选择|select
+判断选中状态|determine selected status
+批发价|Wholesale price
+原价|Original price
+起批量|piece wholesale
+实力保障|Strength of protection
+小时发货|Hour(s) dispatch
+包邮|Free shipping
+包退|guarantee for returns
+件可售|Pieces for sale
+无属性|No property
+库存|in stock
+上拉查看图文详情|Scroll up to check photo details
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+悬浮|float
+进货单|Purchase List
+加入进货单|Add to basket
+立即订购|order now
+暂无权限|No permission
+悬浮|float
+快捷导航|Quick Navigation
+批发首页|Wholesale Home
+初始化|initialization
+属性操作|Attribute operation
+点击|Click on
+加减号|Plus and minus signs
+判断值是否在范围内|Determining whether a value in the range of
+采购商品库存不足|Procurement Stock is not enough
+赋值|Assignment
+点击输入框|Click the input box
+输入|Entry
+判断值是否在范围内|Determining whether a value in the range of
+采购商品库存不足|Procurement Stock is not enough
+添加商品|Adding goods
+请先登录|please log in first
+你还没有登录|You are not logged in
+请先登录|please log in first
+确定|confirm
+取消|cancel
+请选择您需要购买的商品|Please select the items you need to buy
+您订购的商品少于最小起订量|Your order qty is less than MOQ
+添加成功|Added successfully
+相册|Gallery
+详情上拉等|scroll up for details 
+批发搜索|Wholesale Search
+分页器|Pager
+分类列表|Category List
+限时采购|Limited Time Purchase
+限时采购|Limited Time Purchase
+起批量|piece wholesale
+更多批发|More wholesale
+起批量|piece wholesale
+起批量|piece wholesale
+成交量|Volume
+快捷导航|Quick Navigation
+批发首页|Wholesale Home
+搜索|search
+请输入关键字|Please enter key words
+商品滚动|Scroll goods
+商品搜索|product search
+搜索|search
+起批量|piece wholesale
+起批量|piece wholesale
+成交量|Volume
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+批发首页|Wholesale Home
+店铺街分类|Store Street Category
+切换到第一个|Switch to the first
+速度为|Speed ​​of
+搜索|search
+请输入关键字|Please enter key words
+已完成|completed
+未确认|unconfirmed
+订单号|order number
+联系人|Contact
+联系方式|contact details
+收货地址|Shipping address
+是否开发票|Whether invoicing
+增值税发票|VAT invoices
+普通发票|Ordinary invoices
+不需要发票|It does not require the invoice
+发票抬头|Invoice
+纳税人识别码|Taxpayer identification number
+支付方式|payment method
+其他备注|Other Remarks
+款商品|item(s)
+合计|total
+已完成|completed
+设置为完成|Set to complete
+删除|delete
+还没有订单哦|Oh no orders
+快捷导航|Quick Navigation
+批发首页|Wholesale Home
+订单列表|Order List
+删除订单|Delete Orders
+是否删除此订单|Remove this order
+确定|confirm
+取消|cancel
+确认订单|Confirm Order
+是否确认订单已完成|Are you sure order is complete
+确定|confirm
+取消|cancel
+询问框|Query box
+请确认微信支付是否已完成|Please confirm whether Wechat payment has been completed
+已完成支付|Completed payment
+支付遇到问题|problem encountered in payment
+商品|products
+商品|products
+店铺搜索|Store Search
+搜索|search
+搜索|search
+店铺|Store
+热门搜索|popular searches
+最近搜索|Recent Searches
+暂无搜索记录|No search records
+点击关闭搜索|Close search
+关闭|close
+禁用自动提示|Disable automatically prompts
+去除空格|White spaces
+清除搜索记录|Clear search history
+暂无搜索记录|No search records
+相关|Related
+搜索关键词|search keyword
+搜索|search
+用于直接分享搜索结果页|For the direct sharing of search results page
+搜索|search
+店铺|Store
+用于直接分享搜索结果页|For the direct sharing of search results page
+原页面为异步加载|Original page is loaded asynchronously
+直接分享无效|Direct share invalid
+商品|products
+商品|products
+店铺搜索|Store Search
+搜索|search
+热门搜索|popular searches
+最近搜索|Recent Searches
+暂无搜索记录|No search records
+点击关闭|Click to close
+清除搜索记录|Clear search history
+暂无搜索记录|No search records
+商品|products
+详情|Details
+评论|comment
+全部评价|Total
+好评|Good reviews
+中评|Average
+差评|Bad review
+有图|There are pictures
+全部评价|Total
+判断商品属性|determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Photos
+管理员回复|Admin Reply
+回复|Reply
+此处没有内容|There is no content here
+好评|Good reviews
+判断商品属性|determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Photos
+管理员回复|Admin Reply
+回复|Reply
+此处没有内容|There is no content here
+中评|Average
+判断商品属性|determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Photos
+管理员回复|Admin Reply
+回复|Reply
+此处没有内容|There is no content here
+差评|Bad review
+判断商品属性|determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Photos
+管理员回复|Admin Reply
+回复|Reply
+此处没有内容|There is no content here
+有图|There are pictures
+判断商品属性|determine product attributes
+是否是购买的商品|Whether it is purchased
+评论图片|Photos
+管理员回复|Admin Reply
+回复|Reply
+此处没有内容|There is no content here
+正在加载|loading
+快捷导航|Quick Navigation
+限时秒杀|Time limit deal
+首次加载|First loads
+切换|Switch
+初始块|The initial block
+页面|page
+的索引|index of
+显示加载完成|Display loading completed
+评论图片|Photos
+正在加载|loading
+没有更多了|No more
+商品|products
+详情|Detail
+评论|comment
+距开始还剩|until start
+距结束还剩|until end
+已结束|ended
+销量|Sold
+库存|in stock
+限购|Purchase
+数量|quantity 
+用户评价|User rating
+好评率|Positive feedback
+人评论|People Comments
+有图评价|comment with image
+全部评价|Total
+上拉查看图文详情|Scroll up to check photo details
+下拉回到商品信息|scrolll down go back to product info
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+底部导航位置不可移动|Bottom navigation position immovably
+客服|Customer Service
+收藏|Collect
+开抢后|after snap up started
+秒杀活动结束|End flash deals
+已抢完|already sold out
+即将开始|About to start
+已抢购|It has snapped up
+立即抢购|Immediately snapped up
+立即抢购|Immediately snapped up
+商品属性弹出层|product attribute pop-up layer
+判断属性是复选还是单选|Determine property is a single or multiple choices
+有属性图片|There are attributes Pictures
+没属性图片|No attribute picture
+开抢后|after snap up started
+秒杀活动结束|End flash deals
+已抢完|already sold out
+即将开始|About to start
+已抢购|It has snapped up
+立即抢购|Immediately snapped up
+商品属性弹出层|product attribute pop-up layer
+快捷导航|Quick Navigation
+限时秒杀|Time limit deal
+点选可选属性或改变数量时修改商品价格的函数|when click optional attribute or change quantity changes price function
+不能超过限购数量|Not exceed the limit
+接收返回的信息|Receiving the returned information
+属性图片|attribute picture
+用户可购买的数量|Amount can be purchased
+更改数量的同时显示|display while changing the amount
+该地区暂不支持配送|Delivery is not availbale in the region
+已抢完|already sold out
+倒计时|Countdown
+获取|Obtain
+详情上拉等|scroll up for details 
+明日开场|Opening tomorrow
+即将开始|About to start
+抢购中|Panic buying
+已结束|ended
+分页器|Pager
+秒杀倒计时|Countdown
+全场爆款|The audience burst models
+限时抢购|Time limit buy
+距开始|From the start
+距结束|From the end
+已结束|ended
+已抢完|already sold out
+限量|Limit
+准时开抢|Rush to open on time
+已抢|sold out
+取消提醒|Cancel reminder
+提醒我|remind me
+即将开始|About to start
+去抢购|To buy
+已结束|ended
+还没有活动哦|Oh no activity
+快捷导航|Quick Navigation
+正在加载|loading
+秒杀轮播|Flash Deal Carousel
+异步数据|Asynchronous data
+倒计时|Countdown
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+提醒|remind
+取消提醒|Cancel reminder
+设置提醒成功|Set reminders success
+提醒我|remind me
+秒杀提醒已取消|Flash deal alert dismissed
+您可能会抢不到哦|You may miss the deal
+您还没有登录|You are not logged in
+确定|confirm
+取消|cancel
+商品|products
+详情|Detail
+评论|comment
+商品详情|product details
+规格参数|Specifications
+此处没有内容|There is no content here
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+限时秒杀|Deal time limit
+切换|Switch
+享受更加流畅的商城体验|Enjoy smoother mall experience
+赶快下载多商户|Quickly download multiple businesses
+立即下载|download immediately
+商品|products
+店铺搜索|Store Search
+分页器|Pager
+更多|More
+更多|More
+限时|Limited Time
+秒杀|Flash Deals
+更多|More
+查看更多|see more
+更多|More
+找相似|Find similar
+热门大牌|Hot brand
+最全最时尚的大牌汇集|The most complete collection of the most fashionable big
+更多|More
+导航按钮|Navigation buttons
+更多|More
+查看更多|see more
+找相似|Find similar
+客户端|Client
+触屏版|Touch-screen version
+电脑版|PC version
+版权所有|all rights reserved
+并保留所有权利|All Rights Reserved
+正在加载|loading
+回到顶部|back to the top
+顶部|top
+首页|Home
+分类|classification
+搜索|search
+购物车|shopping cart
+中心|center
+社区|community
+悬浮菜单|Float Menu
+浏览记录|History
+刚刚您在浏览|recently browsed
+衣服|clothes
+相关产品|Related Products
+继续浏览|Continue
+关闭|close
+滑动跳转|Slide Jump
+查询城市信息|City Information Query
+定位失败|Positioning failed
+请启用位置服务|Please enable location services
+有浏览商品则底部显示提示|show at bottom if there is browse history
+浏览历史隐藏|Browsing history Hide
+获取|Obtain
+高度|height
+赋值给背景|Assigned to the background
+页面发生变化时触发事件|A trigger event occurs when the page changes
+立即关注|Immediate subscribe
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+个人中心|Profile
+我的收藏|my collection
+我的关注|my followers
+我的订单|My Order
+资金管理|Money management
+购物车|shopping cart
+我的分享|My Share
+个人中心|Profile
+精选类目|Featured Category
+店铺街|Market
+微筹|WeiChou
+品牌街|Brand Street
+专题汇|Topic Report
+积分换购|Points redemption
+最新团购|The latest Group Buy
+促销活动|Promotions
+新闻资讯|news
+社区服务|community service
+超值礼包|Value packs
+拍卖活动|Auction
+我的微店|My WeShop
+拼团活动|Group Buy Promotions
+砍价活动|Bargain
+批发|wholesale
+秒杀活动|flash deals
+优惠券|coupon
+红包|Red envelope
+预售|Pre-sale
+扫码支付|Scan code to pay
+类别|category
+热门|Popular
+地区|area
+距离|distance
+附近|nearby
+返回默认|Return to default
+店铺列表|Store List
+已经有|already have
+人关注|Followers
+距离|distance
+已关注|subscribed
+关注|subscribe
+商品列表|Product List
+商品列表|Product List
+此处没有内容|There is no content here
+店铺列表|Store List
+正在加载|loading
+快捷导航|Quick Navigation
+已关注店铺|Subscribed Stores
+首次加载|First loads
+处理|process
+定位失败|Positioning failed
+点击分类|Click classification
+正在加载|loading
+没有更多了|No more
+点击省份|Click provinces
+循环遍历|Loop through
+点击地区|Click on a region
+点击排序|Click to sort
+已关注|subscribed
+关注|subscribe
+请登录后关注该店铺|Please login to subscribe to this store
+立即登录|log in immediately
+取消|cancel
+顶部|top
+滚动|scroll
+商品搜索|product search
+分类|classification
+综合|All
+新品|New
+销量|Sold
+价格|price
+库存|in stock
+销量|Sold
+此处没有东西|Nothing here
+筛选|filter
+关闭|close
+品牌|Brands
+商品搜索|product search
+搜索|search
+最近搜索|Recent Searches
+点击关闭|Click to close
+店铺街|Market
+筛选|filter
+店铺街分类|Store Street Category
+清空搜索|Empty search
+搜索|search
+分类|classification
+店铺信息商品滚动|store info product ticker
+已经有|already have
+人关注|Followers
+已关注|subscribed
+关注|subscribe
+商品|products
+服务|service
+时效|time limit
+全部商品|all products
+新品|New
+促销|Promotions
+在线客服|online agent
+店铺二维码|Store QR Code
+邀请好友扫一扫分享店铺给|Invite friends to scan and share the store
+商家电话|Business Phone
+店铺简介|About shop
+证照信息|License information
+公司名称|company name
+所在地区|Region
+主营品牌|Main brands
+商家等级|Merchant Level
+商城网店经营者营业执照信息|Mall store operators business license information
+企业名称|Company Name
+营业执照注册号|Business license registration number
+法定代表名称|The name of the legal representative
+营业执照所在地|Business license location
+企业注册资金|Enterprises registered capital
+万元|Ten thousand Dollars
+营业执照有效期|Valid business license
+营业执照经营范围|Business License Business
+公司地址|company address
+店铺名称|Store Name
+以上营业执照信息|Above business license information
+根据国家工商总局|According to the State Administration for Industry and Commerce
+网络交易管理办法|Online Trading Management Method
+要求对入驻商家营业执照信息进行公示|required new merchant to show commercial certificate to the public 
+除企业名称通过认证之外|besides company name check need to be passed
+其余信息由卖家自行申报填写|the remaining inform could be freely filled out the merchant
+如需进一步核实|For further verification
+请联系当地工商行政管理部门|contact your local authority 
+快捷导航|Quick Navigation
+店铺街|Market
+店铺|Store
+店铺关注|Store subscribers
+已关注|subscribed
+关注|subscribe
+请登录后关注该店铺|Please login to subscribe to this store
+立即登录|log in immediately
+取消|cancel
+商品搜索|product search
+已经有|already have
+人关注|Followers
+已关注|subscribed
+关注|subscribe
+全部商品|all products
+新品|New
+推荐|recommend
+领取优惠券|claim coupons
+热门商品|Popular product
+库存|in stock
+销量|Sold
+查看更多|see more
+店铺详情|Store details
+热门分类|Top Categories
+客服|Customer Service
+客服|Customer Service
+旺旺|Wang Wang
+美恰|Mei Qia
+商品搜索|product search
+搜索|search
+商品搜索|product search
+搜索|search
+最近搜索|Recent Searches
+点击关闭|Click to close
+领取优惠券|claim coupons
+领取店铺优惠券|Receive store coupons
+优惠卷|voucher
+优惠卷|voucher
+快捷导航|Quick Navigation
+店铺街|Market
+店铺关注|Store subscribers
+已关注|subscribed
+关注|subscribe
+请登录后关注该店铺|Please login to subscribe to this store
+立即登录|log in immediately
+取消|cancel
+弹出优惠券|Pop-up coupons
+还未登录|Not logged in
+请登录之后领取|Please log in after receiving
+确定|confirm
+取消|cancel
+清空搜索|Empty search
+搜索|search
+分类|classification
+商品详情相册切换|change Product Details album
+快捷导航|Quick Navigation
+优化快捷导航|Optimization quick navigation
+自营的首页|Self-employed home
+商家的店铺页|Merchant shop page
+平台的专题页|Platform Featured Pages
+快捷导航|Quick Navigation
+快捷导航|Quick Navigation
+页面向上滚动|Page scroll up
+下有|There are lower
+所以用以下方式|so use the following method
+点击关闭顶部层|to close top layer
+商品搜索|product search
+搜索|search
+最近搜索|Recent Searches
+点击关闭|Click to close
+处理|process
+定位失败|Positioning failed
+立即购买|Buy now
+快捷导航|Quick Navigation
+专题列表|Theme list
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+异步数据|Asynchronous data
+充值提交申请|Recharge submission
+账户充值|Account refill
+支付方式|payment method
+手续费|Fees
+支付方式描述|Payment Description
+取消|cancel
+提现|withdraw
+银行卡|Bank card
+支付方式|payment method
+手续费|Fees
+支付方式描述|Payment Description
+会员备注|Members Remarks
+管理员备注|Administrators Remarks
+未确认|unconfirmed
+取消|cancel
+取消|cancel
+是否确定要取消此次申请|Are you sure you want to cancel this request
+确定|confirm
+取消|cancel
+提现账户|Account withdrawals
+选择银行卡弹出层|Select bank card ejection layer
+选择银行卡|Select bank card
+提现金额|Withdrawal Amount
+请输入提现金额|Enter the withdrawal amount
+最低可提现金额|The lowest amount of withdrawals
+不限|Any
+本次最大提现额度|The maximum cash withdrawal limit
+手续费|Fees
+图片验证码|Picture Code
+请输入图片验证码|Please enter the image verification code
+短信验证码|SMS verification code
+请输入短信验证码|Please enter the verification code SMS
+发送验证码|Send the verification code
+获取短信验证码|obtain SMS verification code
+提交申请|submit application
+弹窗|Pop-ups
+请填写提现金额|Please fill in the amount of withdrawals
+验证码校验|Check codes
+请输入图片验证码|Please enter the image verification code
+请输入短信验证码|Please enter the verification code SMS
+发送验证码|Send the verification code
+重新获取|Reacquire
+请输入图片验证码|Please enter the image verification code
+请输入手机号|Please enter phone number
+发送频繁|Send frequent
+请输入红包口令|Please enter a password red envelope
+请输入红包密码|Please enter the password red envelope
+提交|submit
+快捷导航|Quick Navigation
+我的红包|My red envelopes
+请输入红包口令|Please enter a password red envelope
+请输入红包密码|Please enter the password red envelope
+卡号|card number
+银行卡号|Bank card number
+持卡人|cardholder
+持卡人姓名|Cardholder's Name
+开户行|Bank
+工商银行上海|ICBC Shanghai
+路支行|Road Branch
+银行|bank
+工商银行|ICBC
+提交|submit
+快捷导航|Quick Navigation
+资金管理|Money management
+银行卡|Bank card
+请输入完整的信息|Please enter complete information
+储值卡卡号|Stored value card number
+请输入储值卡卡号|Please enter the stored value card number
+储值卡密码|Stored value card password
+请输入储值卡密码|Please enter the password stored value card
+请输入图片验证码|Please enter the image verification code
+请输入验证码|please enter verification code
+绑定当前账户|Binding current account
+引用|Quote
+快捷导航|Quick Navigation
+储值卡|stored value card
+未使用|Unused
+已使用|Used
+已过期|expired
+元可用|Dollars available
+去使用|Use Now
+查看订单|check order
+使用期限|Period of use
+还没有红包哦|Oh no red envelopes
+兑换红包|Exchange red envelopes
+引用|Quote
+快捷导航|Quick Navigation
+资金管理|Money management
+切换选项卡|Switch tabs
+去使用|To use
+尾号|Tail number
+添加银行卡|Adding card
+快捷导航|Quick Navigation
+资金管理|Money management
+我的优惠券|my discount coupon
+未使用|Unused
+已使用|Used
+已过期|expired
+免邮|Free postage
+元可用|Dollars available
+元可用|Dollars available
+立即|immediately
+使用|use
+已使用|Used
+已过期|expired
+还没有优惠券哦|Oh no coupons
+快捷导航|Quick Navigation
+调整子菜单样式|Adjustment sub menu style
+列表|List
+充值金额|Recharge amount
+请输入充值金额|Please enter the recharge amount
+最低充值金额|The minimum recharge amount
+不限|Any
+备注|Remark
+选填|Optional
+充值方式|Deposit methods
+充值方式弹出层|Recharge mode pop-up layer
+充值方式|Deposit methods
+手续费|Fees
+提交申请|submit application
+弹窗|Pop-ups
+快捷导航|Quick Navigation
+资金管理|Money management
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+资金管理|Money management
+正在加载|loading
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+可用余额|Available Balance
+冻结余额|Freezed Balance
+充值|Recharge
+提现|withdraw
+快捷导航|Quick Navigation
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+资金管理|Money management
+正在加载|loading
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+资金管理|Money management
+正在加载|loading
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+充值卡卡号|Recharge card number
+请输入充值卡卡号|Please enter the recharge card number
+充值卡密码|Prepaid card code
+请输入充值卡密码|Please enter the recharge card password
+请输入图片验证码|Please enter the image verification code
+请输入验证码|please enter verification code
+绑定当前账户|Binding current account
+引用|Quote
+快捷导航|Quick Navigation
+储值卡|stored value card
+已激活|activated
+已过期|expired
+金额|Money
+查看详情|see details
+过期时间|expire date
+面值|face value
+还没有储值卡哦|Oh no stored value card
+绑定储值卡|Binding stored value card
+快捷导航|Quick Navigation
+资金管理|Money management
+编号|Numbering
+订单号|order number
+使用时间|usage time
+充值|Recharge
+使用|use
+还没有内容哦|Oh no content
+充值|Recharge
+快捷导航|Quick Navigation
+储值卡|stored value card
+参与活动|participate
+全部活动|bottom price
+人参与|People involved
+原价|Original Price
+低价|bottom price
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+砍价首页|Home bargain
+悬浮菜单|Float Menu
+砍价列表获取|Get bargain list
+填写评论内容|Enter comment
+晒图|blueprint
+提交评论|submit comments
+全部项目|All items
+进行中|processing
+已成功|succeeded
+已失败|failed
+全部项目|All items
+进行中|processing
+已成功|succeeded
+已失败|failed
+剩余时间|Time left
+已筹资金|money raised
+支持人|supporter
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+切换|Switch
+异步数据|Asynchronous data
+待付款|Pending payment
+等待您的支持|Waiting for your support
+请您赶快支付哦|Oh, please hurry to pay
+已付款|Paid
+下单成功|successfully ordered
+欢迎下次光临|Always welcome
+岁月无声|Silent years
+已筹资金|money raised
+支持人|supporter
+支持|support
+配送方式|Delivery Method
+时间|time
+支付方式|payment method
+买家留言|Buyers message
+订单号|order number
+创建时间|Created
+付款后显示|After payment display
+付款时间|Payment time
+发货后显示|Display after delivery
+快递单号|tracking number
+待付款|Pending payment
+实付款|real payment
+已取消|Cancelled
+已付款|Paid
+已发货|Shipped
+已确认收货|It has confirm receipt
+查看物流|View Logistics
+快捷导航|Quick Navigation
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+全部关注|All subscribe
+进行中|processing
+已成功|succeeded
+已失败|failed
+剩余时间|Time left
+已筹资金|money raised
+支持人|supporter
+快捷导航|Quick Navigation
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+我的订单|My Order
+我的支持|My Support
+我的关注|my followers
+关于众筹|About Crowdfunding
+意见反馈|Feedback
+项目推荐|Recommended items
+剩余时间|Time left
+已筹资金|money raised
+支持人|supporter
+此处没有内容|There is no content here
+首页|Home
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+悬浮菜单|Float Menu
+店铺信息商品滚动|store info product ticker
+全部订单|All Orders
+待支付|To be paid
+待发货|to be delivered
+待收货|Inbound
+已完结|finished
+订单状态|Order Status
+订单号|order number
+支持|support
+合计|total
+删除|delete
+查看订单|check order
+此处没有内容|There is no content here
+首页|Home
+微筹广场|WeiChou Plaza
+微筹订单|WeiChou orders
+微筹中心|WeiChou center
+悬浮菜单|Float Menu
+引用|Quote
+异步数据|Asynchronous data
+是否删除此订单|Remove this order
+确定|confirm
+取消|cancel
+收货人|Receiver
+请输入收货人姓名|Enter the name of the consignee
+请输入收货人姓名|Enter the name of the consignee
+手机号码|mobile number
+请输入联系电话|Please enter contact phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入联系电话|Please enter contact phone number
+请选择所在地区|Please select your area
+所在地区|Region
+详细信息|details
+详细地址|Address
+请输入详细地址|Please enter the full address
+保存|save
+获取微信收货地址|Obtaining Wechat delivery address
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+收货地址|Shipping address
+微信获取共享收货地址|Wechat to obtain a shared delivery address
+配置注入|Configuration injection
+事件注入|Event injection
+用户成功拉去出地址|address successfully retrieved
+用户拒绝授权获取共享收货地址|User refused to authorize to acess a shared delivery address
+订购数量|Qty
+订购描述|Order description
+选填|Optional
+联系人|Contact
+邮箱地址|email address
+联系电话|contact number
+提交缺货登记|Out of stock 'registration
+重置|Reset
+快捷导航|Quick Navigation
+评价|Evaluation
+商品质量如何|How the quality of goods
+大小合适么|What right size
+快写下你的评价|Fast Write your review
+分享给大家吧|For everyone to share it
+图片信息|image information
+上传照片|upload photos
+图片放大|enlarge image
+店铺服务评分|Store service score
+商品相符|products match
+卖家态度|Sellers attitude
+发货速度|Delivery speed
+人员态度|Staff attitude
+评论成功|Comments Success
+店铺服务评分|Store service score
+已评价|reviewed
+提交评论|submit comments
+显示删除图片|Delete pictures
+默认地址|default address
+设为默认|set as Default
+编辑|edit
+删除|delete
+新增收货人信息|Add consignee information
+还没有收货地址哦|Oh no shipping address
+点击添加一个收货地址|Click Add a shipping address
+快捷导航|Quick Navigation
+设置默认收获地址|Set the default address harvesting
+设置成功|Setting Success
+分享二维码|Share dimensional code
+长按二维码发送给朋友|Long two-dimensional code to a friend
+分成说明|Divided Description
+下线人数|The number of offline
+分成|Divided
+下线人数|The number of offline
+分成|Divided
+我的推荐清单|My recommendation list
+分成明细|Into details
+推荐注册分成|Recommended registered into
+订单分成|Orders divided
+已分成|It has been split into
+等待处理|Pending
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+订单列表|Order List
+数量|quantity 
+库存|in stock
+还没有收藏商品哦|Oh no collection of goods
+正在加载|loading
+店铺信息商品滚动|store info product ticker
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+评价晒单|testimonial review
+您还没有需要评价的订单哦|no have testimonial to review
+快捷导航|Quick Navigation
+已评价晒单|Testimonial has been reviewed
+请输入旧密码|Please enter your old password
+请输入新密码|Please enter a new password
+确认输入新密码|Confirm Enter the new password
+确认修改|Confirm the changes
+快捷导航|Quick Navigation
+账户安全|account security
+新密码不能为空|The new password can not be empty
+两次密码不一致|Passwords are not the same
+商品|products
+举报类型|Report Types
+换货属性|Replacement attribute
+举报主题|Report title
+举报主题不能为空|Report title can not be empty
+问题描述|Problem Description
+请填写问题描述|Please fill in the description of issue
+举报类型|Report Types
+换货属性|Replacement attribute
+举报主题|Report title
+举报内容|Report content
+图片信息|image information
+上传凭证|upload certificate
+图片放大|enlarge image
+为了能够更快更好地解决问题|In order to be able to solve problems faster and better
+请您上传与卖家沟通的记录图片或者其他证明图片|please upload proof of communication with buyers or other proof photos
+服务说明|Service Description
+请提供充分的证据以确保举报成功|Please provide sufficient evidence to ensure successful reporting
+请珍惜您的会员权利|Please cherish your membership rights
+帮助商城更好地管理网站|Help the mall to better manage the website
+被举报待处理的商品不能反复进行违规提交|reported products awaiting processing cannot repeatedly report
+处理下架后的商品不能再次举报|off-the-shelf products can't be reported again
+商家如重新上架后仍存在违规现象|if the products still have violations after re-listing
+可再次对该商品进行违规举报|You can report violations of this product again
+举报仅针对商品|Report products only
+如情节严重|If the situation is serious
+再做处理|process again
+举报时依次选择举报类型及举报主题|Choose the type of report and the subject of the report
+必填|Mandatory
+填写违规描述|Fill Violation Description
+必填|Mandatory
+上传|Upload
+张以内的举证图片|pages limit of proof photos
+选填|Optional
+详细的举报内容有助于平台对该条举报的准确处理|Detailed info helps the platform to accurately handle the report
+请客观地向商城反映您所遇到的真实情况|Please objectively reflect the real situation you encounter to the mall
+以共同维护一个诚信和公平的购物环境|To jointly maintain an honest and fair shopping environment
+取消举报|Cancel Report
+删除|delete
+确认提交|confirm submission
+快捷导航|Quick Navigation
+引用|Quote
+单选|Single choice
+取消举报|Cancel Report
+是否确定删除|Are you sure you delete
+确定|confirm
+取消|cancel
+显示删除图片|Delete pictures
+请选择|please choose
+在线客服|online agent
+咨询客服|Contact Customer Service
+快捷导航|Quick Navigation
+个人资料|personal information
+客户服务|customer service
+帮助手册|Help Manual
+快捷导航|Quick Navigation
+个人资料|personal information
+帮助中心|Help
+购物流程图|Shopping flowchart.
+如何注册|How to register
+登录|log in
+第一步|first step
+打开|turn on
+个人中心|Profile
+进入右图登录页|Click on the right picture to login
+未注册用户|Unregistered users
+点击新用户注册|Click on New User Registration
+第二步|The second step
+打开|turn on
+新用户注册|New User Registration
+进入下图注册页|To enter the following registration page
+有两种注册方式|There are two types of registration
+快速注册和邮箱注册|Quick registration and email registration
+快速注册|Fast Registration
+输入验证码|Enter confirmation code
+输入您的手机号|Enter your phone number
+获取动态验证码|Obtain dynamic verification code
+设置新密码即可|Set a new password
+邮箱注册|email registration
+输入您的用户名|Enter your user name
+密码注册即可|Password Sign up to
+第三步|third step
+如果你已经注册过账号|If you have already registered an account
+直接填写用户名和密码即可|Directly fill in the user name and password
+新注册用户注册成功后默认已经登录您当前的账号|Newly registered users have already logged into your current account by default after successful registration
+如何提交订单|How do I submit an order
+第一步|first step
+查找商品|Find Product
+进入|enter
+商城首页|Mall Homepage
+在搜索栏输入您想要购买的商品|Enter a product you want to buy in the search bar
+或在底部快捷导航分类中查找商品|Or find products at the bottom quick navigation category
+如下图|As shown below
+第二步|The second step
+提交订单|Submit Order
+进入|enter
+商品页面|Product page
+查看商品信息|View product information
+选择好商品属性|Choose a good product attributes
+点击加入购物车|Click Add to Cart
+再点击下边的购物车|Then click below the cart
+进入购物车去结算|go to cart to make payment
+进入到|Go to
+订单确认|Order Confirmation
+填写好收货地址|Fill out the shipping address
+选择支付方式和配送方式|Select Payment and Delivery
+核实好订单信息后点提交订单|After verifying the order information, click Submit Order
+这个样订单就提交成功了|This sample orders submitted successful
+第三步|third step
+去付款|To pay
+如果是余额付款|If it is a balance payment
+订单确认页面提交后就已经付款成功了|After the order confirmation page is submitted, the payment has been successful
+如果你选择的其他的第三方支付|If you choose other third-party payment
+订单提交后|After the order is submitted
+点击你选择的付款方式进入付款即可|Click on your choice of payment method of payment to enter
+第四步|the fourth step
+查询订单|checking order
+商家发货|products dispatch
+待收货|waiting for product delivery
+中可看到你的商品|You can see the merchandise
+根据物流单号即可查到商品物流信息|you can track shipping status based on consigment number
+第五步|the fifth step
+去评价|go review
+确认收货后|After Items received confirmation
+可对商品进行评价|you can review the products 
+或再次购买|Or buy again
+快捷导航|Quick Navigation
+个人资料|personal information
+帮助中心|Help
+拼团流程图|Group Buy flowchart
+拼团流程|Group Buy Process
+第一步|first step
+选择拼团商品|Select the Group Buy merchandise
+用户中心|User Center
+进入|enter
+拼团频道|Group Buy Channel
+选择你喜欢的拼团商品|Choose your favorite Group Buy of goods
+点击|Click on
+去开团|To open group
+有三种选择方式|There are three ways to select
+顶部分类频道|Top Categories Channel
+排行|ranking
+首页广告位|Home advertising
+第二步|The second step
+团长发起拼团|Head of group launch group buy
+选择好拼团商品|Choose a good Group Buy of goods
+进入拼团商品页|Product page enter the Group Buy
+查看拼团商品信息|View product information Group Buy
+选择好商品属性|Choose a good product attributes
+点击右下角|Click the lower right corner
+人团|People group
+进入|enter
+订单确认|Order Confirmation
+填写好收货地址|Fill out the shipping address
+选择支付方式和配送方式|Select Payment and Delivery
+核实好订单信息后点提交订单并且付款完成|After verifying the order information, click to submit the order and make the payment to complete
+这样您的开团就成功了|Your group is successfully created
+现在您就可以将拼团链接分享出去|Now you can share your Group Buy link
+让更多的人来参团|Allow more people to join the group
+参团|Join group
+进入朋友分享的页面|Enter the page to share with friends
+点击|Click on
+立即参团|Join group now
+付款后即为参团成功|you will be added to the group after payment
+若多人同时支付|if more than one person make payment at the same time
+按先支付成功的用户获得参团资格|the right to join the group will be based on first pay first join
+第三步|third step
+等待拼团目标人数|Waiting for the target number
+你可以在|You can
+用户中心|User Center
+拼团状态栏|Group status bar
+进入您正在拼团的商品|view products in your Group Buy
+查看拼团进度|View Group Buy progress
+参团人数达到拼团目标人数|When the number of participants reaches the target number
+则此次拼团就成功了|then your Group Buy is is successful created
+第四步|the fourth step
+等待卖家发货|Waiting for seller to ship
+确认收货即可|Just confirm the receipt
+拼团失败|Group Buy Failed
+在有效时间内未凑齐人数|Failure to gather the number of people within the time limit
+即为组团失败|then your Group Buy failed
+此时商城会将原款退回账户余额|the mall will return the original money to the account balance
+快捷导航|Quick Navigation
+个人资料|personal information
+帮助中心|Help
+拼团介绍|Group Buy introduction
+拼团是一种基于微信社交的新型拼团的电商营销模式|Group Buy is a new type of e-commerce marketing model based on WeChat social networking
+依靠朋友圈的飞速传播不但能迅速提升品牌影响|Relying on the rapid spread of the circle of friends can not only quickly increase the brand influence
+还能促进消费者以分享|But also to promote consumer to share
+拼团系统重磅来袭|Group Buy has gone viral
+精心研发的拼团系统具有超强的吸粉与促销能力|The meticulously developed Group Buy system is very attractive and has strong promotional power
+应用广泛|Wide range of applications
+运行流畅|Running smoothly
+极致体验为您迅速吸粉实现销量指数上涨|The ultimate experience for you to quickly increase your sales
+超强吸粉能力的拼团模式|Super attractive Group By model
+拼团具有超强的吸粉与促销能力|Group Buy system is very attractive and has strong promotional power
+应用广泛|Wide range of applications
+运行流畅|Running smoothly
+极致体验为您迅速吸粉实现销量指数上涨|The ultimate experience for you to quickly increase your sales
+系统特性功能|System Feature
+拼团系统集合了海量商城最核心的功能|The grouping system integrates the core functions of mass shopping stores
+接近原生|Near native
+的交互式体验达到行业领先水准|Interactive experience reaches industry-leading standards
+给用户不一样的购物体验|Give users a different shopping experience
+全异步模式|Full asynchronous mode
+完全独立商城|Completely independent Mall
+用全异步模式|With full asynchronous mode
+完全独立商城|Completely independent Mall
+不依赖其他任何程序|Not dependent on any other software
+不用|No need to
+端一样能高效管理|terminal to be efficiently managed
+并可根据需求|And on demand
+自行选择是否需要与|Choose whether to
+的数据库整合成同一个数据库|integrated into a single database
+完美支持资金原路退回|Perfect support funds return through originate payment route
+拼团系统完美支持资金原路退回|Group By System perfect supports funds return through originate payment route
+帮助用户更好的管理资金去向|To help users better manage the money flow
+强大的退换货功能|Powerful return and exchange function
+拼团系统原生支持退换货功能|Group Buy System natively supports the return and exchange function
+更好展现其平台优质服务|Better show the quality service of the platform
+进一步提高用户忠诚度|Further improve customer loyalty
+完善的客服反馈|flawless customer service feedback
+拼团系统原生支持客服反馈功能|Group Buy System natively support customer feedback
+快捷导航|Quick Navigation
+个人资料|personal information
+帮助中心|Help
+多商户|Multi-merchant
+多商户系统是一款由上海商创网络科技有限公司推出的商城系统|Multi-merchant system is a network Technology Co., Ltd. of Shanghai to launch the Shopping Mall
+让商家即可自营亦可招募入驻商|Let merchants be a self-employed or recruit members
+打造真正属于自己的垂直电商平台|To create a truly their own vertical business platform
+全新的技术架构|The new technical architecture
+全新的|New
+设计|design
+丰富的促销体系各项新功能从根源上解决了电商企业普遍存在的推广|Various new functions of the rich promotion system have solved the widespread promotion of e-commerce enterprises from the root
+招商|Merchants
+盈利等问题|Profit and other issues
+供应商店铺与平台店铺共存模式|Coexistence model between supplier stores and platform stores
+极大的丰富了平台商品|Greatly enriched platform products
+是企业开展平台类型电商业务的最佳选择|It is the best choice for enterprises to develop platform type e-commerce business
+下图为首页图展示|The following picture shows the home page
+四大个性化优质特点|Four high-quality personalized features
+完善的系统功能机制|Perfect system function mechanism
+多商户整合了众多核心功能|Multi-merchants integrate many core functions
+产品体验方面达到了行业最高水准|Product experience aspects of the industry reached the highest level
+让用户轻松享受顶级电商系统中的所有强悍功能|Allowing users to easily enjoy all the powerful features of the system's top electricity supplier
+完整的电商生态模式|Complete electricity supplier ecological model
+多商户结合|Multi-merchant combination
+信息|information
+资金|funds
+实物|Kind
+的三位一体思路|Trinity ideas
+从平台到入驻商家|From the platform to the business settled
+再到终端顾客|And then to the end customer
+形成一个完整的电商生态模式|To form a complete eco-mode electric provider
+大数据下集群技术部署方案|Big Data clustered technology deployment programs
+快捷导航|Quick Navigation
+个人资料|personal information
+帮助中心|Help
+浏览记录|History
+清空|Clear
+此处没有内容|There is no content here
+快捷导航|Quick Navigation
+清除搜索记录|Clear search history
+真的要清空浏览记录|Really want to clear the browsing history
+确定|confirm
+取消|cancel
+温馨提示|notification
+恭喜拍卖中的商品|Congratulations to auction goods
+消息|News
+我的订单|My Order
+全部订单|All Orders
+待付款|Pending payment
+待拼团|Pending Group Buy
+待收货|awaiting product delivery
+待评价|awaiting review
+退换货|Product Return
+我的钱包|My Wallet
+资金管理|Money management
+余额|Balance
+红包|Red envelope
+积分|points
+优惠券|coupon
+分页器|Pager
+收藏的商品|Collection of goods
+关注的店铺|Store followed
+我的分享|My Share
+服务中心|Service Center
+我的微店|My WeShop
+我的微筹|My WeChou
+拼团频道|Group Buy Channel
+商家入驻|New Merchants
+浏览记录|History
+礼品卡|gift card
+我的提货|My pickup
+我的砍价|My bargain
+我的批发|My Wholesale
+我的采购单|My purchase orders
+我的采购单|My purchase orders
+采购单退换货|Purchase Order Returns
+首页|Home
+分类|classification
+搜索|search
+购物车|shopping cart
+中心|center
+社区|community
+悬浮菜单|Float Menu
+店铺信息商品滚动|store info product ticker
+清除搜索记录|Clear search history
+增票资质信息|Ticket qualification information
+单位名称|company name
+请输入单位名称|Enter a Name
+请输入单位名称|Enter a Name
+纳税人识别码|Taxpayer identification number
+请输入纳税人识别码|Enter the taxpayer identification number
+请输入纳税人识别码|Enter the taxpayer identification number
+注册地址|Registered address
+请输入注册地址|Enter the registered address
+请输入注册地址|Enter the registered address
+注册电话|Telephone registration
+请输入注册电话|Enter the registered phone
+请输入注册电话|Enter the registered phone
+开户银行|Bank
+请输入开户银行|Please enter the bank
+请输入开户银行|Please enter the bank
+银行账户|Bank accounts
+请输入银行账户|Please enter the bank account
+请输入银行账户|Please enter the bank account
+票据收件信息|Bill receipt information
+姓名|Full name
+请输入姓名|Please type in your name
+请输入姓名|Please type in your name
+手机号|phone number
+请输入手机号|Please enter phone number
+请输入收票人手机号|Please enter the recipient's mobile phone number
+请选择地区|please select the region
+所在地区|Region
+请选择地区|please select the region
+详细地址|Address
+请输入详细地址|Please enter the full address
+请输入详细地址|Please enter the full address
+提交|submit
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+增票资质信息|By votes qualification information
+单位名称|company name
+纳税人识别码|Taxpayer identification number
+注册地址|Registered address
+注册电话|Telephone registration
+开户银行|Bank
+银行账户|Bank accounts
+票据收件信息|Notes recipient information
+姓名|Full name
+手机号|phone number
+所在地区|Region
+详细地址|Address
+审核状态|Approval Status
+未审核|Not reviewed
+通过审核|Approved
+审核未通过|Not approved by
+删除|delete
+修改|modify
+新增|New
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+请输入完整的信息|Please enter complete information
+是否删除增值发票|Delete Tax invoices
+确定|confirm
+取消|cancel
+说点什么吧|say something
+提交|submit
+第三方输入法兼容问题|Third-party input method compatibility issues
+未处理|pending
+用户取消|User canceled
+无效举报|Report invalid
+恶意举报|Malicious Report
+有效举报|valid report
+举报类型|Report Types
+举报主题|Report title
+查看详情|see details
+取消|cancel
+删除|delete
+还没有订单哦|Oh no orders
+快捷导航|Quick Navigation
+订单列表|Order List
+删除订单|Delete Orders
+是否确定删除|Are you sure to delete
+确定|confirm
+取消|cancel
+帮助中心|Help
+仲裁|arbitration
+违规举报|report of abusement
+已经有|already have
+人关注|Followers
+取消关注|unsubscribe
+商品|products
+服务|service
+时效|time limit
+还没有收藏店铺哦|no favorite shop yet
+快捷导航|Quick Navigation
+店铺街|Market
+关于商城|About Mall
+商城介绍|Mall Introduction
+购物流程|shopping process
+微信通玩法|WeiXin Tong Rules
+微信通介绍|WeXin Tong Introuduction
+微信通流程|WeiXin Tong procudure
+微分销玩法|WeiXin Distribution Rules
+微分销介绍|WeiXin Distribution Introduction
+微分销流程|WeiXin Distribution Procedure
+拼团玩法|Group Buy Rules
+拼团介绍|Group Buy introduction
+拼团流程|Group Buy Procedure
+在线客服|online agent
+咨询客服|Contact Customer Service
+常见问题|common problem
+订单已提交成功|Orders submitted successfully
+什么时候可以送到|ETA
+一般|general
+天可以到货|Days to arrive
+新疆|Xinjiang
+西藏|Tibet
+内蒙古等偏远地区到货时间为|Inner Mongolia and other remote areas, the arrival time for
+海外购订单一般|Overseas purchase orders in general
+天到货|Day of arrival
+您可以在订单跟踪页面查看具体物流信息|You can view specific logistics information on the order tracking page
+如右图|At right
+我们的商品是否可以退换货|Whether we can return goods
+我的商品是否可以退换货|Whether I can return goods
+我们承诺符合以下情况|We are committed to comply with the following conditions
+自客户收到商品之日起|From the date the customer receives the goods
+日内可以退货|Days can return
+日内可以换货|Days can be exchanged
+客户可在线提交返修申请办理退换货事宜|Customers can submit a repair application online for return and exchange matters
+国家三包所规定的功能性故障|Functional failures stipulated by the National Three Guarantees
+经由生产厂家指定或特约售后服务中心检测确认|Tested and confirmed by the manufacturer's designated or special after-sales service center
+并出具检测报告|And issue a test report
+到货物流损或缺件情况|loss or damaged during transportation
+物流损指在运输过程中造成的损坏|Logistics damage refers to damage caused during transportation
+漏液|Leak
+破碎|broken
+性能故障|not in working order
+经售后人员核查情况属实|After-sales staff to verify that is true
+期间可能需要快递人员证明或要求您提供实物照片等|During the period, you may asked to provide a certificate from the courier or a proof photo, etc.
+以便售后人员快速做出判断及时处理|So that after-sales personnel can quickly make judgments and deal with them in time
+无条件办理退换货事宜|Unconditional return policy matters handled
+后台添加|Add at backend
+快捷导航|Quick Navigation
+个人资料|personal information
+根据手机找回|retrieve based on phone number
+请输入新密码|Please enter a new password
+请再输入一次新密码|Please enter a new password
+确认修改|Confirm the changes
+请填写新密码|Please fill in the new password
+新密码不能小于|The new password can not be less than
+请确认新密码|Confirm New Password
+两次密码不一致|Passwords are not the same
+用户名|username
+手机号|phone number
+邮箱|email
+请输入图片验证码|Please enter the image verification code
+请输入验证码|please enter verification code
+下一步|The next step
+请输入用户信息|Please enter your user information
+请输入验证码|please enter verification code
+验证码不正确|Incorrect verification code
+根据邮箱找回|According to the email to retrieve
+用户名|username
+邮箱|email
+输入验证码|Enter confirmation code
+发送验证码|Send the verification code
+下一步|The next step
+用户名|username
+手机号码|mobile number
+输入验证码|Enter confirmation code
+发送验证码|Send the verification code
+下一步|The next step
+提交检验|Submit inspection
+请填写验证码|Please fill in the verification code
+发送验证码|Send the verification code
+请输入用户名|please enter user name
+请输入用户名|please enter user name
+请输入您的用户名|Please enter your username
+手机号|phone number
+请输入密码|Please enter your password
+密码至少|Password least
+位数|Digit
+请输入|please enter
+位登录密码|Digit password
+立即登录|log in immediately
+手机号快捷登录|Phone number login
+忘记密码|forget password
+新用户注册|New User Registration
+快捷登录|quick login
+手机号快捷登录|Phone number login
+请输入图片验证码|Please enter the image verification code
+请输入图片验证码|Please enter the image verification code
+请输入手机号码|Please enter the phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入手机号|Please enter phone number
+获取短信验证码|obtain SMS verification code
+请输入短信验证码|Please enter the verification code SMS
+请输入短信验证码|Please enter the verification code SMS
+登录|log in
+若手机号未注册|If the phone number is not registered
+则默认注册账号|The default registered account
+密码为短信验证码|Password for the SMS verification code
+引用|Quote
+发送验证码|Send the verification code
+重新获取|Reacquire
+请输入图片验证码|Please enter the image verification code
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+发送频繁|Send frequent
+刷新图片验证码|Refresh image verification code
+请输入手机号码|Please enter the phone number
+手机号码格式不正确|The phone number is not formatted correctly
+请输入手机号|Please enter phone number
+请设置|Please set
+位登录密码|Digit password
+密码至少|Password least
+位数|Digit
+请设置|Please set
+位登录密码|Digit password
+请输入图形验证码|Please enter the captcha code
+请输入图形验证码|Please enter the captcha code
+请输入短信验证码|Please enter the verification code SMS
+请输入短信验证码|Please enter the verification code SMS
+获取短信验证码|obtain SMS verification code
+注册即视为同意|Registration is deemed to agree
+用户注册协议|User Registration Agreement
+引用|Quote
+发送验证码|Send the verification code
+重新获取|Reacquire
+请输入图形验证码|Please enter the captcha code
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+发送频繁|Send frequent
+切换|Switch
+注册协议文章|Registration Agreement Article
+弹窗页面层|Popup layer
+关闭|close
+维修|service
+退货|Returns
+换货|Replacement
+引用|Quote
+未处理|pending
+待申诉|Pending appeal
+对话中|Dialogue
+完成|completed
+商品|products
+换货属性|Replacement attribute
+纠纷类型|Types of disputes
+纠纷类型不能为空|Types of disputes can not be empty
+请选择|please choose
+问题描述|Problem Description
+请填写问题描述|Please fill in the description of issue
+详细信息|details
+纠纷类型|Types of disputes
+投诉时间|Complaints Time
+问题描述|Problem Description
+初步审核时间|Preliminary review time
+请输入您要发布的内容|Please enter the content you want to publish
+发布对话|Publish dialogue
+图片信息|image information
+上传凭证|upload certificate
+图片放大|enlarge image
+为了能够更快更好地解决问题|In order to be able to solve problems faster and better
+请您上传与卖家沟通的记录图片或者其他证明图片|please upload proof of communication with buyers or other proof photos
+服务说明|Service Description
+尊敬的用户|respected user
+为了更好的解决您的问题|In order to better solve your problem
+请您在问题描述中反馈具体纠纷问题|Make your feedback specific disputes in issue statement
+并上传相关证据图片|And upload relevant evidence picture
+避免上传外部链接等内容|Avoid uploading content of external links, etc.
+以免耽误您的纠纷处理|So as not to delay your disputes
+确认提交|confirm submission
+问题已经解决|issue has been resolved
+快捷导航|Quick Navigation
+引用|Quote
+显示删除图片|Delete pictures
+检查谈话|Check the conversation
+发布对话|Publish dialogue
+可申请订单|You may apply for orders
+已申请订单|It has applied for an order
+订单号|order number
+拼团标识|Group Buy Logo
+拼团订单|Group Buy Orders
+拼团标识|Group Buy Logo
+款商品|products
+合计|total
+交易纠纷|Dispute transaction
+删除|delete
+还没有订单哦|Oh no orders
+快捷导航|Quick Navigation
+订单列表|Order List
+删除订单|Delete Orders
+是否删除此订单|Remove this order
+确定|confirm
+取消|cancel
+门店自提码|Stores pickup code
+提货码|Delivery code
+服务电话|service line
+营业时间|Hours
+联系客服|Contact Customer Service
+订单号|order number
+拼团标识|Group Buy Logo
+拼团失败|Group Buy Failed
+拼团标识|Group Buy Logo
+配件标识|Accessories logo
+配件|Accessories
+赠品|Gifts
+配件标识|Accessories logo
+配件|Accessories
+赠品|Gifts
+商品优惠|Product deals
+卡号|card number
+密码|password
+截止日期|deadline
+查看卡密|Card Password
+配件标识|Accessories logo
+配件|Accessories
+赠品|Gifts
+卡号|card number
+密码|password
+截止日期|deadline
+查看卡密|Card Password
+超级礼包|Super Gift Pack
+礼包|Package
+超级礼包|Super Gift Pack
+套餐价|Package price
+已优惠|discounted
+超级礼包|Super Gift Pack
+配送方式|Delivery Method
+门店自提|Stores pickup
+自提点|pickup location
+联系人|Contact
+联系电话|contact number
+地址|address
+到达线路|Arrival line
+提货时间|pickup time
+商品包装|Product packaging
+买家留言|Buyers message
+支付方式|payment method
+手续费|Fees
+支付方式|payment method
+切换支付方式|Switching Payment
+手续费|Fees
+发票类型|invoice type
+增值发票|Tax invoices
+发票信息|Invoice Information
+税率金额|Tax amount
+发票抬头|Invoice
+发票内容|invoice content
+红包|Red envelope
+红包金额|The amount of red envelopes
+优惠券|coupon
+免邮券|Free postage coupons
+优惠券金额|Coupon amount
+折扣|discount
+配送费用|Shipping fees
+使用积分|Use Points
+使用红包|Use red envelopes
+使用储值卡|Using a Card
+使用优惠券|use a coupon
+减免运费|Free Shipping
+延迟收货|Delivery Delay
+悬浮|float
+应付总额|The total amount payable
+订单过期|Orders expired
+立即付款|Pay Now
+悬浮|float
+快捷导航|Quick Navigation
+我的订单|My Order
+延迟收货|Delivery Delay
+是否延迟收货此订单|Whether to delay receipt of this order
+确定|confirm
+取消|cancel
+秒后自动关闭|seconds will shut down automatically
+确认订单|Confirm Order
+你确认已经收到货物了吗|Are you sure you have received the goods?
+确定|confirm
+取消|cancel
+取消订单|cancel order
+确定要取消该订单吗|Sure you want to cancel the order
+取消后将视为无效订单|order is invalid after cancellation
+取消订单|cancel order
+再考虑下|Reconsider
+点击查看自提点信息|Click to view pickup location info
+全部订单|All Orders
+待付款|Pending payment
+待收货|awaiting delivery
+订单号|order number
+拼团标识|Group Buy Logo
+拼团订单|Group Buy Orders
+拼团标识|Group Buy Logo
+砍价标识|Bargain logo
+砍价订单|Bargain Order
+砍价标识|Bargain logo
+配件|Accessories
+赠品|Gifts
+款商品|products
+合计|total
+延迟收货|Delivery Delay
+申请售后|Apply after-sale
+查看订单|check order
+删除|delete
+删除|delete
+立即支付|pay immediately
+还没有订单哦|Oh no orders
+快捷导航|Quick Navigation
+订单列表|Order List
+延迟收货|Delivery Delay
+是否延迟收货此订单|Whether to delay receipt of this order
+确定|confirm
+取消|cancel
+秒后自动关闭|seconds will shut down automatically
+删除订单|Delete Orders
+是否删除此订单|Remove this order
+确定|confirm
+取消|cancel
+确认订单|Confirm Order
+你确认已经收到货物了吗|Are you sure you have received the goods?
+确定|confirm
+取消|cancel
+取消订单|cancel order
+确定要取消该订单吗|Sure you want to cancel the order
+取消后将视为无效订单|order is invalid after cancellation
+取消订单|cancel order
+再考虑下|Reconsider
+对话记录|Conversations
+登录|log in
+微博登录|Weibo login
+微信登录|Log in Wechat
+登录|log in
+一键登录|One-click login
+更方便|more convenient
+更快捷|faster
+已经绑定|Already bound
+已绑定|Bound
+解绑|Unbundling
+去绑定|Unbinding
+解绑后|After unbinding
+将不能快捷登录网站|no fast login
+请谨慎操作|Proceed with caution
+没有第三方授权登录插件|No third-party plug-ins unauthorized access
+快捷导航|Quick Navigation
+账户安全|account security
+点击|Click on
+询问框|Query box
+您确定要解绑此会员帐号吗|Are you sure you want to unbind this member logins
+确定|confirm
+取消|cancel
+解绑|Unbundling
+解绑|Unbundling
+关联商城账号|Account associated Mall
+新注册用户系统会默认分配一个主账号且自动关联|The newly registered user system will assign a master account by default and automatically linked
+如果在商城已经注册过账号的|If you have already registered an account at the mall
+可在此重新关联已注册的账号|You can re-link the registered account here
+关联可快捷登录商城|use linked account helps you log in to the Mall quickly
+网站和|Website and
+账号|account number
+并可享受网站会员特权等|and can enjoy website member privileges, etc.
+商城承诺保障您的账号隐私安全|Mall commitment to protect your account privacy
+验证信息|verify message
+关联完成|link completed
+请输入用户名或手机号|Please enter your user name or phone number
+不能输入特殊字符|You can not enter special characters
+用户名|username
+手机号|phone number
+请输入图片验证码|Please enter the image verification code
+请输入验证码|please enter verification code
+请输入密码|Please enter your password
+请输入您的密码|please enter your password
+确定关联|confirm the association
+忘记密码|forget password
+当前登录账号|The current login account
+用户名|username
+手机|Mobile phone
+已关联账号|Linked Account
+可切换登录账号|Switchable login account
+用户名|username
+手机|Mobile phone
+邮箱|email
+切换并登录|Switch and log
+解除关联|unlink
+解除关联后将无法使用微信快捷登录商城|After unlink, you will not be able to use WeChat quickly log in to the mall
+网站及|Website and
+但仍可以使用系统默认分配账号登录|But you can still log in using the system's default account
+当前登录账号为关联账号|The current login account is an linked account
+则无法解除关联|cannot unlink
+如您需要解除关联|If you need to unlink
+请将当前登录账号切换为主账号即可|Please switch the current account to the main account
+快捷导航|Quick Navigation
+个人资料|personal information
+提交验证|Submit verification
+刷新图片验证码|Refresh image verification code
+解除关联|unlink
+询问框|Query box
+您确定要解除关联账号吗|Are you sure you want to unlink the account?
+确定|confirm
+取消|cancel
+切换并登录|Switch and log
+当前登录账号|The current login account
+用户名|username
+手机|Mobile phone
+去关联账号|To associate account
+已关联账号|Linked Account
+账号关联可快捷登录商城|Account association can quickly log in to the mall
+网站和|Website and
+账号|account number
+并可享受网站会员特权等|A member and enjoy privileges, etc.
+商城承诺保障您的账号隐私安全|Mall commitment to protect your account privacy
+解除关联后|After unlink
+将无法使用微信快捷登录商城|Wechat will not be available for fast login
+网站及|Website and
+但仍可以使用系统默认分配账号登录|But you can still log in using the system's default account
+可切换账号|To switch accounts
+用户名|username
+手机|Mobile phone
+邮箱|email
+解除账号关联|unlink account association
+切换并登录|Switch and log
+快捷导航|Quick Navigation
+账户安全|account security
+提交验证|Submit verification
+解除关联|unlink
+询问框|Query box
+您确定要解除关联账号吗|Are you sure you want to unlink the account?
+确定|confirm
+取消|cancel
+切换登录|Login switch
+建议您启动全部安全设置|We recommend that you start all security settings
+以保障账户及资金安全|To protect the accounts and financial security
+修改登录密码|Change My Password
+互联网账号存在被盗风险|Internet account is at risk of being stolen
+建议您定期更改密码|We recommend that you change your password regularly
+立即手机验证|phone verification now
+已验证手机|Verified phone
+验证后|After verification
+可用于快速找回登录密码|It can be used to quickly retrieve password
+接收消息提醒|Receiving message alerts
+立即邮箱验证|E-mail verified immediately
+已验证邮箱|Verified email
+验证后|After verification
+可用于快速找回登录密码等|It can be used to quickly retrieve login password, etc.
+启用支付密码|Enabling payment password
+已启用支付密码|Enabled payment password
+启用后|When enabled
+购物需验证支付密码|verify payment password is required to shop
+增加安全性|Increase security
+授权管理|Authorization Management
+第三方登录授权信息|Sign in with authorization information
+快捷导航|Quick Navigation
+个人资料|personal information
+用户名|username
+昵称|nickname
+性别|gender
+出生日期|date of birth
+收货地址|Shipping address
+实名认证|Verified
+已认证|verified
+未认证|not certified
+账户安全|account security
+仅微信显示|Only Wechat display
+关联账号|Associate account
+使用帮助|Using help
+退出|drop out
+修改昵称|change username
+昵称|nickname
+昵称|nickname
+确定|confirm
+修改性别|change gender
+确定|confirm
+修改出生日期|change date of birth
+出生日期|date of birth
+确定|confirm
+性别展开修改弹窗|Expand gender edit popup
+关闭|close
+点击修改颜色|Click Edit Color
+提交修改|Commit changes
+昵称展开修改弹窗|Expand nickname edit popup
+关闭|close
+并提交修改|And commit the changes
+出生日期展开修改弹窗|expand Date of Birth edit popup
+关闭|close
+并提交修改|And commit the changes
+修改头像|Modify avatar
+上传的图片不能超过|Upload a picture can not exceed
+真实姓名|real name
+真实姓名|real name
+身份证号|identity number
+身份证号|identity number
+身份证正面|ID card front
+修改图片|Edit Picture
+上传图片|upload image
+身份证反面|ID card back
+修改图片|Edit Picture
+上传图片|upload image
+银行|bank
+工商银行上海|ICBC Shanghai
+路支行|Road Branch
+银行卡号|Bank card number
+银行卡号|Bank card number
+手机号码|mobile number
+手机号码|mobile number
+短信验证码|SMS verification code
+短信验证码|SMS verification code
+获取验证码|get verification code
+同意实名认证协议并确定|Consent agreement and to determine the real-name authentication
+提交|submit
+快捷导航|Quick Navigation
+认证详情|Certification details
+提交表单|submit Form
+验证数据|verify the data
+请输入完整的|Enter the full
+异步提交|Asynchronous submitted
+获取验证码|get verification code
+请填写手机号码|please fill in mobile number
+获取手机验证码|Get phone code
+没有倒计时|No countdown
+下面用于图片上传预览功能|The following is used for image upload preview function
+图片异常的捕捉|Abnormal picture capture
+防止用户修改后缀来伪造图片|Prevent users from modifying the suffix to fake pictures
+您上传的图片格式不正确|Your uploaded image format is not correct
+请重新选择|Please choose
+真实姓名|real name
+身份证号|identity number
+身份证正面|ID card front
+身份证反面|ID card back
+银行|bank
+银行卡号|Bank card number
+认证时间|Certification time
+审核状态|Approval Status
+审核通过|approved
+审核未通过|Not approved by
+未审核|Not reviewed
+审核未通过描述|reason to not approve
+绑定手机|linked phone
+认证渠道|Certified Channel
+实名认证|Verified
+修改认证信息|Modify authentication information
+快捷导航|Quick Navigation
+个人资料|personal information
+请输入邮箱|please input your email
+请输入邮箱验证码|Please enter the email verification code
+获取邮箱验证码|Get email address Verification Code
+已认证手机号|Certified phone number
+请输入短信验证码|Please enter the verification code SMS
+获取短信验证码|obtain SMS verification code
+已认证手机|Certified mobile phone
+使用手机发送验证码|Use the phone to send a verification code
+使用邮箱发送验证码|Send codes email
+确定修改|Identify changes
+快捷导航|Quick Navigation
+账户安全|account security
+验证码倒计时|Code Countdown
+发送验证码|Send the verification code
+重新获取|Reacquire
+发送手机验证码|Send phone code
+发送频繁|Send frequent
+请先填写认证手机号|Please fill in the Verified Phone Number
+请输入有效的手机号|please input valid mobile phone number
+提交验证|Submit verification
+请先填写认证手机号|Please fill in the Verified Phone Number
+请输入短信验证码|Please enter the verification code SMS
+发送邮箱验证码|Send E-mail verification code
+发送频繁|Send frequent
+请输入邮箱|please input your email
+请输入有效的邮箱|Please enter a valid email
+验证码倒计时|Code Countdown
+发送验证码|Send the verification code
+重新获取|Reacquire
+提交验证|Submit verification
+请输入用户邮箱|Please enter your email
+请输入有效的邮箱|Please enter a valid email
+请输入邮箱验证码|Please enter the email verification code
+请输入图片验证码|Please enter the image verification code
+请输入图片验证码|Please enter the image verification code
+请输入验证的手机号|Please enter the phone number
+请输入验证码|please enter verification code
+获取短信验证码|obtain SMS verification code
+确定|confirm
+请输入验证的手机号|Please enter the phone number
+确定|confirm
+快捷导航|Quick Navigation
+账户安全|account security
+验证码倒计时|Code Countdown
+发送验证码|Send the verification code
+重新获取|Reacquire
+发送验证码|Send the verification code
+请输入图片验证码|Please enter the image verification code
+请输入验证的手机号|Please enter the phone number
+请输入有效的手机号|please input valid mobile phone number
+发送频繁|Send frequent
+提交验证|Submit verification
+请输入验证的手机号|Please enter the phone number
+请输入有效的手机号|please input valid mobile phone number
+请输入验证码|please enter verification code
+请输入有效的手机号码|Please input valid telephone number
+已认证邮箱|Verified email
+请输入邮箱验证码|Please enter the email verification code
+获取邮箱验证码|Get email address verification code
+请输入图片验证码|Please enter the image verification code
+请输入图片验证码|Please enter the image verification code
+已认证手机|Certified mobile phone
+请输入验证码|please enter verification code
+获取短信验证码|obtain SMS verification code
+输入原支付密码|Enter the original payment password
+请输入原支付密码|Please enter the original payment password
+请输入|please enter
+位支付密码|digits payment password
+使用余额|Balance
+已认证手机|Certified mobile phone
+使用手机发送验证码|Use the phone to send a verification code
+已认证邮箱|verified email
+使用邮箱发送验证码|Send codes email
+确定|confirm
+快捷导航|Quick Navigation
+账户安全|account security
+验证码倒计时|Code Countdown
+发送验证码|Send the verification code
+重新获取|Reacquire
+发送验证码|Send the verification code
+请输入图片验证码|Please enter the image verification code
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+发送频繁|Send frequent
+提交验证|Submit verification
+请输入手机号|Please enter phone number
+请输入有效的手机号|please input valid mobile phone number
+请输入验证码|please enter verification code
+请输入支付密码|Please enter payment password
+请输入|please enter
+位支付密码|digits payment password
+发送邮箱验证码|Send E-mail verification code
+发送频繁|Send frequent
+请先验证填写邮箱|Please fill in the verification email
+验证码倒计时|Code Countdown
+发送验证码|Send the verification code
+重新获取|Reacquire
+提交验证|Submit verification
+请先验证填写邮箱|Please fill in the verification email
+请输入邮箱验证码|Please enter the email verification code
+请输入支付密码|Please enter payment password
+请输入|please enter
+位支付密码|digits payment password
+商品|products
+商品|products
+换货属性|Replacement attribute
+判断属性是复选还是单选|Determine property is a single or multiple choices
+退货原因|reasons for returns
+商品数量|product quantity 
+数量不能为空|quantity can not be empty
+数量为数字|quantity must be a number
+图片放大|enlarge image
+个人信息|Personal information
+个人信息|Personal information
+请输入收货人姓名|Enter the name of the consignee
+手机号码格式不正确|The phone number is not formatted correctly
+请填写手机号码|please fill in mobile number
+请输入邮箱|please input your email
+地区选择|Select area
+地区选择|Select area
+快捷导航|Quick Navigation
+售后列表|Sale list
+引用|Quote
+退货属性|Returns property
+表单验证|form validation
+请选择退换货原因|Please select the reasons for return
+显示删除图片|Delete pictures
+申请凭据|Application credentials
+换货数量|quantity of replacement
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+退换货类型切换|Return type switch
+服务类型|Service type
+为退款时|When refunds
+默认隐藏商品数量选择|Select the number of goods are hidden by default
+退款原因|reasons for returns
+退款|Refund
+隐藏换货商品属性|Hide your replacement attribute
+维修原因|reason for repair
+维修|service
+换货原因|Replacement reason
+换货|Replacement
+请求换货商品属性|Request a replacement product attributes
+定义模板标签|Custom template tags
+退货原因|reasons for return
+退货|Returns
+退款原因|reasons for return
+退款|Refund
+商品属性选择|Product attribute selection
+退换货原因选择|Select the reasons for return
+的值|The value
+维修|service
+退货|Returns
+换货|Replacement
+仅退款|Only refund
+拒绝原因|Denial Reason
+商品退款|Product Refund
+凭证图片|Pictures voucher
+悬浮|float
+确认收货|Items received confirmation
+已完成|completed
+已拒绝|rejected
+待同意|awaiting approval
+悬浮|float
+快捷导航|Quick Navigation
+售后列表|Sale list
+店铺信息商品滚动|store info product ticker
+确认订单|Confirm Order
+你确认已经收到货物了吗|Are you sure you have received the goods?
+确定|confirm
+取消|cancel
+选择其他快递方式|Choose other courier
+的值|The value
+用户选择快递信息寄回|Users choose express information return
+请选择快递公司|Please select Express
+请填写其他快递公司名称|Please fill in the name of other courier companies
+请填写快递单号|Please fill in the express orders
+售后申请订单|Orders application for sale
+属性|Attributes
+此处没有内容|There is no content here
+售后申请订单|Orders application for sale
+快捷导航|Quick Navigation
+正在加载|loading
+售后申请订单列表|Sale and application order list
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+退换货申请进度|Return application status
+此处没有内容|There is no content here
+退换货申请进度|Return application status
+快捷导航|Quick Navigation
+正在加载|loading
+退换货进度查询列表|Returns status inquiry list
+加载更多|load more
+正在加载|loading
+没有更多了|No more
+激活退换货订单|Returns activation order
+你确认要激活吗|Are you sure you want to activate it
+激活后可以再次申请退换货操作|After activation, you can apply for the return again
+确定|confirm
+取消|cancel
+请求|request
+删除已完成退换货订单|Delete completed return orders
+你确认要删除该退换货订单吗|Are you sure you want to delete the return order
+确定|confirm
+取消|cancel
+请求|request
+取消退换货申请|Cancel Return application
+您确定要取消退换货申请吗|Are you sure you want to cancel the return application
+确定|confirm
+取消|cancel
+请求|request
+跳转提示|redirect warning
+微软雅黑|Microsoft elegant black
+页面自动|Automatic page
+跳转|redirect
+等待时间|waiting time
+批发价|Wholesale price
+总价|Total price
+请输入您的联系方式|Please enter your contact information
+付款方式和配送方式等信息|Payment and Delivery information
+买家留言|Buyers message
+您还没有批发商品|You don't have wholesale product yet
+返回批发中心|back to wholesale center
+悬浮|float
+实付款|real payment
+继续采购|Continue to purchase
+订购|order
+快捷导航|Quick Navigation
+没有商品|No products
+请填写批发信息|Please fill in the information wholesale
+属性|Attributes
+数量|quantity 
+价格|price
+购买|buy
+详情|Detail
+查看商品详情|View Product Details
+悬浮|float
+客服|Customer Service
+采购清单|Purchasing List
+立即采购|Purchase immediately
+悬浮|float
+快捷导航|Quick Navigation
+悬浮菜单|Float Menu
+引用|Quote
+商品详情相册切换|change Product Details album
+换货数量|quantity of replacement
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+不能小于最小数量|Not less than the minimum number of
+不能超过最大数量|Not exceed the maximum number of
+请输入关键字|Please enter key words
+销量|Sold
+价格|price
+选择分类|Choose category
+批发价|Wholesale price
+市场价|Price
+去批发|To wholesale
+去登录|To log
+去逛逛|Go shopping
+右侧浮动导航|The right side of the floating navigation
+分类|classification
+关闭|close
+搜索|search
+请输入搜索关键字|please enter keyword to search
+分类|classification
+排序|Sorting
