@@ -3,7 +3,9 @@ const readline = require('readline')
 const fs = require('fs')
 const inFile = './files/file.txt'
 const outFile = './output/mobile.php'
+const outFile2 = './output/langmap.js'
 let result = []  // 处理结果
+let result2 = {}  // 保存键值对
 
 const r1 = readline.createInterface({
   input: fs.createReadStream(inFile),
@@ -16,6 +18,7 @@ function handleOneLine(line) {
   value = value.trim()  // 值
   const jp = PYTool.GetJP(key)
   result.push(`$_LANG['e2door_${jp}'] = "${value}";`)
+  result2[key] = `{$lang.e2door_${jp}}`
 }
 
 // 处理结果
@@ -24,9 +27,15 @@ function handleResult() {
     <?php
       ${result.join('\r\n')}
   `
-  fs.writeFile(outFile, content, (err, data) => {
+  // fs.writeFile(outFile, content, (err, data) => {
+  //   if (err) {
+  //     throw err
+  //   }
+  // })
+
+  fs.writeFile(outFile2, `module.exports = ${JSON.stringify(result2)}`, (err, data) => {
     if (err) {
-      throw err
+      console.log(err)
     }
   })
 }

@@ -36,15 +36,15 @@ function getExt(filepath) {
   return result
 }
 
-var count = 0
-var exts = new Set()
-var okExts = ['vue', 'less', 'js', 'json']
-getFiles(path, function (filepath) {
-  const ext = getExt(filepath)
-  if (okExts.includes(ext)) {
-    handleFile(filepath)
-  }
-})
+// var count = 0
+// var exts = new Set()
+// var okExts = ['vue', 'less', 'js', 'json']
+// getFiles(path, function (filepath) {
+//   const ext = getExt(filepath)
+//   if (okExts.includes(ext)) {
+//     handleFile(filepath)
+//   }
+// })
 
 function handleFile(filepath) {
   try {
