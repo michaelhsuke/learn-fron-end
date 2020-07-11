@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
-const iconv = require('iconv-lite')
-const dir = '/Users/xuke/projects/js-unicom/woService/woService-www/src/site/service/jf'
+// const iconv = require('iconv-lite')
+const dir = '/Users/xuke/projects/js-unicom/vue-wo-activity/src/views/2020/weeklyLottery'
 
 
 
@@ -26,7 +26,7 @@ function getExt(filepath) {
 }
 
 var fileExts = new Set()
-var okExts = ['css', 'php', 'htm', 'xml', 'js', 'html']
+var okExts = ['css', 'php', 'htm', 'xml', 'js', 'html', 'vue', 'less']
 
 handleFile(dir, function (filepath) {
   var ext = getExt(filepath)
