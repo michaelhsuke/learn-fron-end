@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      padding: 20px;
+    }
+
+    #outer {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #f00;
+      padding: 0;
+      margin: 0;
+      /* padding: 10px; */
+      /* margin: 20px; */
+      overflow: scroll;
+      /* box-sizing: content-box; */
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    #inner {
+      width: 80px;
+      height: 10000px;
+      border: 1px solid #00f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="outer">
+    <div id="inner"></div>
+  </div>
+  <div id="result"></div>
+
+  <script>
+    var $outer = document.getElementById('outer')
+    var $inner = document.getElementById('inner')
+    var $result = document.getElementById('result')
+    $result.innerHTML = $inner.offsetTop
+    // $result.innerHTML = $outer.clientHeight
+    // $result.innerHTML = $outer.offsetLeft
+    // $result.innerHTML = $outer.scrollHeight
+    // $outer.addEventListener('scroll', function (ev) {
+    //   console.log(this.scrollTop)
+    // })
+  </script>
+
+
+</body>
+
+</html>

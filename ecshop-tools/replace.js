@@ -1,9 +1,9 @@
 const readdir = require('../utils/readdir')
 // const path = `/Users/xuke/projects/self/ecshop/mobile/resources/views`
-const path = `/Users/xuke/my-projects/ecshop/mobile/resources/views/`
+const path = `/Users/xuke/my-projects/ecshop/mobile/resources/views/category`
 const fs = require('fs')
 const exts = new Set()
-const reg = /[\u4e00-\u9fa5]{2,}/g
+const reg = /[\u4e00-\u9fa5]{1,}/g
 let result = new Set()
 const langmap = require('./output/langmap.js')
 Object.keys(langmap).forEach(key => {
